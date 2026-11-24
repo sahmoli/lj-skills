@@ -1,0 +1,109 @@
+{
+  "schema_version": "lj.annotate.packet.2",
+  "return_schema_version": "lj.annotate.return.2",
+  "packet_id": "lj-annotate-cross-research-synthetic-v2",
+  "task_version": "2.0.0-synthetic",
+  "title": "跨研究人工快速验证 · 虚构样例",
+  "mode": "assisted_review",
+  "provenance": {
+    "task_spec_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "codebook_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "source_manifest_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+    "ai": {
+      "system": "synthetic-test-system",
+      "model": "synthetic-test-model",
+      "prompt_sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+      "draft_manifest_sha256": "4444444444444444444444444444444444444444444444444444444444444444"
+    }
+  },
+  "layout": {
+    "profile": "fixed_review",
+    "desktop_decision_overflow": "fail",
+    "evidence_min_font_px": 12,
+    "evidence_max_font_px": 34,
+    "max_fields": 8,
+    "secondary_mode": "auto",
+    "narrow_breakpoint_px": 860
+  },
+  "sections": [
+    {"key": "scope", "role": "upstream_scope", "label": "1 · 范围判断", "tone": "target", "fields": ["scope"]},
+    {"key": "classification", "role": "peer_classification", "label": "2 · 并列内容分类", "tone": "classification", "fields": ["classification"]},
+    {"key": "outcome", "role": "downstream_outcome", "label": "3 · 下游结果", "tone": "outcome", "fields": ["outcome"]},
+    {"key": "quality", "role": "input_quality", "label": "4 · 输入质量", "tone": "quality", "fields": ["quality"]}
+  ],
+  "fields": [
+    {
+      "key": "scope",
+      "label": "当前对象是否属于研究范围？",
+      "hint": "只根据左侧可见证据判断。",
+      "options": [
+        {"value": "yes", "label": "是", "key": "1", "tone": "yes"},
+        {"value": "no", "label": "否", "key": "2", "tone": "no"},
+        {"value": "unclear", "label": "不确定", "key": "3", "tone": "unclear", "requires_note": true}
+      ]
+    },
+    {
+      "key": "classification",
+      "label": "是否出现目标行为？",
+      "hint": "高亮只是定位线索，不自动等于“是”。",
+      "options": [
+        {"value": "yes", "label": "是", "key": "q", "tone": "yes"},
+        {"value": "no", "label": "否", "key": "w", "tone": "no"},
+        {"value": "unclear", "label": "不确定", "key": "e", "tone": "unclear", "requires_note": true}
+      ]
+    },
+    {
+      "key": "outcome",
+      "label": "是否明确连接到研究结果？",
+      "options": [
+        {"value": "yes", "label": "是", "key": "a", "tone": "yes"},
+        {"value": "no", "label": "否", "key": "s", "tone": "no"},
+        {"value": "unclear", "label": "不确定", "key": "d", "tone": "unclear", "requires_note": true},
+        {"value": "not_applicable", "label": "不适用", "key": "f", "tone": "structural", "structural_only": true}
+      ]
+    },
+    {
+      "key": "quality",
+      "label": "证据是否足够判断？",
+      "options": [
+        {"value": "yes", "label": "是", "key": "z", "tone": "yes"},
+        {"value": "no", "label": "否", "key": "x", "tone": "no", "requires_note": true}
+      ]
+    }
+  ],
+  "structural_rules": [
+    {"when": {"field": "scope", "equals": "no"}, "set": {"outcome": "not_applicable"}, "lock": ["outcome"]}
+  ],
+  "highlighting": {
+    "enabled": true,
+    "groups": [
+      {"key": "focal", "label": "当前对象", "tone": "target", "static_terms": [], "include_focal_aliases": true, "targets": "both"},
+      {"key": "classification", "label": "可能的分类线索（高亮不等于答案）", "tone": "classification", "static_terms": ["行为", "互动"], "targets": "primary"},
+      {"key": "outcome", "label": "可能的结果线索", "tone": "outcome", "static_terms": ["保护", "治理"], "targets": "both"}
+    ]
+  },
+  "records": [
+    {
+      "record_key": "SYN-V2-001",
+      "primary_text": "虚构物种甲出现了互动行为，文本同时提到保护行动。",
+      "secondary_text": "Synthetic species alpha shows an interaction and mentions conservation.",
+      "focal_entity": {"key": "alpha", "label": "虚构物种甲", "subtitle": "Synthetic species alpha", "aliases": ["虚构物种甲", "species alpha"]},
+      "highlight_terms": {"focal": ["虚构物种甲", "species alpha"]},
+      "ai_draft": {"scope": "yes", "classification": "yes", "outcome": "yes", "quality": "yes"},
+      "initial_notes": {},
+      "bindings": {"evidence_sha256": "5555555555555555555555555555555555555555555555555555555555555555"}
+    },
+    {
+      "record_key": "SYN-V2-002",
+      "primary_text": "这是一条完全虚构的超长压力测试记录。它重复提供中性上下文，用来验证不同长度的证据不会推动右侧判断区和底部按钮。此处不包含真实人物、项目、来源、标识符或研究结果。行为只是测试词；治理也只是测试词。This deliberately long synthetic record repeats neutral context so the browser test can verify that evidence length never moves the decision controls or footer. It contains no real person, project, source, identifier, or research result. This deliberately long synthetic record repeats neutral context so the browser test can verify that evidence length never moves the decision controls or footer.",
+      "secondary_text": "完全虚构的保留原文。",
+      "focal_entity": {"key": "beta", "label": "虚构对象乙", "subtitle": "Synthetic object beta", "aliases": ["虚构对象乙", "object beta"]},
+      "highlight_terms": {"focal": ["虚构对象乙", "object beta"]},
+      "active_fields": ["scope", "quality"],
+      "ai_draft": {"scope": "no", "classification": "no", "outcome": "not_applicable", "quality": "yes"},
+      "initial_notes": {},
+      "bindings": {"evidence_sha256": "6666666666666666666666666666666666666666666666666666666666666666"}
+    }
+  ],
+  "return_filename": "synthetic-cross-research-review.json"
+}

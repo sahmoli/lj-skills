@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJ Design"
+  short_description: "为生态或保护假设设计判别性检验"
+  default_prompt: "Use $lj-design to design a discriminating test for this selected hypothesis."

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "profiles": {
+    "core": [
+      "lj-question",
+      "lj-evidence",
+      "lj-read",
+      "lj-design",
+      "lj-review",
+      "lj-write",
+      "lj-viz"
+    ],
+    "full": [
+      "lj-question",
+      "lj-evidence",
+      "lj-read",
+      "lj-design",
+      "lj-review",
+      "lj-write",
+      "lj-viz",
+      "lj-concept",
+      "lj-backbone",
+      "lj-journal",
+      "lj-annotate",
+      "lj-talk"
+    ]
+  },
+  "optional": [
+    "lj-concept",
+    "lj-backbone",
+    "lj-journal",
+    "lj-annotate",
+    "lj-talk"
+  ],
+  "retired_names": [
+    "lj-ask",
+    "lj-blindspot",
+    "lj-book",
+    "lj-citecheck",
+    "lj-constraint",
+    "lj-delegate",
+    "lj-dig",
+    "lj-paper",
+    "lj-roam",
+    "lj-sourcework",
+    "lj-weave",
+    "lj-wiki",
+    "_compat"
+  ],
+  "shared": [
+    "_shared",
+    "workflows"
+  ],
+  "templates": [
+    "templates/academic-talk.md",
+    "templates/delegation.md",
+    "templates/blindspot-audit.md",
+    "templates/lecture-design-zh.md",
+    "templates/references",
+    "templates/scripts"
+  ]
+}

@@ -1,0 +1,20 @@
+# OS / editor junk
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
+
+# never commit local secrets
+.env
+*.local
+
+# python bytecode
+__pycache__/
+*.pyc
+
+# runtime workspace dirs (session logs + run artifacts, not source code)
+lj-*-workspace/
+
+# matplotlib cache used by the local test gate
+.mplconfig/

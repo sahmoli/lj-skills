@@ -1,0 +1,31 @@
+{
+  "canvas": {
+    "width_mm": 183,
+    "height_mm": 96
+  },
+  "outer_mm": 9,
+  "panel_mm": 4,
+  "panels": [
+    {
+      "id": "a",
+      "left_mm": 9,
+      "bottom_mm": 9.0,
+      "width_mm": 63.840361,
+      "height_mm": 78.0
+    },
+    {
+      "id": "b",
+      "left_mm": 76.840361,
+      "bottom_mm": 9.0,
+      "width_mm": 43.506024,
+      "height_mm": 78.0
+    },
+    {
+      "id": "c",
+      "left_mm": 124.346386,
+      "bottom_mm": 9.0,
+      "width_mm": 49.653614,
+      "height_mm": 78.0
+    }
+  ]
+}

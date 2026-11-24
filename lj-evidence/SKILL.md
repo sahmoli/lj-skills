@@ -1,0 +1,18 @@
+---
+name: lj-evidence
+description: Find research sources via multi-database discovery and citation snowballing, fetch legal open-access full texts into page-anchored local Markdown, or verify claims, retractions, and citations.
+---
+
+# lj-evidence
+
+Choose **Build** for a source corpus (topic discovery + citation snowballing), **Fulltext** for local-first lookup, legal OA retrieval, local PDF ingestion, and anchored Markdown preparation, or **Verify** for named claims, retraction/preprint integrity checks, citations, or a bounded novelty check. A request to find sources calls for sources and coverage, not just a search plan.
+
+For **Build**, run [discover_sources.py](scripts/discover_sources.py) (OpenAlex + Semantic Scholar + arXiv; `--query` and/or `--seed-doi --backward --forward`) and report scope, search routes actually used, admission criteria, provenance, retraction flags, source dependencies, and material gaps. Read [sourcework guidance](references/sourcework-protocol.md) when a corpus schema, ledger, or coverage procedure is needed.
+
+For **Fulltext**, check local converted full texts first with [search_local_corpus.py](scripts/search_local_corpus.py) (returns physical `<!-- pdf-p0001 -->` anchors and `PDF++` links when a matching PDF exists, or `<!-- jats-sec:... -->` locators for JATS XML — never fabricates PDF page numbers). Prefer legally accessible primary full texts over abstract-only inference: run [fetch_oa.py](scripts/fetch_oa.py) (`--doi` / `--wanted-note` / `--scan-inbox` with `--convert`; repository-first legal cascade: arXiv → Europe PMC PDF/JATS XML → OpenAIRE Graph v3 → Unpaywall via `$UNPAYWALL_EMAIL` → OpenAlex → optional `$WILEY_TDM_TOKEN` → Semantic Scholar → Crossref/OA publisher patterns, verified via three-state [verify_pdf.py](scripts/verify_pdf.py)) into `$LJ_PAPERS_DIR` (default `./papers`, never inside public git roots). For paywalled or WAF-gated items, run `fetch_oa.py --open-wanted` in your normal browser / Zotero Connector and harvest safely with [ingest_local.py](scripts/ingest_local.py) (read-only copy default, SHA-256 dedup, converts via [pdf_to_md.py](scripts/pdf_to_md.py) using `pymupdf` or `--engine docling`, logs `_provenance.jsonl`, and atomically checks off exact-DOI matches in `*wanted*.md`). Read [fulltext pipeline](references/fulltext-pipeline.md) for venv and privacy rules. Never automate Sci-Hub or bypass paywalls; OA access does not grant public redistribution.
+
+For **Verify**, run [resolve_citation.py](scripts/resolve_citation.py) (Crossref / OpenAlex / PubMed / arXiv) to check existence, **Axis 1.5 integrity** (retractions, corrections, and preprint-to-published drift), and metadata consistency, then connect each claim to source identity, access level, a readable passage locator (with PDF page anchor when local full text exists), verdict, and confidence. Read [verification guidance](references/verification-protocol.md) for the four axes and access ladder; load [ecology domain passes](references/domain-ecology.md) for ecology/conservation manuscripts. Metadata establishes identity, not claim support; verify critical denominators, subsets, figures, and qualifiers against the original PDF page. Unreachable is not no-match, and scoped not-found is not proof of absence.
+
+Use [validate_report.py](scripts/validate_report.py) or [validate_dossier.py](scripts/validate_dossier.py) for saved schema-based artifacts. Bibliographic tools supply evidence; they do not decide the verdict.
+
+Follow the [suite honesty and authorization rules](../_shared/honesty-constitution.md) and [unified Markdown note contract](../_shared/note-output.md). Explicit output paths and no-save/read-only instructions take precedence.

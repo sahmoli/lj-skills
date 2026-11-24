@@ -1,0 +1,63 @@
+slug: nature
+journal: Nature
+publisher: nature_portfolio
+doi_prefixes:
+  value: [10.1038/s41586]
+  confidence: official
+  source_url: https://www.nature.com/nature/
+  last_verified: 2026-08-15
+society: {value: null, confidence: official, source_url: "https://www.nature.com/nature/", last_verified: 2026-08-15}
+
+metrics:
+  quartile: {value: unknown, confidence: unknown, source_url: null, last_verified: 2026-08-15}
+  impact_factor: {value: unknown, confidence: unknown, source_url: null, last_verified: 2026-08-15}
+  cite_score: {value: unknown, confidence: unknown, source_url: null, last_verified: 2026-08-15}
+  is_top: {value: 是, confidence: official, source_url: "Juan", last_verified: 2026-08-15}
+open_access: {value: hybrid, confidence: official, source_url: "https://www.nature.com/nature/for-authors/publishing-options", last_verified: 2026-08-15}
+apc_usd: {value: unknown, confidence: unknown, source_url: "https://www.nature.com/nature/for-authors/publishing-options", last_verified: 2026-08-15}
+review_model: {value: "single-anonymized by default; double-anonymized available", confidence: official, source_url: "https://www.nature.com/nature/for-authors/initial-submission", last_verified: 2026-08-15}
+scope: {value: "Original research of outstanding scientific importance across fields, written for a broad scientific readership.", confidence: official, source_url: "https://www.nature.com/nature/journal-information", last_verified: 2026-08-15}
+taste: {value: "A decisive conceptual or empirical advance whose importance is legible beyond the immediate specialty; clarity and compression must preserve evidence.", confidence: secondary, source_url: "https://www.nature.com/nature/journal-information", last_verified: 2026-08-15}
+
+caps:
+  Article:
+    words: {value: "typical page-budget guidance rather than a single durable word cap; verify live", excludes: [methods, references, figure_legends], confidence: unknown, source_url: "https://www.nature.com/nature/for-authors/formatting-guide", last_verified: 2026-08-15}
+    figs_tables: {value: "typical: about 4 display items for 6 pages; about 5–6 for 8 pages; not a hard figure maximum", confidence: official, source_url: "https://www.nature.com/nature/for-authors/formatting-guide", last_verified: 2026-08-15}
+    refs: {value: "verify live", confidence: unknown, source_url: "https://www.nature.com/nature/for-authors/formatting-guide", last_verified: 2026-08-15}
+    abstract: {value: "verify live", confidence: unknown, source_url: "https://www.nature.com/nature/for-authors/formatting-guide", last_verified: 2026-08-15}
+    structure: {value: "Nature Article structure; Methods separate from main display-page budget", confidence: official, source_url: "https://www.nature.com/nature/for-authors/formatting-guide", last_verified: 2026-08-15}
+
+artwork:
+  widths: {value: "final: 89 mm single column or 183 mm double column; maximum height 170 mm; 120–136 mm possible by arrangement", confidence: official, source_url: "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/", last_verified: 2026-08-15}
+  font: {value: "editable sans-serif Helvetica or Arial; ordinary text 5–7 pt at final size; consistent across figures", confidence: official, source_url: "https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/", last_verified: 2026-08-15}
+  line_weight: {value: "0.25–1 pt at final size; strokes below 0.25 pt may disappear", confidence: official, source_url: "https://www.nature.com/nature/for-authors/final-submission", last_verified: 2026-08-15}
+  panel_labels: {value: "8 pt bold upright lowercase a, b, c; arrange in letter order where possible", confidence: official, source_url: "https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/", last_verified: 2026-08-15}
+  raster_dpi: {value: "main photographic elements minimum 300 dpi; target 450–600 dpi for final main figures; Extended Data no more than 300 dpi; do not upsample", confidence: official, source_url: "https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/", last_verified: 2026-08-15, conflict_note: "Nature official pages express 300 minimum, 450 proof ceiling/target, and 300–600 common range; follow the stricter final-figure guide and verify with production."}
+  vector_formats: {value: "preferred editable AI, EPS, PDF; editable SVG/PS and other layered formats may be accepted", confidence: official, source_url: "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/", last_verified: 2026-08-15}
+  raster_formats: {value: "assemble main figures as editable vector/layered files with embedded high-resolution images; layered PSD/TIFF or highest-quality JPEG may be fallbacks; Extended Data JPEG preferred, TIFF/EPS accepted", confidence: official, source_url: "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/", last_verified: 2026-08-15, conflict_note: "The specialised guide is stricter than the general final-submission page; confirm pure-raster main figures with production."}
+  colour_mode: {value: "RGB recommended; online retains RGB and print converts; Extended Data must use RGB", confidence: official, source_url: "https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/", last_verified: 2026-08-15}
+  legend_limit: {value: "use ≤249 words until official pages reconcile: initial-submission says <250 words, formatting guide says <300", confidence: official, source_url: "https://www.nature.com/nature/for-authors/initial-submission", last_verified: 2026-08-15, conflict_note: "Two current Nature official pages disagree (250 versus 300 words)."}
+
+desk_reject_triggers:
+  - "Importance is legible only to a narrow specialty → state the general scientific advance without inflating the claim."
+  - "Main figures are a result inventory rather than a necessary evidence chain → remove or route supporting panels to Extended Data."
+  - "Artwork contract is taken from memory rather than the current official guide → verify all final-production fields live."
+reporting:
+  data_availability_statement: {required: true, confidence: official, source_url: "https://www.nature.com/nature-portfolio/editorial-policies/reporting-standards", last_verified: 2026-08-15}
+  data_repository: {value: "public repository where field norms require; data available to editors/reviewers", confidence: official, source_url: "https://www.nature.com/nature-portfolio/editorial-policies/reporting-standards", last_verified: 2026-08-15}
+  code_sharing: {value: "custom code central to conclusions should be available with a code-availability statement", confidence: official, source_url: "https://www.nature.com/nature-portfolio/editorial-policies/reporting-standards", last_verified: 2026-08-15}
+  reporting_guideline: {value: "apply the relevant Nature Portfolio reporting standard", confidence: official, source_url: "https://www.nature.com/nature-portfolio/editorial-policies/reporting-standards", last_verified: 2026-08-15}
+  sensitive_locality: {value: "no Nature-main species-locality rule verified; apply conservation governance and verify with editor", confidence: unknown, source_url: "https://www.nature.com/nature/editorial-policies", last_verified: 2026-08-15}
+  orcid: {value: "corresponding-author ORCID expected", confidence: secondary, source_url: "https://www.nature.com/nature/for-authors/final-submission", last_verified: 2026-08-15}
+ai_disclosure:
+  placement: inherit
+  block: {value: "Use the current Nature Portfolio AI policy and publisher profile; verify live.", confidence: official, source_url: "https://www.nature.com/nature-portfolio/editorial-policies/ai", last_verified: 2026-08-15}
+submission:
+  portal: {value: "Nature online submission system", confidence: official, source_url: "https://www.nature.com/nature/for-authors/initial-submission", last_verified: 2026-08-15}
+  pack: {value: [manuscript, figures, legends, reporting statements, data and code availability], confidence: official, source_url: "https://www.nature.com/nature/for-authors/initial-submission", last_verified: 2026-08-15}
+my_notes:
+  reader_profile:
+  writing_style:
+  figure_preference:
+  cautions:
+  favorite_articles: []

@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJ Annotate"
+  short_description: "构建或审计离线单记录辅助与盲法标注工作台"
+  default_prompt: "Use $lj-annotate to build or audit an offline, one-record annotation workbench while preserving the measurement contract."

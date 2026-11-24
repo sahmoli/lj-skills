@@ -1,0 +1,19 @@
+# Wiki pages previously listed as lj-concept-managed but lacking the required `## Key Claims` contract.
+# They are not release-gated until deliberately migrated with grounded claims; do not silently re-add them.
+neutral-theory-of-biodiversity
+metabolic-theory-of-ecology
+macroecology
+metacommunity-theory
+maximum-entropy-theory-of-ecology
+complexity-stability-debate
+community-assembly-rules
+trait-based-ecology
+eco-evolutionary-dynamics
+movement-ecology-paradigm
+climate-refugia
+green-wave-hypothesis
+optimal-foraging-theory
+life-history-theory
+niche-construction-theory
+home-range-theory
+cost-of-transport

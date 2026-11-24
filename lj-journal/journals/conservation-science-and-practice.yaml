@@ -1,0 +1,237 @@
+slug: conservation-science-and-practice
+journal: Conservation Science and Practice
+publisher: wiley                       # Wiley on behalf of the Society for Conservation Biology (SCB)
+doi_prefixes:
+  value: ["10.1111/csp2"]
+  confidence: secondary
+  source_url: "DOI stem from this journal's Wiley articles — verify against a live DOI"
+  last_verified: 2026-06-23
+# CSP = the 3rd SCB journal (society-owned, Wiley-published, ISSN 2578-4854, launched 2019, fully GOLD open access, CC BY).
+# ROUTING: CSP is the SCB "Where should I send my conservation paper?" chart's TERMINAL for the applied/local branch
+#   — rigorous methods + a clear, DIRECT, EXPLICIT application to conservation practice/policy/planning for a PARTICULAR
+#   species, location or social context; novelty & big-picture relevance are NOT required, but usefulness to
+#   practitioners/policy makers IS. This is exactly the work Conservation Biology rejects for lacking generality.
+#   See routing/scb-where-to-send.md (Gate 3).
+society:
+  value: Society for Conservation Biology (SCB)
+  confidence: official
+  source_url: https://conbio.org/publications/conservation-science-and-practice/
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: "Q1 (best quartile, Conservation category per SCImago/Resurchify 2024)", confidence: secondary, source_url: "https://www.scimagojr.com/journalsearch.php?q=21101070986&tip=sid", last_verified: 2026-06-22}
+  impact_factor: {value: "~2.8 (2024 JIF, secondary listings)", conflict_note: "Resurchify reports 2.84; another listing reports 2.218 — divergent secondary figures, verify on JCR/Clarivate.", confidence: secondary, source_url: "https://www.resurchify.com/impact/details/21101070986", last_verified: 2026-06-22}
+  cite_score:    {value: "1.8 (secondary listing)", conflict_note: "Search listing says CiteScore 1.8; OpenAlex 2yr-mean-citedness = 1.95 (a different metric). Looks low for the journal's profile — re-verify on Scopus.", confidence: secondary, source_url: "https://research.com/journal/conservation-science-and-practice", last_verified: 2026-06-22}
+  h_index:       {value: "54 (OpenAlex); SCImago lists 36", confidence: secondary, source_url: "https://api.openalex.org/sources/issn:2578-4854", last_verified: 2026-06-22}
+  is_top:        {value: null, confidence: unknown, source_url: null, last_verified: 2026-06-22}   # Juan's own subjective flag — NOT yet set. CSP is the applied/local terminal of the SCB chart (Q1 but modest IF ~2.8), generally regarded below the flagship CB / high-impact CL. Do not AI-fill; Juan decides.
+
+open_access:
+  value: gold (fully open access since 2019 launch; DOAJ-listed; CC BY)
+  confidence: official
+  source_url: https://conbio.org/publications/conservation-science-and-practice/
+  last_verified: 2026-06-22
+apc_usd:
+  value: "1850 (USD)"
+  conflict_note: "OpenAlex source record & DOAJ both list APC = $1,850; not re-confirmed on the Wiley Open Access page this run (Wiley 403s to automated fetch). SCB members likely get a discount (as with sibling Conservation Letters); editorial/country waivers requested during ScholarOne submission. verify_live: Wiley CSP OA page."
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/issn:2578-4854
+  last_verified: 2026-06-22
+
+review_model:
+  value: double_anonymized            # OVERRIDE of wiley default (single). Neither authors nor reviewers know identities; author guidelines have "Blinding the submission" + manuscript-anonymization guidance (consistent with sibling Conservation Biology, also double-anonymous).
+  conflict_note: "Confirmed only via SEARCH SNIPPETS quoting the official Wiley author-guidelines page (Wiley 403s to automated fetch). Treat as secondary until read on a live browser. verify_live."
+  confidence: secondary
+  source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Publishes papers that address the policy, planning, and practice of conserving biological diversity.
+    Aimed at bridging the knowledge–action gap by providing a venue for scientists to inform practitioners
+    and vice versa; explicitly encourages submissions that LINK SCIENCE TO PRACTICE and connect findings to
+    real conservation outcomes (which strategies work, and which fail). Unlike its sibling Conservation
+    Biology, CSP WELCOMES applied/case-specific work that does NOT transcend a particular species, ecosystem,
+    or situation — provided methods are rigorous and the work is directly useful to practitioners/policy
+    makers. It is the SCB decision-chart TERMINAL for the applied/local branch (Gate 3; see
+    routing/scb-where-to-send.md).
+  confidence: official
+  source_url: https://conbio.org/publications/conservation-science-and-practice/
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: >
+    Conservation Science and Practice rewards rigorous, USEFUL applied work that links science to on-the-ground
+    practice, policy, and planning — explicitly including case-specific and regional studies that do NOT
+    transcend a particular species, ecosystem, or situation (exactly the work Conservation Biology turns away
+    for lack of generality). The decisive filter is not novelty or big-picture transferability but demonstrable
+    relevance and usefulness to practitioners and policy makers, and a clear link from findings to conservation
+    OUTCOMES (what works, and what fails). It serves a DUAL audience of researchers and conservation
+    practitioners, and uniquely asks authors to name which audience they are writing for. Its distinctive
+    "Evidence" article type — short communications reporting the outcomes of real conservation interventions,
+    policy development and planning — embodies the journal's knowledge–action-gap mission.
+  confidence: official
+  source_url: https://conbio.org/publications/conservation-science-and-practice/
+  last_verified: '2026-06-22'
+  audience:
+    value: >
+      Explicitly DUAL: researchers AND conservation practitioners. The journal is "aimed at bridging the
+      knowledge action gap by providing a venue for scientists to inform practitioners and vice versa," and
+      "encourage[s] authors to identify their target audience, whether it be other researchers or conservation
+      practitioners."
+    confidence: official
+    source_url: https://conbio.org/publications/conservation-science-and-practice/
+  writing_style:
+    value: >
+      Practice-facing and outcome-oriented: authors are asked to connect findings to conservation outcomes and
+      to state explicitly how the work is useful to practitioners/policy makers, and to name their target
+      audience. Established methods applied to specific case studies are acceptable; broad theoretical novelty
+      is not required, but rigorous methods and a clear question are.
+    confidence: official
+    source_url: https://conbio.org/publications/conservation-science-and-practice/
+  figure_preference:
+    value: >
+      Contributed Papers cap display items at no more than 6 figures and/or tables in the main text, with
+      additional tables/figures encouraged in Supplemental Materials where needed (per the Wiley author
+      guidelines; secondary — Wiley 403s to automated fetch, verify_live).
+    confidence: secondary
+    source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines
+  signals:
+    value: >
+      Five official article groupings reveal intent: Reviews, Contributed Papers, Perspectives and Notes,
+      Letters and Comments, and the unusual "Evidence" type — short communications reporting the OUTCOMES of
+      conservation practice (policy development, planning, interventions), explicitly surfacing which strategies
+      work and which fail. The journal's stated aim of bridging the knowledge–action gap, its welcome of
+      case-specific/non-transcending studies, and its request that authors name their target audience together
+      signal an applied, practitioner-serving remit.
+    confidence: official
+    source_url: https://conbio.org/publications/conservation-science-and-practice/
+
+caps:                                  # MAP keyed by article_type. Five OFFICIAL groupings from the conbio.org CSP page; per-type word/abstract/figure caps from the Wiley author-guidelines page via SEARCH SNIPPETS (Wiley 403s to automated fetch) → confidence secondary, verify_live on a live browser.
+  # NOTE on word count (per Wiley CSP guidelines): the count runs from the FIRST WORD OF THE ABSTRACT through
+  # the Acknowledgments and EXCLUDES the title page, References, table captions, figure legends, and Supporting
+  # Information. Manuscripts exceeding the limit are RETURNED to authors for reduction before review.
+  Contributed Papers:                  # primary original-research / applied type
+    words:
+      value: "3000–7000"
+      excludes: [title_page, references, table_legends, figure_legends, SI]   # INCLUDES abstract + main text + acknowledgments
+      confidence: secondary
+      source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables:
+      value: 6                          # "no more than 6 figures and/or tables in the main text"; extras encouraged in Supplemental Materials
+      confidence: secondary
+      source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines
+      last_verified: 2026-06-22
+    refs:
+      value: "no stated numeric cap"
+      confidence: unknown
+      source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines
+      last_verified: 2026-06-22
+    abstract:
+      value: 200                        # "abstract for Contributed Papers should not exceed 200 words"
+      confidence: secondary
+      source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines
+      last_verified: 2026-06-22
+    structure:
+      value: "IMRAD (formal testing of the proposition); word count Abstract→Acknowledgments"
+      confidence: secondary
+      source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines
+      last_verified: 2026-06-22
+  Reviews:
+    words:       {value: "5000–8000", excludes: [title_page, references, table_legends, figure_legends, SI], confidence: secondary, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    figs_tables: {value: "no explicit cap stated (verify)", confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    refs:        {value: "no stated numeric cap", confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    abstract:    {value: "~200 (not confirmed; Contributed Papers=200, verify)", confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    structure:   {value: "comprehensive review of a topic relevant to conservation science or practice; abstract required", confidence: secondary, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+  Perspectives and Notes:              # combined OFFICIAL grouping; Wiley splits into Perspective + (Research) Note
+    words:       {value: "Perspective 3000–5000; Note 3000", excludes: [title_page, references, table_legends, figure_legends, SI], confidence: secondary, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    figs_tables: {value: "no explicit cap stated (verify)", confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    refs:        {value: "no stated numeric cap", confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    abstract:    {value: 150, confidence: secondary, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    structure:   {value: "shorter communications reporting emerging ideas for conservation science/practice; Perspectives need only be supported by evidence from the literature or case studies (not formal hypothesis testing); Notes report small projects or preliminary findings", confidence: secondary, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+  Letters and Comments:                # combined OFFICIAL grouping; Wiley splits into Letter + Comment
+    words:       {value: 1000, excludes: [title_page, references, table_legends, figure_legends, SI], confidence: secondary, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    figs_tables: {value: "few/none (verify)", confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    refs:        {value: "few (verify)", confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    structure:   {value: "Letter = short communication on a topic of interest to readers (1000 w); Comment = response to a paper previously published in CSP, Conservation Letters or Conservation Biology (1000 w); likely no abstract", confidence: secondary, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+  Evidence:                            # the journal's distinctive, knowledge–action-gap article type
+    words:       {value: "not confirmed (short communication; a related short-comm type 'Innovations in Practice' is 1000 w — verify Evidence cap on live page)", confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    figs_tables: {value: "not confirmed (verify)", confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    refs:        {value: "not confirmed (verify)", confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    abstract:    {value: "not confirmed (verify)", confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines", last_verified: 2026-06-22}
+    structure:   {value: "short communications specifically reporting on the OUTCOMES of conservation practice, including policy development, planning and interventions (which strategies work / which fail)", confidence: official, source_url: "https://conbio.org/publications/conservation-science-and-practice/", last_verified: 2026-06-22}
+
+desk_reject_triggers:
+  - "Manuscript exceeds the per-type word cap (e.g., Contributed Paper >7000) → trim to cap BEFORE submission; over-length manuscripts are RETURNED to authors for reduction before review."
+  - "No clear, DIRECT, EXPLICIT application to conservation practice/policy/planning for a particular species, place or social context (SCB chart Gate 3) → make the practitioner usefulness explicit; CSP does NOT require novelty/general relevance, but it DOES require usefulness to practitioners/policy makers."
+  - "Target audience not named → CSP asks authors to identify whether they write for other researchers or for practitioners; state it in the cover letter / framing."
+  - "Purely descriptive, no clear research question, or weak methods/data/analysis → fails SCB Gate 1/2 (rigor is still required even though broad relevance is NOT) → not an SCB journal."
+  - "Author/institution identity discoverable (review model appears DOUBLE-anonymous — secondary) → anonymize the manuscript and put identifying info on a separate title page; mask identity in shared data. (Confirm review model on the live Wiley page.)"
+  - "No data-availability statement / data not in a public repository → add the statement and deposit (Dryad/Zenodo/Figshare); gold-OA Wiley journal expects open data."
+  - "Sensitive species localities exposed → mask/coarsen precise locations and state that you did."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/data-sharing-citation/data-sharing-policy.html
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Deposit in a public repository before publication (Dryad common in ecology; Zenodo/Figshare; domain-specific archives). verify_live for any CSP-specific mandate."
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/data-sharing-citation/data-sharing-policy.html
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Share analysis code/scripts with a persistent identifier where applicable (Wiley data & code policy)"
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/data-sharing-citation/data-sharing-policy.html
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: null
+    confidence: unknown
+    source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "Mask/coarsen precise locations of threatened or trafficked taxa; state masking (conservation norm; not reconfirmed on CSP page this run)"
+    confidence: secondary
+    source_url: https://conbio.org/publications/conservation-science-and-practice/
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID expected (Wiley default)"
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/submission/orcid.html
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                    # → wiley: Methods OR Acknowledgements (Wiley does not mandate one fixed section)
+  block:
+    value: >
+      "During the preparation of this work the author(s) used [TOOL/SERVICE] in order to
+      [REASON, e.g. improve language and readability]. After using this tool/service, the author(s)
+      reviewed and edited the content as needed and take(s) full responsibility for the content of
+      the publication." (Wiley/COPE: disclose tool + version + access date + role + how output was
+      verified; grammar/spell/general-editing tools exempt; generative AI cannot be listed as an author.)
+    confidence: official
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: "Wiley ScholarOne (Manuscript Central) — waivers requested during the ScholarOne submission process. Exact short-code/URL not confirmed this run (verify_live)."
+    confidence: secondary
+    source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines
+    last_verified: 2026-06-22
+  pack:
+    value: [manuscript (per-type word cap; Contributed Paper 3000–7000), ≤6 figures/tables in main text (Contributed Papers), abstract (200 for Contributed Papers / 150 for Perspectives & Notes), data-availability statement, AI-disclosure block (if used), ORCID, separate title page + anonymized manuscript (review model appears double-anonymous — verify), named target audience (researchers vs practitioners), cover letter, CC BY gold-OA + APC (~$1850)]
+    confidence: secondary
+    source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/25784854/homepage/author-guidelines
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

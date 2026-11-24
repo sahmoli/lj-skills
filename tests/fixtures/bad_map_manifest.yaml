@@ -1,0 +1,17 @@
+figure_id: fig-bad-map
+claim: Area-weighted occurrence density is highest in the tropics.
+reader_task: locate
+analysis_unit: grid-cell
+repeating_unit: census
+estimand: records per square kilometre
+comparison: global grid cells
+panels: [{label: a, role: phenomenon, mark: polygon, quantity_semantics: absolute-magnitude, axis_policy: spatial, axis_min: 0, zero_is_meaningful: true}]
+uncertainty: {applicable: false, reason: complete mapped census for stated period}
+encoding: {primary_channel: colour, colour_role: sequential, colour_is_sole_carrier: false, redundant_channel: direct-label}
+spatial: {is_map: true, purpose: area, crs: "EPSG:3857", sensitive_locality: {present: true, method: random-coordinate-jitter}}
+alternative_explanation: sampling effort not shown
+medium: paper
+provenance: {data: [{path: occurrences.csv, columns: [longitude, latitude]}], code: map.R, command: Rscript map.R, transforms: coordinate jitter}
+output: {width_mm: 183, height_mm: 90, formats: [pdf]}
+build: {status: planned, artifacts: []}
+qc: {final_size_reviewed: false, colour_accessibility_reviewed: false, claim_trace_reviewed: false}

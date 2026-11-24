@@ -1,0 +1,142 @@
+figure_id: fig-1
+figure_family: quantitative
+workflow: {profile: full}
+claim: "State the narrowest claim this figure may support."
+reader_task: compare
+analysis_unit: "site-year"
+repeating_unit: "independent sites"
+estimand: "between-treatment difference in mean response"
+comparison: "treatment versus control; null difference = 0"
+panels:
+  - label: a
+    role: phenomenon
+    mark: point
+    quantity_semantics: estimate
+    axis_policy: null-centred
+    axis_min: -1
+    zero_is_meaningful: true
+uncertainty:
+  applicable: true
+  target: "model parameter"
+  type: "95% confidence interval"
+  level: 0.95
+  reason: ""
+encoding:
+  primary_channel: position
+  colour_role: categorical
+  colour_is_sole_carrier: false
+  redundant_channel: shape
+presentation:
+  ordering: "Order categories by the comparison quantity; preserve a scientific or temporal order when it is the claim."
+  axis_breaks: "Use interpretable breaks in displayed units; avoid library-default decimal clutter."
+  unit_display: "Display the scientific unit without unnecessary notation or scaling."
+  abbreviations: {applicable: false, reason: "No repeated long labels in this example."}
+  label_priority: "Direct-label the focal estimate; keep supporting categories in one compact key."
+  shared_scale: {comparable: true, basis: "All panels show the same model-coefficient estimand."}
+reference_board:
+  - source_id: 2025-pigot-macroecological-rules-predict-biomass
+    source_kind: corpus
+    figure_id: Fig-3
+    pdf_page: 4
+    borrow: "small repeated taxon silhouettes, aligned facets, compact direct comparison"
+    avoid: "too many taxon colours when the reader task has fewer categories"
+  - source_id: juan-cost-scaling-surrogate-portfolios
+    source_kind: corpus
+    figure_id: Fig-2
+    pdf_page: 5
+    borrow: "pair/singleton semantic colour language and dense trajectory rhythm"
+    avoid: "silhouette-label crowding at the smallest final size"
+visual_design:
+  direction: quiet-analytical
+  hierarchy:
+    hero_panel: a
+    support_strategy: quieter-context
+    area_earned_by: "estimate and interval marks, not explanatory prose"
+  palette:
+    namespace: evidence
+    ink: "#202124"
+    context: "#D9DDE2"
+    missing: "#8B9098"
+    semantic:
+      focal: "#4477AA"
+      comparison: "#CCBB44"
+    critical_pairs: [[focal, comparison]]
+    accent_budget: 1
+    categorical_count: 2
+    collision_check: true
+  spacing_mm:
+    outer: 4
+    panel: 4
+    within_panel: 2.5
+    label_offset: 1.5
+  typography:
+    family: Arial
+    body_pt: 7
+    panel_label_pt: 8
+    coloured_text: false
+    panel_title_strategy: caption-only
+  scaffolding:
+    stroke_pt: 0.5
+    background_gridlines: false
+    drop_shadows: false
+    decorative_boxes: false
+    corner_policy: square
+  density_strategy: "data occupy the panel; no empty explanatory hero or UI cards"
+  legend_strategy: direct-label
+  placement:
+    collision_check: true
+    clip_check: true
+    longest_label_stress_test: true
+    edge_clearance_mm: 1.5
+    label_icon_clearance_mm: 1.5
+    direct_label_ladder: [outside-data, margin-band, leader-line, compact-legend]
+  icons:
+    mode: none
+    purpose: not-applicable
+    provenance: not-applicable
+    grammar: none
+    optical_height_mm: not-applicable
+    silhouettes: []
+visual_vocabulary:
+  applicable: true
+  scope: paper
+  path: visual-vocabulary.example.yaml
+  locked_channels: [entity, colour-role, symbol, order, units, sign, terminology]
+  reason: "Recurring treatments/entities must decode identically across the manuscript."
+spatial:
+  is_map: false
+  purpose: not-applicable
+  crs: not-applicable
+  sensitive_locality:
+    present: false
+    method: none
+alternative_explanation: "State the control, validation, or unresolved rival."
+medium: paper
+provenance:
+  data:
+    - path: data/example.csv
+      columns: [treatment, response, site_id]
+  code: figures/fig-1.py
+  command: "python3 figures/fig-1.py"
+  transforms: "group summaries computed from site-level observations"
+  filters: none
+  exclusions: none
+output:
+  width_mm: 89
+  height_mm: 70
+  formats: [pdf, svg, png]
+build:
+  status: planned
+  artifacts: []
+qc:
+  stress_render:
+    status: pending
+    artifact: pending
+  technical_preflight:
+    status: pending
+    report: pending
+  final_size_reviewed: false
+  colour_accessibility_reviewed: false
+  claim_trace_reviewed: false
+  visual_craft_reviewed: false
+  visual_craft_verdict: pending

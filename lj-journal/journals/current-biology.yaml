@@ -1,0 +1,253 @@
+slug: current-biology
+journal: Current Biology
+publisher: elsevier                     # Cell Press (an Elsevier imprint); follows Elsevier generative-AI policy
+# NOTE on sourcing: cell.com Cloudflare-blocks automated fetch (403 to WebFetch & curl). The official
+# pages below (article-types / revise-manuscript / journal-policies / after-you-submit) were read VERBATIM
+# this run via a read-proxy relay of the genuine published Cell Press text; source_url points to the
+# canonical cell.com URL. Fields so obtained are marked `official`. Metrics/APC come from third-party
+# aggregators → `secondary`. ORCID could not be located on-page → `unknown` (verify_live).
+society:
+  value: null                          # Cell Press is an Elsevier imprint; Current Biology has NO learned society
+  confidence: official
+  source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: "Q1 (Biology; ~5/107)", confidence: secondary, source_url: "https://manusights.com/blog/current-biology-impact-factor", last_verified: 2026-06-22}
+  impact_factor: {value: "7.5 (2024 JCR JIF); 5-yr JIF 9.3. NOTE: not re-verified at JCR primary this run; OpenAlex 2-yr mean-citedness = 5.64 (a DIFFERENT metric).", confidence: secondary, source_url: "https://www.bioxbio.com/journal/CURR-BIOL", last_verified: 2026-06-22}
+  cite_score:    {value: "not verified this run (Scopus CiteScore not retrieved); OpenAlex 2-yr mean-citedness = 5.64 as a proxy-only figure", confidence: unknown, source_url: "https://openalex.org/S128425624", last_verified: 2026-06-22}
+  h_index:       {value: 453, confidence: secondary, source_url: "https://openalex.org/S128425624", last_verified: 2026-06-22}
+  is_top:        {value: "(待人工填 — Juan has no journal_db card for this journal yet)", confidence: unknown, source_url: "Juan (no journal_db card)", last_verified: 2026-06-22}
+
+open_access:
+  value: "hybrid (subscription journal with an open-access option; OA articles under CC BY or CC BY-NC-ND). OpenAlex: is_oa=false, is_in_doaj=false → confirms hybrid/subscription."
+  confidence: secondary
+  source_url: https://openalex.org/S128425624
+  last_verified: 2026-06-22
+apc_usd:
+  value: "≈7,030 USD (hybrid OA, excl. tax) per ScienceDirect 2025"
+  conflict_note: "ScienceDirect/web 2025 lists ≈7,030 USD; OpenAlex lists 6,830 USD. Cell Press open-access page Cloudflare-blocks fetch — confirm exact current figure in a human browser."
+  confidence: secondary
+  source_url: https://www.sciencedirect.com/journal/current-biology
+  last_verified: 2026-06-22
+
+review_model:
+  value: "single-anonymous (Cell Press standard across all journals). Current Biology offers NO double-anonymous opt-in (only One Earth & Immunity do) and NO transparent peer review opt-in (only Cell Genomics & Cell Systems do)."
+  confidence: official
+  source_url: https://www.cell.com/information-for-authors/after-you-submit
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    A general journal publishing original, peer-reviewed research across ALL areas of biology, paired with
+    an extensive editorial/Magazine section. Two main research formats: Articles and Reports (very concise
+    findings may also run as Correspondence). A primary aim is to foster communication ACROSS fields of
+    biology — both by publishing findings of general interest from diverse fields and through highly
+    accessible editorial pieces that explicitly aim to inform non-specialists. All formats must be written
+    accessibly for the broad Current Biology readership.
+  confidence: official
+  source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: Current Biology rewards work from any area of biology that presents conceptual advances of
+    unusual significance on a biological question of wide interest — either important to a specific
+    field or intrinsically interesting to biologists broadly. Its defining aim is to foster communication
+    across fields, so editors weigh whether an advance is legible and compelling to a diverse, partly
+    non-specialist readership, not just subfield experts. The journal prizes concise, to-the-point reporting
+    and runs a large didactic front-matter ecosystem (Dispatches, Quick Guides, Primers, Reviews, Q&As)
+    that explicitly explains topics for non-specialists.
+  confidence: secondary
+  source_url: https://www.cell.com/current-biology/aims
+  last_verified: '2026-06-22'
+  audience:
+    value: Biologists generally, across diverse fields, plus non-specialists. A primary aim of the journal
+      is to foster communication across fields of biology, both by publishing important findings of
+      general interest from diverse fields and through highly accessible editorial articles that explicitly
+      aim to inform non-specialists.
+    confidence: secondary
+    source_url: https://www.cell.com/current-biology/aims
+  writing_style:
+    value: Values concise, accessible writing. Reports 'present findings of broad biological interest
+      in a concise, to-the-point style'; editorial formats are highly accessible and explicitly aim
+      to inform non-specialists. Correspondences must be presented concisely.
+    confidence: secondary
+    source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+  figure_preference:
+    value: 'Display-item limits scale by format: Articles are typically ~10 journal pages (~5,000 words)
+      with no more than seven display items (figures and tables); Reports are typically ~6 journal pages
+      (~2,500 words) with no more than four display items.'
+    confidence: secondary
+    source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+  signals:
+    value: 'Large editorial ''front matter'': magazine formats including Features, essays, Q&A interviews,
+      the explicitly didactic Quick Guides and Primers (which explain a field or taxonomic group for
+      non-specialists), Dispatches ''from the frontlines of biology'', and Reviews/Minireviews. Peer-reviewed
+      research appears as Articles, Reports, and Correspondences.'
+    confidence: secondary
+    source_url: https://www.cell.com/current-biology/aims
+
+caps:                                   # MAP keyed by article type. CB research formats: Article, Report, Correspondence (+ commissioned Magazine formats).
+  Article:                              # full-length research; conceptual advance of unusual significance
+    words:
+      value: "~5000 (≈ten journal pages)"
+      excludes: [summary, STAR_Methods, supplemental_information, references]
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+      last_verified: 2026-06-22
+    figs_tables:
+      value: 7                          # "no more than seven display items (figures and tables)"
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+      last_verified: 2026-06-22
+    refs:
+      value: "no stated numeric cap (references are excluded from the ~5,000-word count; governed by the ten-page limit)"
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+      last_verified: 2026-06-22
+    abstract:
+      value: "250 (Summary: single paragraph, NO references, conveys conceptual advance + significance to a broad readership)"
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/revise-manuscript
+      last_verified: 2026-06-22
+    structure:
+      value: "Summary, Introduction, Results, Discussion + STAR Methods; Resource Availability section required (lead contact / materials availability / data and code availability); up to 10 keywords"
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/revise-manuscript
+      last_verified: 2026-06-22
+  Report:                               # concise findings of broad biological interest
+    words:
+      value: "~2500 (≈six journal pages)"
+      excludes: [summary, STAR_Methods, supplemental_information, references]
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+      last_verified: 2026-06-22
+    figs_tables:
+      value: 4                          # "no more than four display items (figures and tables)"
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+      last_verified: 2026-06-22
+    refs:
+      value: "no stated numeric cap (references excluded from the ~2,500-word count; governed by the six-page limit)"
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+      last_verified: 2026-06-22
+    abstract:
+      value: "250 (Summary: single paragraph; references ARE cited here; ALL essential background must go in the summary so Results begins immediately with the new findings)"
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/revise-manuscript
+      last_verified: 2026-06-22
+    structure:
+      value: "Summary (background + refs) then Results (or Results and Discussion) begins immediately with new findings + STAR Methods; Resource Availability section required"
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/revise-manuscript
+      last_verified: 2026-06-22
+  Correspondence:                       # original research that is broad-interest and very concise; peer-reviewed
+    words:
+      value: 1000                       # "no more than 1,000 words of main text"; must not exceed two printed pages
+      excludes: [references, supplemental_information]
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "1 (one figure OR table in main text; up to 2 further display items allowed in online supplemental information)"
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+      last_verified: 2026-06-22
+    refs:
+      value: 10                         # "a maximum of 10 references"
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+      last_verified: 2026-06-22
+    abstract:
+      value: "null (no abstract per se; the first paragraph is sent to Medline — make it a short intro + brief summary of the main conclusions)"
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+      last_verified: 2026-06-22
+    structure:
+      value: "continuous main text, NO sections or subheadings; peer-reviewed; <=2 printed pages"
+      confidence: official
+      source_url: https://www.cell.com/current-biology/information-for-authors/article-types
+      last_verified: 2026-06-22
+  Magazine (Review/Minireview/Essay/Perspective/Q&A/Primer/Quick Guide/Dispatch/Feature/Letter):
+    words:        {value: "no public numeric caps — Magazine pieces (incl. short/long Reviews & Minireviews) are USUALLY COMMISSIONED by the editors; request format-specific guidelines by emailing cbiol@current-biology.com (Letters & Correspondence are the exception and may be unsolicited)", confidence: official, source_url: "https://www.cell.com/current-biology/information-for-authors/article-types", last_verified: 2026-06-22}
+    figs_tables:  {value: "not publicly specified (commissioned; per decision letter / on request)", confidence: unknown, source_url: "https://www.cell.com/current-biology/information-for-authors/article-types", last_verified: 2026-06-22}
+    refs:         {value: "not publicly specified (commissioned; per decision letter / on request)", confidence: unknown, source_url: "https://www.cell.com/current-biology/information-for-authors/article-types", last_verified: 2026-06-22}
+    abstract:     {value: "not publicly specified", confidence: unknown, source_url: "https://www.cell.com/current-biology/information-for-authors/article-types", last_verified: 2026-06-22}
+    structure:    {value: "lively, accessible, didactic Magazine style; Features, essays, Q&A interviews, quick guides, primers, book reviews, dispatches, reviews/minireviews, letters", confidence: official, source_url: "https://www.cell.com/current-biology/information-for-authors/article-types", last_verified: 2026-06-22}
+
+desk_reject_triggers:
+  - "Over format (Article >~5,000 words / >7 display items; Report >~2,500 words / >4 display items; Correspondence >1,000 words / >1 figure / >10 refs) → trim to the type's limits before submitting."
+  - "No general/broad biological interest or no conceptual advance of wide significance → reframe for the cross-field readership; send a presubmission inquiry first."
+  - "Summary >250 words (or, for a Report, missing the references/essential background it must carry) → fix the summary."
+  - "No Resource Availability section, or data/standardized datasets/original code not deposited in a Cell Press-recommended FAIR repository with accession numbers → stage deposits now."
+  - "Generative-AI created/altered research or DATA images (including brightness/contrast/color adjustments) → prohibited; submit unmanipulated images."
+  - "Overused 'novel'/novelty claims → remove (editors explicitly discourage them)."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: official
+    source_url: https://www.cell.com/current-biology/information-for-authors/journal-policies
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Standardized datasets MUST be deposited in a data-type-specific, Cell Press-recommended public repository BEFORE acceptance (FAIR/digital-longevity criteria per Fairsharing), with accession/permanent identifiers in the published paper; embargoes lifted by publication. Domain examples: wwPDB/EMDB (structures), Addgene (plasmids), KOMP (mouse lines)."
+    confidence: official
+    source_url: https://www.cell.com/current-biology/information-for-authors/journal-policies
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Must share ALL original code reported in the paper unless legally/ethically prohibited; archive in a repository meeting digital-longevity/FAIR criteria and list it in the 'data and code availability' subsection."
+    confidence: official
+    source_url: https://www.cell.com/current-biology/information-for-authors/journal-policies
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "STAR Methods + Key Resources Table required for research articles; sex- and gender-based analysis (SGBA) reporting expected. No field-specific ecology reporting guideline (e.g., PRISMA-EcoEvo/ODMAP) mandated — it is a general biology journal."
+    confidence: official
+    source_url: https://www.cell.com/current-biology/information-for-authors/journal-policies
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "No species-locality / endangered-taxa coordinate-masking policy is stated (general biology journal — verify case-by-case with your editor). For sensitive HUMAN data that cannot be openly shared: host in well-managed controlled-access repositories and state the limitations transparently in the data availability statement."
+    confidence: official
+    source_url: https://www.cell.com/current-biology/information-for-authors/journal-policies
+    last_verified: 2026-06-22
+  orcid:
+    value: "Not located on Current Biology's author pages this run. Cell Press generally collects an ORCID iD for the lead/corresponding author at submission/revision — confirm in a human browser."
+    confidence: unknown
+    source_url: https://www.cell.com/current-biology/information-for-authors/journal-policies
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                    # → elsevier: named "Declaration of generative AI and AI-assisted technologies in the writing process", at the END just above References, PUBLISHED. Cell Press on-page rule confirms: a NEW section placed AFTER "Declaration of interests".
+  block:
+    value: >
+      "During the preparation of this work, the author(s) used [NAME TOOL / SERVICE] in order to [REASON].
+      After using this tool/service, the author(s) reviewed and edited the content as needed and take(s)
+      full responsibility for the content of the published article." (Cell Press/Elsevier: declare at FIRST
+      submission; the statement is PUBLISHED in a NEW section titled "Declaration of generative AI and
+      AI-assisted technologies in the writing process," placed AFTER the "Declaration of interests" section.
+      If nothing to disclose, no statement is needed. Standard grammar/spell checkers are exempt. Generative
+      AI may NOT be used to create or alter research/DATA images — including brightness/contrast/color
+      adjustments. AI cannot be listed as an author.)
+    confidence: official
+    source_url: https://www.cell.com/current-biology/information-for-authors/journal-policies
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: "Cell Press Editorial Manager — https://www.editorialmanager.com/current-biology. Presubmission inquiries strongly encouraged (email cbiol@current-biology.com). Cell Press Multi-Journal Submission (MJS) available for parallel consideration."
+    confidence: official
+    source_url: https://www.cell.com/current-biology/information-for-authors
+    last_verified: 2026-06-22
+  pack:
+    value: [manuscript (Article ~5,000 words / Report ~2,500 / Correspondence 1,000), display items (<=7 Article / <=4 Report / 1 Correspondence), 250-word Summary, up to 10 keywords, cover letter conveying general significance, STAR Methods + Key Resources Table, Resource Availability section (lead contact / materials availability / data and code availability) with accession numbers, data + original code deposited in a Cell Press-recommended FAIR repository, Declaration of generative AI section (if applicable), Declaration of interests]
+    confidence: secondary
+    source_url: https://www.cell.com/current-biology/information-for-authors/revise-manuscript
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

@@ -1,0 +1,231 @@
+slug: journal-of-biogeography
+journal: Journal of Biogeography
+publisher: wiley                       # Wiley proprietary journal (no society); ISSN 0305-0270 / 1365-2699
+society:
+  value: null                          # JBI is NOT a society journal (OpenAlex societies: [])
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/S138151673
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: "Q1 (Ecology; Geography, Physical)", confidence: secondary, source_url: "https://wos-journal.info/journalid/13448", last_verified: 2026-06-22}
+  impact_factor: {value: "~3.6-3.9 (2024 JCR; resurchify 3.87, alt 3.484, journalmetrics 2025 3.6). OpenAlex 2yr mean-citedness = 2.14 (a different metric).", confidence: secondary, source_url: "https://www.resurchify.com/impact/details/29269", last_verified: 2026-06-22}
+  cite_score:    {value: "not re-verified this run (no journal_db card). OpenAlex 2yr mean-citedness = 2.14.", confidence: unknown, source_url: "https://api.openalex.org/sources/S138151673", last_verified: 2026-06-22}
+  h_index:       {value: 228, confidence: secondary, source_url: "https://openalex.org/S138151673", last_verified: 2026-06-22}
+  is_top:        {value: "(待人工填 — no journal_db card; Juan's 是/否 top-tier flag unset)", confidence: unknown, source_url: "n/a — pending Juan", last_verified: 2026-06-22}
+
+open_access:
+  value: hybrid (subscription journal with Wiley OnlineOpen gold-OA option; is_oa=false, not in DOAJ)
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/S138151673
+  last_verified: 2026-06-22
+apc_usd:
+  value: "~4,800-4,840 USD for the gold OnlineOpen option (OpenAlex 4840; manusights 2026 guide 4800). Many Wiley transformative agreements cover the fee; no APC for subscription route."
+  conflict_note: "OpenAlex: 4840 USD; manusights 2026 guide: 4800 USD. Wiley fundedaccess page 403s to automated fetch."
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/S138151673
+  last_verified: 2026-06-22
+
+review_model:
+  value: "UNCONFIRMED — likely single-anonymized (Wiley default), but NOT verified for JBI this run. Note: JBI's sister Wiley biogeography journals are double-blind (Global Ecology & Biogeography since Jan 2018; Diversity & Distributions double-anonymous), so JBI may also offer/require double-blind — VERIFY on the official forauthors page before anonymizing."
+  confidence: unknown
+  source_url: https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Publishes original biogeographic research and synthesis on the spatial and temporal patterns of
+    biodiversity and the processes that generate them — the distribution of life across geography and
+    through time. Welcomes work spanning ecological, evolutionary, palaeo-, conservation and methodological
+    biogeography across marine, terrestrial and freshwater systems and all taxa, that addresses a clear
+    biogeographic question with conclusions of general relevance — not local description for its own sake.
+  confidence: secondary
+  source_url: https://onlinelibrary.wiley.com/journal/13652699
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: Journal of Biogeography rewards work at the intersection of biology and geography that not
+    only describes biodiversity patterns but reveals the mechanisms shaping them through time (from
+    the deep past into the future) and from local to global scales, welcoming ecological, evolutionary,
+    genomic and theoretical approaches to understudied, vexing and urgent questions. Its core readership
+    is biogeographers, ecologists, evolutionary and conservation biologists, botanists and zoologists,
+    and the flat team of equal Senior Editors (no single EIC) is actively working to widen reach toward
+    other stakeholders such as policymakers. Distinctively, it brands review articles "Synthesis" rather
+    than "Review" to demand integrated, contradiction-resolving, framework-building scholarship, and
+    requires a structured abstract (Aim, Location, Taxon, Methods, Results, Main conclusions; <=300
+    words) with Research Articles held to roughly 6,000 words and conventional IMRaD structure.
+  confidence: secondary
+  source_url: https://www.wiley.com/en-us/journals/Journal+of+Biogeography-p-13652699
+  last_verified: '2026-06-22'
+  audience:
+    value: Core readership is biogeographers, ecologists, evolutionary biologists, conservation biologists,
+      botanists and zoologists; the editorial team is actively working to expand reach beyond these
+      regular readers to other stakeholders such as policymakers. Decisions are made by a team of equal
+      Senior Editors (no single EIC) backed by an Editorial Advisory Board.
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/doi/full/10.1111/jbi.14965
+  writing_style:
+    value: Research Articles use a structured abstract (<=300 words, with headings Aim, Location, Taxon,
+      Methods, Results, Main conclusions) and conventional IMRaD headings (Introduction, Materials and
+      Methods, Results, Discussion); main text should not exceed ~6,000 words. Synthesis articles may
+      relax structure and run to ~10,000 words (or more if justified). Word counts assessed case-by-case
+      on request.
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html
+  figure_preference:
+    value: 'Research Articles are limited to roughly 2-3 pages of illustrative material (about 6 tables
+      and figures total, including captions), accompanied by a structured abstract of <=300 words (headings:
+      Aim, Location, Taxon, Methods, Results, Main conclusions). No distinctive display rules beyond
+      standard Wiley figure guidance were confirmed; a mandatory graphical abstract could NOT be verified
+      and was removed.'
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html
+  signals:
+    value: 'Seven content types: Research Paper, Methods and Tools, Data, Synthesis, Perspective, Commentary
+      and Correspondence. Tellingly, it brands reviews ''Synthesis'' not ''Review'' to demand an integrated
+      understanding that resolves misunderstandings and apparent contradictions and often presents new
+      conceptual frameworks (up to ~10,000 words). Perspectives are stimulating, reflective personal
+      essays; Commentary gives light, jargon-free comment on the latest biogeography research, understandable
+      to a general/undergraduate audience. Structured abstract required. Has a Judith Masters Fund supporting
+      Global South authors.'
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/13652699/homepage/guide.htm
+
+caps:                                             # MAP keyed by article_type. Could NOT read the official Wiley page (403); values are publisher's own text quoted via WebSearch + corroborating guides → secondary/unknown. JBI's CURRENT scheme = seven types: Research Paper, Methods and Tools, Data, Synthesis, Perspective, Commentary, Correspondence.
+  Research Paper:                                 # primary research article type ("Research Article")
+    words:
+      value: "<=7000 words INCLUSIVE of abstract AND reference list (unusual — JBI counts refs in the limit); article should comprise no more than 10-12 published pages"
+      excludes: [supplementary_information]       # 7000 INCLUDES abstract + main text + references; only SI sits outside
+      conflict_note: "Current (2023+) guideline = 7000 all-inclusive across 10-12 pages. An OLDER JBI scheme had a separate 'Letter' type (<=4000 words, abstract <=250, ~4 display items) and Research Paper <=6000 words with ~6 figs/tables — that older scheme is SUPERSEDED; do not use 6000/'Letter'."
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "no strict combined cap in current guidance; keep within the 10-12 published-page envelope (older guidance was ~6 figures+tables across 2-3 pages)"
+      confidence: unknown
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html
+      last_verified: 2026-06-22
+    refs:
+      value: "no numeric cap; references are COUNTED inside the 7000-word inclusive total (older guidance allowed ~2-3 pages of references). Reference style: APA author-year (7th)."
+      confidence: secondary
+      source_url: https://manusights.com/blog/journal-of-biogeography-submission-guide
+      last_verified: 2026-06-22
+    abstract:
+      value: "<=300 words, STRUCTURED under: Aim; Location; Taxon; Methods; Results; Main conclusions"
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html
+      last_verified: 2026-06-22
+    structure:
+      value: "IMRAD. Main-text headers: Introduction; Materials and Methods; Results; Discussion; Acknowledgements; References."
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html
+      last_verified: 2026-06-22
+  Methods and Tools:                              # methodology-centered papers (new methods/software/critical evaluation)
+    words:        {value: "structured as Research Articles — treat as <=7000 words all-inclusive (not separately stated)", excludes: [supplementary_information], confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    figs_tables:  {value: "not separately specified (as Research Paper)", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    refs:         {value: "counted within the word limit (as Research Paper)", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    abstract:     {value: "structured <=300 words", confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    structure:    {value: "structured as a Research Article but the focus is methodology (new method, tool or software)", confidence: secondary, source_url: "https://manusights.com/blog/journal-of-biogeography-submission-guide", last_verified: 2026-06-22}
+  Data:                                           # Data Paper — dataset description article
+    words:        {value: "data descriptor; no specific word cap stated", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    figs_tables:  {value: "not specified", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    refs:         {value: "not specified", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    abstract:     {value: "structured abstract (Wiley/JBI convention; <=300)", confidence: secondary, source_url: "https://manusights.com/blog/journal-of-biogeography-submission-guide", last_verified: 2026-06-22}
+    structure:    {value: "dataset descriptor; underlying dataset deposited in a public repository (GBIF for occurrences, TreeBASE for phylogenies, Dryad/Zenodo)", confidence: secondary, source_url: "https://manusights.com/blog/journal-of-biogeography-submission-guide", last_verified: 2026-06-22}
+  Synthesis:                                      # JBI's review / synthesis category
+    words:        {value: "up to 10,000 words, ALL inclusive — or more if the additional length is fully justified (discuss with a Senior Editor first)", excludes: [supplementary_information], confidence: secondary, source_url: "https://manusights.com/blog/journal-of-biogeography-submission-guide", last_verified: 2026-06-22}
+    figs_tables:  {value: "not strictly limited", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    refs:         {value: "counted within the 10,000-word inclusive total; no separate numeric cap", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    abstract:     {value: "structured <=300 words", confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    structure:    {value: "synthesis / review of an emerging or under-synthesised biogeographic topic; structured abstract", confidence: secondary, source_url: "https://manusights.com/blog/journal-of-biogeography-submission-guide", last_verified: 2026-06-22}
+  Perspective:                                    # forward-looking opinion / viewpoint piece
+    words:        {value: "main text max 5000 words; TOTAL (abstract + main text + references) max 7000 words; <=8 printed pages; shorter articles encouraged", excludes: [supplementary_information], confidence: secondary, source_url: "https://manusights.com/blog/journal-of-biogeography-submission-guide", last_verified: 2026-06-22}
+    figs_tables:  {value: "not separately specified (kept within ~8 printed pages)", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    refs:         {value: "counted within the 7000-word total", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    abstract:     {value: "structured abstract (likely <=300 by analogy; VERIFY)", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    structure:    {value: "forward-looking opinion / viewpoint on a biogeographic issue; flexible", confidence: secondary, source_url: "https://manusights.com/blog/journal-of-biogeography-submission-guide", last_verified: 2026-06-22}
+  Commentary:                                     # short comment on a topical issue
+    words:        {value: "<=1600 words; maximum 2 journal pages", confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    figs_tables:  {value: "minimal / few", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    refs:         {value: "maximum 10 references", confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    abstract:     {value: "short / none (not specified)", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    structure:    {value: "brief commentary on a topical biogeographic issue", confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+  Correspondence:                                 # response / letter re previously published work
+    words:        {value: "<=2500 words INCLUSIVE of a short one-paragraph abstract (<=150 words); 6-10 keywords", excludes: [supplementary_information], confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    figs_tables:  {value: "minimal / few", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    refs:         {value: "not specified", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    abstract:     {value: "one-paragraph abstract, <=150 words", confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+    structure:    {value: "short correspondence responding to / commenting on previously published work", confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html", last_verified: 2026-06-22}
+
+desk_reject_triggers:
+  - "Over the 7000-word all-inclusive Research-Paper cap (remember JBI counts abstract AND the reference list inside the limit) → trim the text AND the reference list to fit ~10-12 published pages."
+  - "Local / single-site descriptive inventory with no general biogeographic question or transferable insight → reframe around pattern-and-process at a biogeographic scale, or target a regional journal."
+  - "Data and/or code not made available to reviewers at submission → deposit (Dryad 'Private for Peer Review' link, or Zenodo/GitHub/GBIF/TreeBASE) and provide the private URL."
+  - "Structured abstract missing the required headings (Aim; Location; Taxon; Methods; Results; Main conclusions) or over 300 words → restructure to the headings."
+  - "Sensitive species coordinates exposed → mask/coarsen localities of threatened or trafficked taxa and state that you did."
+  - "Peer-review anonymity assumption wrong → JBI's review model is UNCONFIRMED this run (sisters GEB/D&D are double-blind); check the official page before deciding whether to anonymize."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Underlying data AND code must be available to reviewers. JBI gives authors Dryad access at submission and COVERS the cost of depositing up to 50 GB if Dryad is chosen (use the 'Private for Peer Review' option to generate a private URL). Alternatives accepted: Zenodo, GitHub, GBIF (occurrence data), TreeBASE (phylogenetic trees)."
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Code/scripts must be available to reviewers and archived with a persistent identifier (Zenodo/GitHub); cited in the data-availability statement."
+    confidence: secondary
+    source_url: https://manusights.com/blog/journal-of-biogeography-submission-guide
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "No single mandated guideline confirmed. Species-distribution / niche-model papers strongly encouraged to follow ODMAP; phylogenetic data to TreeBASE; meta-analyses to follow systematic-review norms (PRISMA-EcoEvo). VERIFY whether ODMAP is required."
+    confidence: unknown
+    source_url: https://onlinelibrary.wiley.com/page/journal/13652699/homepage/forauthors.html
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "Mask/coarsen precise localities of threatened or trafficked taxa and state masking (Wiley / general ecology norm; NOT reconfirmed on the JBI page this run)."
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID iDs required/collected for authors at submission (Wiley default; JBI guide lists ORCID iDs as required)."
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/submission/orcid.html
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                    # → wiley: Methods OR Acknowledgements (Wiley does not mandate one fixed section). JBI guide confirms "declaration of generative AI use in the writing process per Wiley policy".
+  block:
+    value: >
+      "During the preparation of this work the author(s) used [TOOL/SERVICE] in order to
+      [REASON, e.g. improve language and readability]. After using this tool/service, the author(s)
+      reviewed and edited the content as needed and take(s) full responsibility for the content of
+      the publication." (Wiley/COPE: disclose tool + version + access date + role + how output was
+      verified; grammar/spell/general-editing tools exempt; generative AI cannot be listed as an author.)
+    confidence: official
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: Wiley ScholarOne (Manuscript Central) — https://mc.manuscriptcentral.com/jbi
+    confidence: secondary
+    source_url: https://manusights.com/blog/journal-of-biogeography-submission-guide
+    last_verified: 2026-06-22
+  pack:
+    value: [manuscript (<=7000 words ALL-inclusive for a Research Paper), structured abstract <=300 words (Aim; Location; Taxon; Methods; Results; Main conclusions), display items within a 10-12 published-page envelope, references in APA author-year (7th) style, data- AND code-availability statement + Dryad 'Private for Peer Review' link, CRediT author-contribution statement, competing-interests declaration, ethics/permits statement (CITES, country permits, indigenous approvals where relevant), AI-disclosure block, ORCID iDs, cover letter, suggested reviewers]
+    confidence: secondary
+    source_url: https://manusights.com/blog/journal-of-biogeography-submission-guide
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

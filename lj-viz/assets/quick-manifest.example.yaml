@@ -1,0 +1,25 @@
+figure_id: fig-s5-style-repair
+project_root: .
+workflow:
+  profile: quick
+  task: "Repair typography, spacing and label collisions without changing scientific encoding."
+  baseline_artifact: existing-figure.pdf
+  preserve: [claim, data, estimand, encoding, scales]
+  allowed_changes: [typography, spacing, label-placement, legend-position]
+reader_task: compare
+medium: paper
+provenance:
+  code: figure.R
+  command: Rscript figure.R
+output:
+  width_mm: 89
+  height_mm: 70
+  formats: [pdf, png]
+build:
+  status: planned
+  artifacts: []
+qc:
+  technical_preflight: {status: pending, report: pending}
+  baseline_diff_reviewed: false
+  baseline_diff_report: pending
+  visual_craft_verdict: pending

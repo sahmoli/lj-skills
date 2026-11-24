@@ -1,0 +1,248 @@
+slug: biological-conservation
+journal: Biological Conservation
+publisher: elsevier                     # Elsevier B.V.; no learned society owner
+society:
+  value: null
+  confidence: official
+  source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: Q1,   confidence: secondary, source_url: "journal_db / Scopus SJR", last_verified: 2026-06-22}
+  impact_factor: {value: 5.1,  confidence: secondary, source_url: "https://www.resurchify.com/impact/details/17244 (JCR 2024, updated Jun 2026); journal_db OLD=4.4", last_verified: 2026-06-22}
+  cite_score:    {value: 9.9,  confidence: secondary, source_url: "https://journalsearches.com/journal.php?title=biological+conservation (one secondary listing says 8.9 — minor conflict)", last_verified: 2026-06-22}
+  is_top:        {value: 是,    confidence: official,  source_url: "Juan", last_verified: 2026-06-22}
+
+open_access:
+  value: hybrid (subscription journal with optional gold OA; NOT in DOAJ, is_oa=false)
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/S80660208
+  last_verified: 2026-06-22
+apc_usd:
+  value: 3570
+  note: "OpenAlex + journal_db agree on $3,570 (EUR 3,260 / GBP 2,860). Charged only if author elects the gold-OA option."
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/S80660208
+  last_verified: 2026-06-22
+
+review_model:
+  value: double_anonymized            # ★ OVERRIDES Elsevier publisher default (single_anonymized). Juan's OLD note said Single-blind — WRONG.
+  note: >
+    Read verbatim on guide: "This journal follows a double anonymized review process, meaning author
+    identities are concealed from reviewers and vice versa." Title page (with author details) and the
+    anonymized manuscript MUST be uploaded as SEPARATE files; the manuscript must contain no names,
+    affiliations or acknowledgements.
+  confidence: official
+  source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    A leading international journal in conservation science. Publishes work across the biological,
+    sociological, ethical and economic dimensions of conserving biological diversity — theoretical and
+    empirical investigations of the consequences of human actions for the diversity, structure and
+    function of terrestrial, freshwater and marine ecosystems (extinction risk, fragmentation, invasive
+    species, conservation genetics, restoration). Strong appetite for policy- and practice-relevant
+    conservation problems and solutions.
+  confidence: secondary
+  source_url: https://www.sciencedirect.com/journal/biological-conservation
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: Biological Conservation rewards research that simultaneously advances conservation science
+    AND delivers practical value for protecting and managing biodiversity — its stated goal is work
+    whose findings are usable by the people doing protection and management on the ground. Its audience
+    is therefore not scientists alone but also land/resource managers and the government and NGO officials
+    who develop and implement policy. Editorially it prizes a clear, well-communicated message for a
+    wide audience, backed by well-designed studies, explicit hypothesis testing, and rigorous analysis
+    that acknowledges its own limits and uncertainty.
+  confidence: official
+  source_url: http://vincent.devictor.free.fr/Articles/Primack%20&%20Devictor_2018.pdf
+  last_verified: '2026-06-22'
+  audience:
+    value: 'Conservation scientists plus practitioners and decision-makers: land/resource managers and
+      government and NGO officials who develop and implement policy. The journal''s editorials frame
+      its value as serving managers and policy makers, not scientists alone.'
+    confidence: official
+    source_url: http://vincent.devictor.free.fr/Articles/Primack%20&%20Devictor_2018.pdf
+  writing_style:
+    value: 'Prizes a clear, well-communicated message aimed at a wide audience, backed by rigorous methods:
+      well-designed studies, clear hypothesis testing, and rigorous analysis that acknowledges its limits
+      and sources of uncertainty.'
+    confidence: official
+    source_url: http://vincent.devictor.free.fr/Articles/Primack%20&%20Devictor_2018.pdf
+  figure_preference:
+    value: null
+    confidence: unknown
+    source_url: null
+  signals:
+    value: Applied/policy-facing content-type range (research articles, reviews including systematic
+      reviews and perspectives, short communications, policy perspectives, letters to the editor) plus
+      thematic special issues. A 2014 editorial explicitly elevated review articles, signaling appetite
+      for synthesis with applications.
+    confidence: secondary
+    source_url: https://doi.org/10.1016/j.biocon.2014.09.012
+
+caps:                                   # ★ Distinctive: word count INCLUDES text, references, figures AND tables; EACH figure or table = 300 words.
+  Research Article:                     # "Full length articles (Research papers)"
+    words:
+      value: 8000
+      excludes: []                      # NOTHING is excluded
+      includes_note: "Includes text + references + figures + tables. Each figure or table counts as 300 words."
+      confidence: official
+      source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "no strict count limit, but each figure/table consumes 300 words of the 8000 budget"
+      confidence: official
+      source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+      last_verified: 2026-06-22
+    refs:
+      value: "no separate cap — references are counted inside the 8000-word total"
+      confidence: official
+      source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+      last_verified: 2026-06-22
+    abstract:
+      value: 250
+      confidence: official
+      source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+      last_verified: 2026-06-22
+    structure:
+      value: "IMRAD with numbered sections (1, 1.1, 1.1.1); CRediT statement + 3–5 Highlights (≤85 chars each) required; graphical abstract encouraged"
+      confidence: official
+      source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+      last_verified: 2026-06-22
+  Review:
+    words:
+      value: 12000
+      excludes: []
+      includes_note: "Includes references/figures/tables; each fig/table = 300 words. MUST include a methods section explaining how the literature was selected. Systematic Reviews also accepted (follow Collaboration for Environmental Evidence)."
+      confidence: official
+      source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+      last_verified: 2026-06-22
+    figs_tables: {value: "no strict count limit; each fig/table = 300 words", confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+    refs:        {value: "counted in 12000-word total", confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+    abstract:    {value: 250, confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+    structure:   {value: "Must include a literature-selection methods section; Highlights + CRediT required", confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+  Perspective:
+    words:
+      value: 8000
+      excludes: []
+      includes_note: "Includes refs/figs/tables; each fig/table = 300 words. Novel, distinctive viewpoint; must be evidence-grounded and citation-supported — not pure opinion."
+      confidence: official
+      source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+      last_verified: 2026-06-22
+    abstract:    {value: 250, confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+    structure:   {value: "Argument-driven but evidence-grounded; Highlights required", confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+  Short Communication:
+    words:
+      value: 4000
+      excludes: []
+      includes_note: "Includes refs/figs/tables; each fig/table = 300 words. For compelling preliminary findings AND replication studies (give rationale in cover letter for replications)."
+      confidence: official
+      source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+      last_verified: 2026-06-22
+    abstract:    {value: 250, confidence: secondary, source_url: "abstract section states ≤250 generally; not stated per-type on page", last_verified: 2026-06-22}
+    structure:   {value: "Concise; Highlights + CRediT required", confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+  Policy Analysis:
+    words:
+      value: 4000
+      excludes: []
+      includes_note: "Short commentary on contemporary, internationally relevant conservation-policy issues. Based on research/expert analysis/literature review/practitioner reflection; PURE OPINION is not considered. (Guide also labels this section's pieces 'Forum articles'.)"
+      confidence: official
+      source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+      last_verified: 2026-06-22
+    abstract:    {value: 250, confidence: secondary, source_url: "general ≤250 abstract rule", last_verified: 2026-06-22}
+    structure:   {value: "Accessible style; real-world examples and/or referenced evidence", confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+  Correspondence:                       # "Letters to the Editor" — Juan's OLD 'Letter = 4,000 words' was WRONG (that figure belongs to Short Comm)
+    words:
+      value: 800
+      excludes: []
+      includes_note: "Responses to recently published papers; maximum 800 words. Constructive, on a significant issue, respectful in tone. Usually published alongside a response from the original authors."
+      confidence: official
+      source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+      last_verified: 2026-06-22
+    figs_tables: {value: "1 figure maximum (if necessary)", confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+    refs:        {value: "5 maximum (key references only)", confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+    structure:   {value: "Short letter; no abstract", confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+  Book Review:
+    words:       {value: "usually <2000", confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+    structure:   {value: "Titles not more than two years old; pitch ideas to the Book Review editor first", confidence: official, source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors, last_verified: 2026-06-22}
+  # Also published, by invitation only: Fast-Tracked Papers (any of the above types) and Editorials.
+
+desk_reject_triggers:
+  - "Author identities left in the manuscript → DOUBLE-ANONYMIZED: upload a separate title page; strip names, affiliations AND acknowledgements from the main manuscript file."
+  - "Over the word budget — refs + figures + tables ALL count, each fig/table = 300 words → recompute the real total (8000 research / 12000 review / 8000 perspective / 4000 short comm & policy / 800 correspondence) before submitting."
+  - "Data not deposited / no data-availability statement (Option C is mandatory) → deposit in a repository, cite & link, or state a valid reason it cannot be shared."
+  - "Missing Highlights (3–5 bullets, ≤85 chars each, separate file) → add; Elsevier-mandatory."
+  - "Local/descriptive result with no clear conservation implication → reframe the conservation significance and real-world application; state it in the cover letter."
+  - "Pure-opinion piece submitted as a Perspective or Policy Analysis → ground it in evidence/citations or it is rejected."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: official
+    source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Option C — REQUIRED to deposit research data in a relevant repository and cite/link it (or justify why not). Common: Dryad, Zenodo, Figshare, Mendeley Data."
+    confidence: official
+    source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Software/code/models/algorithms are treated as research data and fall under the Option C deposit requirement; cite with a persistent identifier (e.g. Zenodo)."
+    confidence: official
+    source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "Reviews must include a literature-selection methods section; Systematic Reviews follow Collaboration for Environmental Evidence (environmentalevidence.org). SAGER guidelines for sex/gender-based analysis. No PRISMA-EcoEvo/ODMAP/STRANGE mandated on-page."
+    confidence: official
+    source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "No explicit sensitive-species-locality masking rule on the guide. Maps must show only the area studied and carry the note 'map lines delineate study areas and do not necessarily depict accepted national boundaries' (jurisdictional neutrality). Mask precise localities of threatened/trafficked taxa as conservation best practice."
+    confidence: secondary
+    source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID expected for authors (Elsevier Editorial Manager default; secondary sources list ORCID for all authors)"
+    confidence: secondary
+    source_url: https://manusights.com/blog/biological-conservation-submission-guide
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                    # → elsevier: named 'Declaration of generative AI...' section at END, immediately ABOVE References, PUBLISHED. Confirmed verbatim on this journal's guide.
+  block:
+    value: >
+      Section title: "Declaration of generative AI and AI-assisted technologies in the manuscript
+      preparation process." Statement: "During the preparation of this work the author(s) used [NAME OF
+      TOOL / SERVICE] in order to [REASON]. After using this tool/service, the author(s) reviewed and
+      edited the content as needed and take(s) full responsibility for the content of the published
+      article." Place in a new section before the reference list. Basic grammar/spell/reference-check
+      tools are EXEMPT; if nothing to disclose, omit. AI cannot be an author. AI-generated images must
+      also be disclosed in each affected figure caption.
+    confidence: official
+    source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: "Elsevier Editorial Manager — reach it via the ScienceDirect journal page 'Submit your article' button (journal_db lists https://www.editorialmanager.com/bioc/ — exact slug unconfirmed this run)"
+    confidence: secondary
+    source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+    last_verified: 2026-06-22
+  pack:
+    value: [separate title page (names/affiliations/acknowledgements/competing-interests/corresponding-author), anonymized manuscript (.doc/.docx single-column or LaTeX), abstract ≤250 words, 1–7 keywords, Highlights (3–5 bullets ≤85 chars, separate file), graphical abstract (encouraged), declaration of competing interests, CRediT author contributions, data-availability statement + Option C data deposit, funding statement, ethics declaration (vertebrate studies), AI-disclosure section (if AI used), ORCID, cover letter naming the conservation contribution, suggested reviewers]
+    confidence: official
+    source_url: https://www.sciencedirect.com/journal/biological-conservation/publish/guide-for-authors
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

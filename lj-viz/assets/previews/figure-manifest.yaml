@@ -1,0 +1,165 @@
+figure_id: lj-viz-corpus-craft-preview
+project_root: ../../..
+workflow: {profile: full}
+claim: "Demonstrate one coherent visual language for a Nature-style ecology figure; no scientific inference is intended."
+reader_task: compare
+analysis_unit: "synthetic portfolio trajectory, taxon row, or synthetic observation"
+repeating_unit: "not applicable—deterministic visual-craft fixture"
+estimand: "not applicable—visual-craft fixture"
+comparison: "paired-species portfolio versus singleton strategy"
+panels:
+  - label: a
+    role: phenomenon
+    mark: line
+    quantity_semantics: synthetic-rank-trajectory
+    axis_policy: bounded-rank
+    axis_min: 1
+    zero_is_meaningful: false
+    annotation: "vertical synthetic reference at α*"
+  - label: b
+    role: direct-comparison
+    mark: point-line
+    quantity_semantics: synthetic-composite-effectiveness
+    axis_policy: bounded-index
+    axis_min: 0
+    zero_is_meaningful: true
+  - label: c
+    role: relationship-test
+    mark: point-line
+    quantity_semantics: synthetic-association
+    axis_policy: bounded-index
+    axis_min: 0.12
+    zero_is_meaningful: false
+uncertainty:
+  applicable: false
+  reason: "The figure is a deterministic craft fixture and contains no inferential estimand."
+encoding:
+  primary_channel: position
+  colour_role: categorical
+  colour_is_sole_carrier: false
+  redundant_channel: "fill and line style"
+presentation:
+  ordering: "Synthetic trajectories follow rank; taxon rows use a fixed declared order."
+  axis_breaks: "Short decimal ticks selected for the bounded synthetic domains."
+  unit_display: "Dimensionless quantities are named rather than given false units."
+  abbreviations: {applicable: false, reason: "All displayed labels fit the reserved bands."}
+  label_priority: "Direct-label the snow-leopard context; use one shared pair/singleton strip."
+  shared_scale:
+    comparable: false
+    disclosure: "Panels use different quantities and axes; only the pair/singleton identity language is shared."
+reference_board:
+  - source_id: 2025-pigot-macroecological-rules-predict-biomass
+    source_kind: corpus
+    figure_id: Fig-3
+    pdf_page: 4
+    borrow: "biological identity cue and aligned comparison grammar"
+    avoid: "unnecessary taxon-colour proliferation"
+  - source_id: juan-cost-scaling-surrogate-portfolios
+    source_kind: corpus
+    figure_id: Fig-2
+    pdf_page: 5
+    borrow: "stable pair-versus-singleton colour language and dense trajectory rhythm"
+    avoid: "silhouette-label crowding at final size"
+visual_design:
+  direction: quiet-analytical
+  hierarchy:
+    hero_panel: a
+    support_strategy: "comparison then relationship test"
+    area_earned_by: "trajectory density, taxon comparison rows, and observations"
+  palette:
+    namespace: portfolio
+    ink: "#202124"
+    context: "#D9DDE2"
+    missing: "#8B9098"
+    semantic:
+      pair: "#2C7F8E"
+      singleton: "#D98570"
+    critical_pairs: [[pair, singleton]]
+    accent_budget: 0
+    categorical_count: 2
+    collision_check: true
+  spacing_mm:
+    outer: 9
+    panel: 4
+    within_panel: 2.5
+    label_offset: 1.5
+  typography:
+    family: Arial
+    body_pt: 7
+    panel_label_pt: 8
+    coloured_text: false
+    panel_title_strategy: caption-only
+  scaffolding:
+    stroke_pt: 0.5
+    background_gridlines: false
+    drop_shadows: false
+    decorative_boxes: false
+    corner_policy: square
+  density_strategy: "hero panel carries trajectory density; support panels retain whitespace around comparable marks"
+  legend_strategy: shared-strip
+  placement:
+    collision_check: true
+    clip_check: true
+    longest_label_stress_test: true
+    edge_clearance_mm: 1.5
+    label_icon_clearance_mm: 1.5
+    direct_label_ladder: [outside-data, margin-band, leader-line, compact-legend]
+  icons:
+    mode: semantic
+    purpose: "identify the snow-leopard portfolio context without spending a colour channel"
+    provenance: "PhyloPic CC0 asset recorded in the visual vocabulary"
+    grammar: diagram-symbol
+    optical_height_mm: 6
+    silhouettes:
+      - registry_id: panthera-uncia-phylopic-cb44ff49
+        intended_taxon: Panthera uncia
+        depicted_taxon: Panthera uncia
+        match_level: exact
+        approximation_disclosed: false
+visual_vocabulary:
+  applicable: true
+  scope: figure-set
+  path: lj-viz/assets/previews/visual-vocabulary.yaml
+  locked_channels: [entity, colour-role, fill, line-type, order, units, sign, terminology]
+  reason: "Pair and singleton must decode identically in every panel and later figure."
+spatial:
+  is_map: false
+  purpose: not-applicable
+  crs: not-applicable
+  sensitive_locality:
+    present: false
+    method: none
+alternative_explanation: "Not applicable to a synthetic visual-craft fixture; scientific alternatives must be specified for real data."
+medium: paper
+provenance:
+  data:
+    - path: lj-viz/assets/previews/synthetic-data-declaration.md
+      columns: [deterministic-synthetic-values]
+  code: lj-viz/scripts/render_style_preview.py
+  command: "python3 lj-viz/scripts/render_style_preview.py lj-viz/assets/previews --force"
+  transforms: "NumPy seed 11; synthetic trajectories, comparisons, and fitted lines generated in code"
+  filters: none
+  exclusions: none
+output:
+  width_mm: 183
+  height_mm: 96
+  formats: [pdf, svg, png]
+build:
+  status: success
+  artifacts:
+    - path: lj-viz/assets/previews/lj-viz-corpus-craft.pdf
+    - path: lj-viz/assets/previews/lj-viz-corpus-craft.svg
+    - path: lj-viz/assets/previews/lj-viz-corpus-craft.png
+qc:
+  stress_render:
+    status: pass
+    artifact: lj-viz/assets/previews/lj-viz-stress.png
+  technical_preflight:
+    status: pass
+    report: lj-viz/assets/previews/preflight.txt
+  final_size_reviewed: true
+  colour_accessibility_reviewed: true
+  claim_trace_reviewed: true
+  visual_craft_reviewed: true
+  visual_craft_verdict: ship
+schema_version: 1

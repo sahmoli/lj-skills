@@ -1,0 +1,6 @@
+# Reproducible local test environment used for the 2026-09 Astra migration.
+PyYAML==6.0.3
+numpy==2.5.3
+matplotlib==3.11.1
+Pillow==12.3.0
+PyMuPDF==1.28.2

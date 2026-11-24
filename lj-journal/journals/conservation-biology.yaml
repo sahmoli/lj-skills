@@ -1,0 +1,230 @@
+slug: conservation-biology
+journal: Conservation Biology
+publisher: wiley                       # Wiley on behalf of the Society for Conservation Biology (SCB)
+doi_prefixes:
+  value: ["10.1111/cobi"]
+  confidence: secondary
+  source_url: "DOI stem from this journal's Wiley articles — verify against a live DOI"
+  last_verified: 2026-06-23
+society:
+  value: Society for Conservation Biology (SCB)
+  confidence: official
+  source_url: https://conbio.org/publications/conservation-biology
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: Q1,   confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  impact_factor: {value: 5.5,  confidence: secondary, source_url: "journal_db; recent JCR (2024) ~5.2 per secondary listing — VERIFY", last_verified: 2026-06-22}
+  cite_score:    {value: 12.1, confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  is_top:        {value: 是,    confidence: official,  source_url: "Juan", last_verified: 2026-06-22}
+open_access:
+  value: hybrid (subscription journal with Wiley OnlineOpen; not gold OA — OpenAlex is_oa=false, not in DOAJ)
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/S98137347
+  last_verified: 2026-06-22
+apc_usd:
+  value: "3090 (USD); £2060 / €2580"
+  conflict_note: "OpenAlex APC list & journal_db agree on $3,090; one secondary submission-guide listing says $3,400 — treat 3090 as current, re-verify on Wiley OnlineOpen page."
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/S98137347
+  last_verified: 2026-06-22
+
+review_model:
+  value: double_anonymized            # OVERRIDE of wiley default (single). Conservation Biology enacted double-blind peer review Oct 2014; neither authors nor reviewers know identities. Submit a SEPARATE cover page; no author/institution-identifying content in the manuscript except self-citations; mask identity in shared data files; do not cite your own preprint.
+  confidence: official
+  source_url: https://conbio.org/publications/scb-news-blog/conservation-biology-enacts-double-blind-peer-review
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Publishes research and commentary that advance the science and practice of conserving Earth's
+    biological diversity, across any ecosystem or geographic region. Prioritizes manuscripts whose
+    conservation relevance TRANSCENDS a particular species, ecosystem, or situation — documenting
+    biodiversity, investigating human influence on species/ecosystems, and applying practical
+    approaches to prevent extinction. Manuscripts judged on sound science and reasoning; English
+    expression is explicitly not an impediment (free substantive editing for accepted papers).
+  confidence: official
+  source_url: https://conbio.org/publications/conservation-biology
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: 'Conservation Biology, the flagship journal of the Society for Conservation Biology, rewards
+    globally relevant, novel, and transferable work that develops new theory and methods, defines key
+    problems, and proposes solutions for conserving Earth''s biological diversity. Its decisive filter
+    is generalizability: conservation relevance must transcend the particular ecosystem, species, or
+    situation, and manuscripts limited to a single species or location are rarely sent for review. It
+    serves a worldwide community of conservation scientists and practitioners across any ecosystem or
+    region. Stylistically it enforces a tight, IMRaD discipline (clear non-hanging titles, a 300-word
+    mini-version abstract, name-year citations) and strict display-item economy (no more than one table/figure
+    per four pages), with a defined article taxonomy and word caps signaling expected depth.'
+  confidence: official
+  source_url: https://conbio.org/publications/conservation-biology
+  last_verified: '2026-06-22'
+  audience:
+    value: Positioned as the leading global journal in conservation, owned by the Society for Conservation
+      Biology; serves the worldwide conservation research community, academics and practitioners, addressing
+      the science and practice of conserving Earth's biological diversity across any ecosystem or region.
+    confidence: official
+    source_url: https://conbio.org/publications/conservation-biology
+  writing_style:
+    value: Titles must be clear, concise, never hanging (colon/dash), complete sentences, or interrogative.
+      Abstract is a miniversion of the paper (Intro/Methods/Results/Discussion, max 300 words), no citations
+      or 'We discuss' phrasing. IMRaD order, no Conclusion section, no numbered headings, name-year
+      citations oldest-to-newest, no footnotes.
+    confidence: official
+    source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf
+  figure_preference:
+    value: 'Strict economy of display items: no more than one table or figure per four pages of text;
+      few-data-point items must be folded into text. Figures self-explanatory, clear at 60% reduction,
+      >=300 dpi (600 for lettering). Color discouraged (gray-scale must be distinguishable); maps need
+      scale bars and compass; table legends one sentence, no bold, no gridlines.'
+    confidence: official
+    source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf
+  signals:
+    value: 'Defined article taxonomy with word caps signaling expected depth: Contributed Papers 6000,
+      Reviews 7500, Essays 6000, Research Notes 3000, Conservation Practice and Policy 5000, Comments
+      2000, Diversity 2000, Letters 1000 (abstract <=300 words). ''Essays'' and ''Diversity'' sections
+      reveal appetite for opinion/philosophical and human-dimensions pieces. Single-species/single-location
+      desk-reject signal. (Caps are from the 2014 style guide; current Wiley guidance may differ, so
+      treat as indicative of the depth-vs-volume philosophy.)'
+    confidence: official
+    source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf
+
+caps:                                  # MAP keyed by article_type. Caps from the SCB "Conservation Biology Style Guide for Authors" (read this run) + corroborated by current 2026 web listings of the Feb2019 revision.
+  # NOTE on word count (CB-specific, differs from most journals): the count runs from the FIRST WORD
+  # OF THE ABSTRACT through the Acknowledgments and INCLUDES the abstract; the CURRENT (Feb2019)
+  # revision EXCLUDES the reference list (Literature Cited), table/figure legends, and table body
+  # text. (The Sep2014 PDF I read counted Literature Cited IN; this was relaxed in the 2019 update.)
+  # Manuscripts substantially exceeding the cap are not sent for review.
+  Contributed Papers:                  # primary original-research type
+    words:
+      value: 6000
+      excludes: [references, figure_legends, tables]   # INCLUDES abstract + main text + acknowledgments
+      confidence: official
+      source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "no fixed count; ≤1 supporting element (table OR figure) per 4 pages of text (Abstract→Literature Cited)"
+      confidence: official
+      source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf
+      last_verified: 2026-06-22
+    refs:
+      value: "no stated numeric cap"
+      confidence: official
+      source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf
+      last_verified: 2026-06-22
+    abstract:
+      value: 300
+      confidence: official
+      source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf
+      last_verified: 2026-06-22
+    structure:
+      value: "IMRAD, fixed order: Abstract, Introduction, Methods, Results, Discussion, (Supporting Information para), Literature Cited, tables, figure legends, figures. Do NOT combine sections; do NOT include a Conclusion section; do NOT number headings."
+      confidence: official
+      source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf
+      last_verified: 2026-06-22
+  Research Notes:
+    words:       {value: 3000, excludes: [references, figure_legends, tables], confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+    figs_tables: {value: "≤1 per 4 pages of text", confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+    abstract:    {value: 300, confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+    structure:   {value: "Same IMRAD order as Contributed Papers", confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+  Reviews:
+    words:       {value: 7500, excludes: [references, figure_legends, tables], confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+    figs_tables: {value: "≤1 per 4 pages of text", confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+    abstract:    {value: 300, confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+    structure:   {value: "Comprehensive review; flexible internal structure; abstract required", confidence: secondary, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+  Essays:
+    words:       {value: 6000, excludes: [references, figure_legends, tables], confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+    abstract:    {value: 300, confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+    structure:   {value: "Opinion/argument essay; flexible structure; abstract included", confidence: secondary, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+  Conservation Practice and Policy:
+    words:       {value: 5000, excludes: [references, figure_legends, tables], confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+    abstract:    {value: 300, confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+    structure:   {value: "Same IMRAD order as Contributed Papers; applied/policy focus", confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+  Comments:
+    words:       {value: 2000, excludes: [references, figure_legends, tables], confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}   # NO abstract
+    structure:   {value: "Short response/critique; no abstract", confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+  Diversity:
+    words:       {value: 2000, excludes: [references, figure_legends, tables], confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}   # NO abstract
+    structure:   {value: "Essay on diversity/inclusion/perspective in conservation; no abstract", confidence: secondary, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+  Letters:
+    words:       {value: 1000, excludes: [references, figure_legends, tables], confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}   # journal_db said 3,500 — WRONG; CB Letters = 1,000 words
+    abstract:    {value: null, confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}   # NO abstract
+    structure:   {value: "Brief letter to the journal; no abstract", confidence: official, source_url: https://conbio.org/images/content_publications/ConsBiol_Author_Style_Guide_Sep2014.pdf, last_verified: 2026-06-22}
+  # Registered Reports (Stage 1 ~3,500 / Stage 2 ~7,000) and Systematic Reviews (~8,000, PRISMA) are
+  # offered per a 2026 secondary submission guide; add as official keys once read on the live Wiley page.
+
+desk_reject_triggers:
+  - "Manuscript substantially exceeds the per-type word cap (e.g., Contributed Paper >6000) → trim to cap BEFORE submission; over-length papers are not sent for review."
+  - "Author/institution identity discoverable in the manuscript or data files (double-anonymous journal) → move all identifying info to a SEPARATE cover page; mask data; do not cite your own preprint."
+  - "Local single-site/single-species result with no conservation relevance that transcends the case → reframe the transferable 'so what' for conservation."
+  - "Missing data-availability statement / data not archived in a public repository → add the statement and deposit (mask sensitive localities)."
+  - "Combined sections (e.g., Results & Discussion), a Conclusion section, or numbered headings → use fixed Abstract-Intro-Methods-Results-Discussion order, no Conclusion, unnumbered headings."
+  - "Fewer than the required ~4 suggested reviewers / no separate cover page → supply ≥4 potential reviewers and the cover page."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: secondary
+    source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/15231739/homepage/forauthors.html
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Archive data in a public repository (Dryad common in ecology; Zenodo/Figshare). Editor may grant exceptions for sensitive data."
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/data-sharing-citation/data-sharing-policy.html
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Share analysis code/scripts with a persistent identifier where applicable (Wiley data & code policy)"
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/data-sharing-citation/data-sharing-policy.html
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "PRISMA expected for systematic reviews; Registered Reports accepted. No journal-mandated PRISMA-EcoEvo/ODMAP/STRANGE confirmed."
+    confidence: secondary
+    source_url: https://manusights.com/blog/conservation-biology-submission-guide
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "Editor may grant exceptions to data archiving for sensitive information such as locations of endangered/threatened species; mask/coarsen precise localities and state masking."
+    confidence: secondary
+    source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/15231739/homepage/forauthors.html
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID iD expected for all authors (Wiley default; required at submission)"
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/submission/orcid.html
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                    # → wiley: Methods OR Acknowledgements (no fixed section). 2025 Wiley update: disclosure also covers AI-assisted literature search / reference gathering.
+  block:
+    value: >
+      "During the preparation of this work the author(s) used [TOOL/SERVICE] in order to
+      [REASON, e.g. improve language and readability]. After using this tool/service, the author(s)
+      reviewed and edited the content as needed and take(s) full responsibility for the content of
+      the publication." (Wiley/COPE: generative AI cannot be listed as an author; grammar/spell/
+      general-editing tools are exempt from disclosure.)
+    confidence: official
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: "Wiley ScholarOne — https://mc.manuscriptcentral.com/cobi (journal_db note said /conbio — VERIFY live; CB ScholarOne short-code is 'cobi')"
+    confidence: secondary
+    source_url: https://manusights.com/blog/conservation-biology-submission-guide
+    last_verified: 2026-06-22
+  pack:
+    value: [manuscript anonymized for double-blind (≤6000 words for Contributed Papers), separate cover page (title/authors/affiliations/acknowledgments/keywords), abstract ≤300 words, data-availability statement, AI-disclosure block (if used), ORCID for all authors, conflict-of-interest disclosure, ≥4 suggested reviewers, supporting information files]
+    confidence: secondary
+    source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/15231739/homepage/forauthors.html
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJ Backbone"
+  short_description: "梳理一个领域的公理、原则、核心定理及其推导关系"
+  default_prompt: "Use $lj-backbone to map this field's foundations, principles, and core results with their derivations."

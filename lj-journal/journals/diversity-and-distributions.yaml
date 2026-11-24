@@ -1,0 +1,230 @@
+slug: diversity-and-distributions
+journal: Diversity and Distributions
+publisher: wiley                       # Wiley (no owning society; subtitle "A Journal of Conservation Biogeography")
+society:
+  value: "None (no owning society). International Biogeography Society (IBS) members receive a 20% APC discount."
+  confidence: secondary
+  source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/fundedaccess.html
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: Q1,   confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  impact_factor: {value: 4.6,  confidence: secondary, source_url: "journal_db (JCR); OpenAlex 2yr-mean-citedness 2.96)", last_verified: 2026-06-22}
+  cite_score:    {value: 8.2,  confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  is_top:        {value: 是,    confidence: official,  source_url: "Juan", last_verified: 2026-06-22}
+
+open_access:
+  value: gold (fully open access; indexed in DOAJ; converted to full OA in 2019)
+  confidence: secondary                # OpenAlex is_oa=true & in DOAJ; full-OA-since-2019 from secondary aggregator — VERIFY year on Wiley page
+  source_url: https://doaj.org/toc/1472-4642
+  last_verified: 2026-06-22
+apc_usd:
+  value: "3770 (also GBP 2870 / EUR 3210); IBS members -20%; Editorials/Perspectives/Commentaries exempt"
+  conflict_note: "journal_db body said $3,430 (outdated) and frontmatter apc:N/A (wrong); OpenAlex lists stale $2,200. Multiple 2025/26 secondary sources agree $3,770 — VERIFY on Wiley OA page."
+  confidence: secondary
+  source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/fundedaccess.html
+  last_verified: 2026-06-22
+
+review_model:
+  value: double_anonymized            # OVERRIDES Wiley single-anon default. Authors anonymize manuscript + use separate title page; anonymize deposited data too.
+  conflict_note: "journal_db claimed 'Single-blind' — contradicted by multiple current secondary sources stating double-anonymous. VERIFY on official forauthors page."
+  confidence: secondary
+  source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Conservation biogeography: the application of biogeographical principles, theories and analyses to
+    problems concerning biodiversity conservation. Spans all taxa (bacteria to plants and animals) and all
+    ecosystems — biological invasions, climate-change impacts on distributions, species-richness patterns,
+    niche/species-distribution modelling, and biodiversity status & trends. Papers must derive novel insight
+    from biogeographic pattern/process; it no longer accepts purely descriptive biodiversity-pattern papers
+    that lack a conservation focus.
+  confidence: secondary               # remit well-established; not read off official page this run (403)
+  source_url: https://onlinelibrary.wiley.com/journal/14724642
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: 'Diversity and Distributions rewards conservation biogeography in which conservation implications
+    are CENTRAL rather than incidental: applying biogeographical principles, theory and analysis to
+    biodiversity-conservation problems. Merely mentioning conservation, or working on a threatened species
+    without elaborated conservation implications, is explicitly "not a good fit." Its audience is international
+    conservation biogeographers and biodiversity scientists (biogeography, ecology, conservation biology,
+    species-distribution modelling, invasion science) plus conservation planners and risk-assessors
+    who apply range-scale patterns to landscape-level decisions. Manuscripts must be concise and clearly
+    written in English with a full standard structure, and a Data Availability Statement with access
+    to underlying data is mandatory — submissions lacking one are returned to the author absent a Senior-Editor
+    exception.'
+  confidence: secondary
+  source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/productinformation.html
+  last_verified: '2026-06-22'
+  audience:
+    value: 'International conservation biogeographers and biodiversity scientists: researchers in biogeography,
+      ecology, conservation biology, species distribution modelling and invasion science, plus conservation
+      planners/risk-assessors who apply range-scale patterns to landscape-level conservation decisions.'
+    confidence: secondary
+    source_url: https://www.wiley.com/en-us/journals/Diversity+and+Distributions-p-14724642
+  writing_style:
+    value: 'Concise, clear English with standard full structure: all required sections (abstract, introduction,
+      methods, results, conclusions) must be present in the manuscript.'
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+  figure_preference:
+    value: null
+    confidence: unknown
+    source_url: null
+  signals:
+    value: 'Mandatory Data Availability Statement: submissions lacking one (or access to underlying
+      data) are returned to the author unless a cover letter identifies a specific Senior-Editor exception.
+      Named focal topics act as scope gates: species-distribution-modelling innovation, conservation
+      planning/risk-assessment frameworks, and impacts of global/climate/land-use change and invasive
+      species on distributions and range boundaries.'
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+
+caps:
+  Biodiversity Research:                # primary research article (core "Biodiversity Research and Reviews" section)
+    words:
+      value: 6000
+      excludes: [title, abstract, references, figure_legends, tables]   # measured introduction → end of acknowledgements; shorter papers encouraged
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "no explicit combined cap stated"
+      confidence: unknown
+      source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+      last_verified: 2026-06-22
+    refs:
+      value: "no explicit cap stated"
+      confidence: unknown
+      source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+      last_verified: 2026-06-22
+    abstract:
+      value: 300
+      structured: "Aim, Location, Methods, Results, Main conclusions + up to 6 keywords (alphabetical)"
+      conflict_note: "journal_db and manusights aggregator say 250; two sources quoting the official text say 300 structured. Treating 300 as current best — VERIFY."
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+      last_verified: 2026-06-22
+    structure:
+      value: structured abstract (Aim/Location/Methods/Results/Main conclusions) then IMRAD-style body
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+      last_verified: 2026-06-22
+  Review:                               # Reviews & Syntheses (Invited Reviews allowed slightly longer)
+    words:
+      value: "≈7500 (Invited Review up to ≈8000)"
+      excludes: [title, abstract, references, figure_legends, tables]
+      conflict_note: "Word caps from secondary aggregator; VERIFY exact figures."
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+      last_verified: 2026-06-22
+    abstract:
+      value: 300
+      structured: "Aim/Location/Methods/Results/Main conclusions + up to 6 keywords"
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+      last_verified: 2026-06-22
+    figs_tables: {value: "no explicit combined cap stated", confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html", last_verified: 2026-06-22}
+    refs:        {value: "no explicit cap stated", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html", last_verified: 2026-06-22}
+    structure:   {value: review / synthesis; structured abstract, confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html", last_verified: 2026-06-22}
+  Biodiversity Viewpoints / Perspective:   # short opinion/essay items on conservation-biogeography standpoints
+    words:
+      value: "≈2500–4000 (sources disagree: 2500 / 3000 / 4000)"
+      excludes: [references, figure_legends]
+      conflict_note: "Secondary sources give 2500, 3000 and 4000 for Perspective/Viewpoint word caps — VERIFY current figure on official page."
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+      last_verified: 2026-06-22
+    abstract:
+      value: 150
+      structured: "one-paragraph UNstructured abstract; 6–10 keywords"
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+      last_verified: 2026-06-22
+    figs_tables: {value: "minimal; no explicit cap stated", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html", last_verified: 2026-06-22}
+    refs:        {value: "no explicit cap stated", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html", last_verified: 2026-06-22}
+    structure:   {value: unstructured essay; argument-first, confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html", last_verified: 2026-06-22}
+  Correspondence / Commentary:          # comments/criticism of recently published work
+    words:
+      value: "≈2000"
+      excludes: [references]
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+      last_verified: 2026-06-22
+    abstract: {value: null, confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html", last_verified: 2026-06-22}
+    structure: {value: short comment on a recently published article, confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html", last_verified: 2026-06-22}
+  # Biodiversions = short editorial items solicited by the Editor (≈2000 words); not author-submitted — omitted from caps.
+
+desk_reject_triggers:
+  - "Over the 6000-word research cap (introduction → acknowledgements) → trim before submitting; shorter papers are explicitly encouraged."
+  - "Purely descriptive biodiversity-pattern paper with no conservation implication → add an explicit conservation/applied dimension (THE classic D&D desk reject)."
+  - "Manuscript not anonymized (journal is double-anonymous) → strip author identity from body, use a separate title page, and anonymize deposited data, else desk reject."
+  - "No data-availability statement / data not in a public repository before submission → deposit in Dryad (or domain archive) and cite the DOI/link."
+  - "Sensitive/threatened-taxa localities exposed → mask/coarsen coordinates and state that you did."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Public repository required before publication: Dryad, TreeBASE, NERC data centre, GenBank, Zenodo or Figshare (anonymize for double-blind; Dryad 'private-for-peer-review' link available)"
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Share code/scripts (e.g. SDM code, derived layers) with a persistent identifier where applicable"
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/data-sharing-citation/data-sharing-policy.html
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "ODMAP is the community standard for species-distribution/niche-model papers (not confirmed as formally mandated by D&D)"
+    confidence: unknown
+    source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "Mask/coarsen precise localities of threatened or trafficked taxa; state masking"
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID iD required for all authors (also CRediT contributions + conflict-of-interest statement)"
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                    # → wiley: Methods OR Acknowledgements (D&D's own text confirms "Methods or Acknowledgements")
+  block:
+    value: >
+      "During the preparation of this work the author(s) used [TOOL/SERVICE] in order to
+      [REASON, e.g. improve language and readability]. After using this tool/service, the author(s)
+      reviewed and edited the content as needed and take(s) full responsibility for the content of
+      the publication." (Wiley/COPE: generative-AI tools cannot be listed as authors; describe substantial
+      use transparently in Methods or Acknowledgements.)
+    confidence: official
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: Wiley ScholarOne — https://mc.manuscriptcentral.com/ddi  (editorial office ddioffice@wiley.com)
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+    last_verified: 2026-06-22
+  pack:
+    value: [anonymized manuscript (research ≤6000 words intro→acks), separate title page, structured abstract ≤300 words + ≤6 keywords, data-availability statement + repository DOI, ORCID for all authors, CRediT contributions, conflict-of-interest statement, AI-disclosure block, cover letter, suggested reviewers]
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

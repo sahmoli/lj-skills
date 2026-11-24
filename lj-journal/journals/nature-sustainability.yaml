@@ -1,0 +1,317 @@
+slug: nature-sustainability
+journal: Nature Sustainability
+publisher: nature_portfolio                 # Springer Nature / Nature Portfolio
+society:
+  value: null                               # no learned society; published by Nature Portfolio
+  confidence: official
+  source_url: https://www.nature.com/natsustain/
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: Q1,    confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  impact_factor: {value: 29.2,  confidence: secondary, source_url: "journal_db (JCR; OpenAlex 2yr-mean-citedness ~19.9, h-index 207)", last_verified: 2026-06-22}
+  cite_score:    {value: 42.1,  confidence: secondary, source_url: "journal_db (Scopus CiteScore)", last_verified: 2026-06-22}
+  is_top:        {value: 是,     confidence: official,  source_url: "Juan", last_verified: 2026-06-22}
+
+open_access:
+  value: hybrid (subscription OR Gold Open Access for primary research; CC license on OA route; non-primary types are subscription-only)
+  confidence: official
+  source_url: https://www.nature.com/natsustain/submission-guidelines/publishing-options
+  last_verified: 2026-06-22
+apc_usd:
+  value: "12850 (Gold OA; also £9,390 / €10,850). Reviewed end-2026 in Nature Portfolio OA transition."
+  conflict_note: "journal_db OLD: $11,690 (also what OpenAlex still lists) — OUTDATED; current official APC is $12,850."
+  confidence: official
+  source_url: https://www.nature.com/natsustain/submission-guidelines/publishing-options
+  last_verified: 2026-06-22
+
+review_model:
+  value: single_anonymized (default) — double-anonymized peer review is OFFERED as an author opt-in; tick the box at submission AND anonymize the manuscript yourself (the editor will NOT check this for you)
+  confidence: official                       # journal_db said only "Single-blind"; the double-anon option is now advertised
+  source_url: https://www.nature.com/natsustain/submission-guidelines/dapr
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Publishes significant original research from a broad range of natural, social and engineering
+    fields about sustainability, its policy dimensions and possible solutions. Overarching goal:
+    understand how to ensure the well-being of current and future generations within the limits of
+    the natural world. Fosters integrated knowledge across Earth, social and technological systems
+    and their interfaces (explicitly aligned with the UN Sustainable Development Goals agenda).
+  confidence: official
+  source_url: https://www.nature.com/natsustain/aims
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: Nature Sustainability rewards significant original research that advances the well-being of
+    current and future generations within natural limits, transcending disciplinary boundaries across
+    the natural, social and engineering sciences and explicitly engaging sustainability's policy dimensions
+    and possible solutions. It prizes insight that catalyses wise action rather than knowledge alone,
+    and its dedicated Analysis and policy-facing Comment formats signal a strong appetite for solutions-
+    and policy-oriented synthesis. The audience is a cross-disciplinary community of sustainability
+    scholars plus policymakers, with an explicit editorial mission to narrow the gap between research
+    and policy making.
+  confidence: official
+  source_url: https://www.nature.com/natsustain/aims
+  last_verified: '2026-06-22'
+  audience:
+    value: Cross-disciplinary sustainability research community plus policymakers — researchers seeking
+      integrated knowledge across natural, social and engineering/technological systems, and those bridging
+      research and policy making. Inaugural editorial frames a community of sustainability scholars
+      and those arriving from traditional disciplines.
+    confidence: official
+    source_url: https://www.nature.com/natsustain/aims
+  writing_style:
+    value: No prose style/tone rules on the aims page, but submission guidelines impose tight limits
+      (e.g. Brief Communication abstract ~3 sentences/<=70 words, title <=10 words, main text <=1,500
+      words with no headings, Methods <=500 words). Comment articles are opinionated, agenda-setting
+      and provocative pieces calling for action on timely sustainability/policy issues.
+    confidence: secondary
+    source_url: https://www.nature.com/natsustain/content
+  figure_preference:
+    value: No qualitative figure-style guidance found on authoritative pages; only quantitative display-item
+      caps in submission guidelines (e.g. Brief Communication up to 2 display items, flexible at editor
+      discretion within the page limit).
+    confidence: secondary
+    source_url: https://www.nature.com/natsustain/submission-guidelines
+  signals:
+    value: 'Defined content types signal what it wants: Articles, Analysis (new analysis of existing
+      data / new simulation or model leading to novel and arresting conclusions of broad importance,
+      incl. systematic reviews/meta-analyses), Perspectives, Reviews, Comment, News & Views, Features,
+      Correspondence. The ''Analysis'' and policy-relevant ''Comment'' formats reveal appetite for solutions-
+      and policy-facing synthesis.'
+    confidence: official
+    source_url: https://www.nature.com/natsustain/content
+
+caps:                                         # MAP keyed by article_type — verified on the Content Types page this run
+  Article:                                    # primary research study
+    words:
+      value: 3500
+      excludes: [abstract, methods, references, figure_legends]
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    figs_tables:
+      value: 6
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    refs:
+      value: "~50 (guideline; titles of cited articles required for long-form types)"
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    abstract:
+      value: 150
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    structure:
+      value: "IMRAD — Introduction (no heading), Results, Discussion, Methods; Results/Discussion/Methods split by topical subheadings"
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+  Analysis:                                   # new analysis of existing/comparative data; same format as Article
+    words:       {value: 3500, excludes: [abstract, methods, references, figure_legends], confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    figs_tables: {value: 6,    confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    refs:        {value: "~50 (guideline)", confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    abstract:    {value: 150,  confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    structure:   {value: "IMRAD (same as Article)", confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+  Resource:                                   # large dataset of broad utility; same format as Article
+    words:       {value: 3500, excludes: [abstract, methods, references, figure_legends], confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    figs_tables: {value: 6,    confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    refs:        {value: "~50 (guideline)", confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    abstract:    {value: 150,  confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    structure:   {value: "IMRAD (same as Article)", confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+  Brief Communication:                        # concise study of high quality and broad interest (the closest thing to a "Letter" — there is NO "Letter" type)
+    words:
+      value: 1500
+      excludes: [abstract, methods, references, figure_legends]
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "2 (flexible at editor's discretion if page limit observed)"
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    refs:
+      value: "~20 (guideline)"
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    abstract:
+      value: "70 (3 sentences, unreferenced)"
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    structure:
+      value: "Unstructured (no headings); Methods section required, ≤500 words"
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+  Review:                                     # authoritative scholarly survey; usually invited (unsolicited needs a 1-2pp synopsis)
+    words:
+      value: 5000
+      excludes: [references, figure_legends]
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    figs_tables:
+      value: 6
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    refs:
+      value: "100 (exceptions possible; annotate the <=10% most key citations)"
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    abstract:
+      value: "null — uses a Preface up to 100 words (unreferenced), not an abstract"
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    structure:
+      value: "Flexible scholarly survey; balanced, broad scope. NOTE: a structured/replicable systematic review counts as original research and must be submitted as an Article/Analysis."
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+  Perspective:                                # forward-looking/opinionated viewpoint; usually invited (unsolicited needs synopsis)
+    words:
+      value: 5000
+      excludes: [references, figure_legends]
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    figs_tables:
+      value: 6
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    refs:
+      value: 60
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    abstract:
+      value: "null — uses a Preface up to 100 words (unreferenced), not an abstract"
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    structure:
+      value: "Forward-looking/opinionated but balanced; may advocate a position or speculative hypothesis"
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+  Comment:                                    # opinionated, agenda-setting piece; NON-primary (no original research data), not OA-eligible
+    words:
+      value: 1500
+      excludes: [references]
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "Figures/diagrams encouraged but not required (no fixed cap)"
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    refs:
+      value: "15 (use sparingly; article titles omitted)"
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    abstract:
+      value: null
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+    structure:
+      value: "No fixed structure; accessible non-technical style; must road-map a proposed solution. Peer review at editor's discretion."
+      confidence: official
+      source_url: https://www.nature.com/natsustain/content
+      last_verified: 2026-06-22
+  Correspondence:                             # forum comment; not research data; not a technical comment (use Matters Arising for that)
+    words:       {value: "300-800", excludes: [references], confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    figs_tables: {value: 1, confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    refs:        {value: "10 (article titles omitted)", confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    structure:   {value: "Unstructured; peer-reviewed at editors' discretion", confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+  Matters Arising:                            # technical comment/clarification on a Nature Sustainability paper; specialist submission process
+    words:       {value: "~1200 (should ideally not exceed)", excludes: [references], confidence: secondary, source_url: https://www.nature.com/natsustain/submission-guidelines/matters-arising, last_verified: 2026-06-22}
+    figs_tables: {value: "minimal; editor's discretion", confidence: secondary, source_url: https://www.nature.com/natsustain/submission-guidelines/matters-arising, last_verified: 2026-06-22}
+    refs:        {value: 15, confidence: secondary, source_url: https://www.nature.com/natsustain/submission-guidelines/matters-arising, last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+    structure:   {value: "Concise technical comment on contemporary knowledge; follow specialist Matters Arising process", confidence: official, source_url: https://www.nature.com/natsustain/content, last_verified: 2026-06-22}
+
+desk_reject_triggers:
+  - "Over the per-type word cap or display-item cap (Article 3,500w/6 items; Brief Comm 1,500w/2 items) → trim to format BEFORE submitting."
+  - "Local/descriptive study without broad transdisciplinary significance or a solution angle → reframe for a general sustainability readership."
+  - "Manuscript not accessible to non-specialists / too technical / no narrative arc → rewrite for a broad smart audience (Nature house priority)."
+  - "No Data Availability Statement, or data/code not deposited in a public repository → prepare deposit + the Nature Reporting Summary before peer review."
+  - "Submitting a non-primary type (Comment/Review/Perspective/Correspondence) that contains original unpublished research data → these can't carry primary research; submit as Article/Analysis (and they're not Gold-OA eligible)."
+  - "Opted into double-anonymized review but left author identity in the manuscript → editor will NOT check; you break your own anonymity."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: official
+    source_url: https://www.nature.com/natsustain/editorial-policies
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Deposit underlying data in an appropriate community/public repository (e.g., Figshare, Zenodo, Dryad); DOI'd datasets may be cited in the reference list. Source data encouraged for figures."
+    confidence: official
+    source_url: https://www.nature.com/natsustain/editorial-policies
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Required when newly developed code is central to the paper — complete the Software submission checklist; code must be available for peer review and on publication."
+    confidence: official
+    source_url: https://www.nature.com/natsustain/editorial-policies
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "Nature 'Reporting Summary' required at peer review for life/clinical/behavioural & social/ecology, evolution & environmental sciences manuscripts (transparent-reporting form)."
+    confidence: official
+    source_url: https://www.nature.com/natsustain/editorial-policies
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "Nature Portfolio permits withholding genuinely sensitive data (e.g., precise locations of endangered/at-risk species) under its data-availability/research-ethics policy — state the restriction."
+    confidence: secondary
+    source_url: https://www.nature.com/natsustain/editorial-policies
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID required for the corresponding author (Nature Portfolio mandatory)."
+    confidence: official
+    source_url: https://www.nature.com/natsustain/submission-guidelines/orcid
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                          # → nature_portfolio: document generative-AI/LLM use in the Methods section (or suitable alternative if no Methods)
+  block:
+    value: >
+      Declare any use of generative AI / LLM-assisted technology in the Methods section (or a suitable
+      alternative part if there is no Methods). Pure AI copy-editing of grammar/tone needs NO declaration.
+      AI tools cannot be listed as authors. Generative-AI-created images/figures are generally prohibited;
+      disclose non-generative ML image processing in the figure caption.
+    confidence: official
+    source_url: https://www.nature.com/nature-portfolio/editorial-policies/ai
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: "Nature MTS (eJP) — https://mts-natsustain.nature.com/"
+    confidence: secondary
+    source_url: https://www.nature.com/natsustain/submission-guidelines
+    last_verified: 2026-06-22
+  pack:
+    value: [cover letter, manuscript within per-type word cap, abstract (150w for Article), <=6 display items (Article), Data Availability Statement, code availability + Software checklist if code is central, Nature Reporting Summary (at peer review), AI-disclosure in Methods if used, ORCID for corresponding author, suggested reviewers, optional presubmission enquiry, tick double-anon box + anonymize if opting in]
+    confidence: official
+    source_url: https://www.nature.com/natsustain/content
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

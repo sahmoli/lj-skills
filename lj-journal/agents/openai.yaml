@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJ Journal"
+  short_description: "核验投稿要求与题刊匹配，依据近期论文拓展跨学科阅读和研究机会"
+  default_prompt: "Use $lj-journal to assess journal fit or explore cross-disciplinary venues, distinguishing current evidence, recent precedents, and the additional evidence each route needs."

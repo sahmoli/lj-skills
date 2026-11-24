@@ -1,0 +1,243 @@
+slug: journal-of-animal-ecology
+journal: Journal of Animal Ecology
+publisher: wiley_bes                    # British Ecological Society on Wiley (inherits wiley)
+society:
+  value: British Ecological Society (BES)
+  confidence: official                  # OpenAlex host/society = British Ecological Society, ISSN 0021-8790 / 1365-2656
+  source_url: https://www.britishecologicalsociety.org/publications/journals/journal-of-animal-ecology/
+  last_verified: 2026-06-22
+
+metrics:                                 # No journal_db card existed for JAE — metrics seeded fresh from OpenAlex this run.
+  quartile:      {value: "Q1 (Ecology) — not re-verified against current JCR/Scopus this run", confidence: secondary, source_url: "https://openalex.org/S33456383", last_verified: 2026-06-22}
+  impact_factor: {value: "~4 (recent JCR; NOT re-verified this run). OpenAlex 2-yr mean citedness = 2.55 (a different metric, not the JCR IF)", confidence: unknown, source_url: "https://openalex.org/S33456383", last_verified: 2026-06-22}
+  cite_score:    {value: "not verified this run (OpenAlex 2-yr mean citedness = 2.55 as a verifiable proxy)", confidence: unknown, source_url: "https://openalex.org/S33456383", last_verified: 2026-06-22}
+  h_index:       {value: 314, confidence: secondary, source_url: "https://openalex.org/S33456383", last_verified: 2026-06-22}
+  is_top:        {value: "(待人工填) — Juan's own 是/否 flag; no journal_db card exists yet", confidence: unknown, source_url: "Juan (pending)", last_verified: 2026-06-22}
+  # OpenAlex (this run): h-index 314, 2yr mean citedness 2.546, works_count 9364, cited_by 706009, is_oa false.
+
+open_access:
+  value: hybrid (subscription Transformative Journal; gold OA optional, not fully OA)
+  confidence: secondary
+  source_url: https://openalex.org/S33456383      # OpenAlex is_oa=false, is_in_doaj=false
+  last_verified: 2026-06-22
+apc_usd:
+  value: 3400
+  note: "OpenAlex returned APC $3,400 USD ( = £2,270 / €2,830 ) this run — same APC as sibling BES journal J Applied Ecology. Subscription/hybrid: APC only applies if gold-OA is chosen. Wiley OA page 403s to automated fetch."
+  confidence: secondary                  # OpenAlex is an aggregator, not the publisher
+  source_url: https://openalex.org/S33456383
+  last_verified: 2026-06-22
+
+review_model:
+  value: double_anonymized             # BES moved ALL journals to double-anonymous in 2023. Anonymize MS + author identity (separate title page, strip identifiable self-reference) or desk reject.
+  note: "JAE transitioned to mandatory double-anonymous alongside Functional Ecology, Methods in Ecology & Evolution and J Applied Ecology, following the 3-year single-vs-double trial published by Functional Ecology in 2023. 'Confidential' double-anonymous: author and reviewer names concealed; even the cover letter must be anonymous."
+  confidence: secondary                # corroborated by jecologyblog 'evolution of peer review at the BES' + appliedecologist blog; official Wiley page 403s to bots this run
+  source_url: https://jecologyblog.com/2023/09/26/the-evolution-of-peer-review-at-the-bes/
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Publishes the best animal-ecology research that advances ecological theory, generates novel ecological
+    insight, or addresses broad ecological principles or questions — across all areas of animal ecology
+    (behavioural, population, community, physiological, disease, movement, evolutionary and applied ecology),
+    in any taxon, biome or system. The bar is general interest and conceptual advance, not local description.
+  confidence: secondary
+  source_url: https://besjournals.onlinelibrary.wiley.com/journal/13652656
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: The Journal of Animal Ecology, a flagship British Ecological Society journal, rewards work
+    that challenges, innovates, and advances how animal ecologists think — testing key ecological principles,
+    developing new theory, or improving methods, with hypotheses that are novel or of lasting importance
+    and insight that generalizes beyond the focal study system. Its audience is animal ecologists across
+    subfields (behavioural, community, population, ecosystem, individual, evolutionary, physiological,
+    spatial/climate, parasite/disease ecology) within the BES readership. Stylistically it expects the
+    distinctive BES numbered abstract (under 350 words, simple factual numbered statements) ending in
+    a "Synthesis" statement that frames broader ecological relevance for non-specialists, with figures
+    that convey the key result "at a glance."
+  confidence: secondary
+  source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/aims-and-scope/read-full-aims-and-scope
+  last_verified: '2026-06-22'
+  audience:
+    value: Animal ecologists across subfields (behavioural, community, population, ecosystem, individual,
+      evolutionary, physiological, spatial, climate, parasite/disease ecology, macroecology) and the
+      British Ecological Society readership. Bar emphasizes general interest beyond a single study system.
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/aims-and-scope/read-full-aims-and-scope
+  writing_style:
+    value: 'Standard IMRAD: title page, abstract, Introduction, Materials and Methods, Results, Discussion,
+      References. Abstract under 350 words as simple, factual, numbered statements listing main results
+      and conclusions. Concise, hypothesis-driven framing emphasizing broad ecological significance.'
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/journal-resources/guide-to-scientific-writing
+  figure_preference:
+    value: Figures should convey the important result 'at a glance' and cut down on lengthy explanations.
+      Legends must be self-contained (understandable without reference to main text); all lettering
+      and symbols clear and legible. Figures/tables embedded in-text or placed at end with legends.
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/journal-resources/guide-to-scientific-writing
+  signals:
+    value: 'BES numbered-abstract convention: numbered statements giving background/justification, approach,
+      key findings, and a final Synthesis statement on broader relevance. Article types reveal scope:
+      Concepts (emerging ideas), Research Methods Guides (~7000w), synthetic Reviews (~8500w), In Focus
+      (invited), Forum (responses/reanalysis).'
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines
+
+caps:                                   # MAP keyed by article_type. Caps are confidence=secondary: official Wiley page 403s to automated fetch; values are the publisher's own quoted text recovered via search.
+  Research Article:                     # JAE's primary research type (the "Standard Paper")
+    words:
+      value: 8500
+      excludes: [SI]
+      includes_note: "CRITICAL & distinctive: the 8,500 cap is INCLUSIVE of nearly everything — title page, abstract, main text, references, AND figure/table legends all count. (Only Supporting Information is outside it.) This is far more inclusive than most journals, which exclude references. Over the cap → give a clear justification in the cover letter."
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "no hard numeric cap stated for Research Articles (keep display items lean; overflow to SI)"
+      confidence: unknown
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines
+      last_verified: 2026-06-22
+    refs:
+      value: "no separate numeric cap — but references COUNT toward the 8,500-word total, which is the de facto constraint"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines
+      last_verified: 2026-06-22
+    abstract:
+      value: 350
+      note: "Structured/numbered Summary-style abstract, normally FIVE numbered points: (1) background/justification; (2) approach & methods; (3-4) key results; (5) final synthesis statement on wider relevance. Must read in isolation. Keywords: <=8, alphabetical."
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/journal-resources/guide-to-scientific-writing
+      last_verified: 2026-06-22
+    structure:
+      value: "IMRAD body + numbered structured Summary/Abstract (5 points) ending in a synthesis statement"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/journal-resources/guide-to-scientific-writing
+      last_verified: 2026-06-22
+  Review:
+    words:
+      value: 8500
+      excludes: [SI]
+      includes_note: "Inclusive of title page, abstract, main text and references (same accounting as Research Articles). Editors do NOT want a literature recap — a JAE Review must deliver genuine advances in ecological thinking / novel synthesis on a topic of general interest."
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables: {value: "no hard cap stated", confidence: unknown, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+    refs:        {value: "no separate cap (counts toward 8,500-word total)", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+    abstract:    {value: 350, confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/journal-resources/guide-to-scientific-writing, last_verified: 2026-06-22}
+    structure:   {value: "synthetic review giving genuine new insight/perspective on a topical subject of general interest; NOT a literature summary", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+  Concepts in Animal Ecology:           # short ideas/perspective essays
+    words:
+      value: 3000
+      excludes: [SI]
+      includes_note: "3,000 words INCLUDING title page, abstract and references list. Plus a hard cap of up to FOUR tables or figures."
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables: {value: 4, confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+    refs:        {value: "no separate cap (counts toward 3,000-word total)", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+    abstract:    {value: "included in 3,000-word total (short; not separately specified)", confidence: unknown, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+    structure:   {value: "thought-provoking, novel or controversial perspective on a concept in animal ecology (develops a classic concept or frames an emerging area); NOT a review and NOT solely about the authors' own work", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+  Research Methods Guides:
+    words:
+      value: 7000
+      excludes: [SI]
+      includes_note: "Tend to be no longer than 7,000 words including title page, abstract and references list."
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables: {value: "no hard cap stated", confidence: unknown, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+    refs:        {value: "no separate cap (counts toward 7,000-word total)", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+    abstract:    {value: "included in 7,000-word total", confidence: unknown, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+    structure:   {value: "practical guide to methods/tools for animal ecology research", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+  Long-term Studies:                    # feature category for long-running datasets
+    words:
+      value: "8500 (usual JAE cap); longer papers considered if clearly justified"
+      excludes: [SI]
+      includes_note: "Held to the usual 8,500-word JAE accounting (incl. references/legends), but editors will consider longer manuscripts where the long-term dataset justifies it — flag and justify in the cover letter."
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/features/Synthesis-papers
+      last_verified: 2026-06-22
+    figs_tables: {value: "no hard cap stated", confidence: unknown, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/features/Synthesis-papers, last_verified: 2026-06-22}
+    refs:        {value: "no separate cap (counts toward word total)", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/features/Synthesis-papers, last_verified: 2026-06-22}
+    abstract:    {value: 350, confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/journal-resources/guide-to-scientific-writing, last_verified: 2026-06-22}
+    structure:   {value: "research drawing on long-term (multi-year) study systems; standard research structure", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/features/Synthesis-papers, last_verified: 2026-06-22}
+  In Focus:                             # invited commentary
+    words:        {value: "by invitation only (short commentary on a paper in the issue); specs not published", confidence: unknown, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+    figs_tables:  {value: "minimal (not specified)", confidence: unknown, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+    refs:         {value: "few (not specified)", confidence: unknown, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+    abstract:     {value: null, confidence: unknown, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+    structure:    {value: "invited editorial commentary highlighting/contextualising a research article in the same issue", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines, last_verified: 2026-06-22}
+
+desk_reject_triggers:
+  - "Research Article over 8,500 words — and remember REFERENCES + figure/table legends + abstract + title page ALL count → trim to the cap (or justify the overage in the cover letter) before submitting; push detail to SI."
+  - "Technically sound but narrowly descriptive / system-specific result with no broad ecological insight or conceptual advance → reframe the general ecological question the work answers."
+  - "A 'Review' or 'Concepts' piece that merely summarises the literature (or recaps the authors' own work) → must deliver a genuine advance in ecological thinking; sharpen the novel synthesis/argument."
+  - "Manuscript not anonymized for double-anonymous review (since 2023) → strip identifiable author self-reference, upload a SEPARATE title page, and keep the cover letter anonymous too."
+  - "Data and/or non-standard analysis code (or theoretical model code) not archived in a public repository (Dryad) at acceptance → stage the Dryad deposit and supply a private-for-peer-review link; add a data-availability statement."
+  - "Sensitive species localities exposed → mask/coarsen precise coordinates and state that you did."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/editorial-policies
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Public archiving is a CONDITION of publication. Dryad Digital Repository is integrated with BES journals (BES covers the archiving cost). Authors list the repository + accession numbers/DOIs in a data-availability statement; if a data DOI exists, also cite the dataset in the reference list. Private-for-peer-review upload supported."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/editorial-policies
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "New scripts for NON-STANDARD analyses must be archived alongside the data in a suitable repository (e.g. Dryad). For theoretical papers the underlying MODEL CODE must be archived."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/editorial-policies
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "No single mandated checklist. BES encourages best-practice reporting; for behavioural/animal studies the STRANGE framework (sampling-bias transparency) is the field norm BES promotes, and PRISMA-EcoEvo for systematic reviews/meta-analyses. VERIFY whether STRANGE is mandated vs recommended for JAE on the live page."
+    confidence: unknown
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/editorial-policies
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "Mask/coarsen precise locations of threatened, sensitive or trafficked taxa; state that masking was done (BES editorial policy)."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/editorial-policies
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID iD required for all authors at submission (BES default). CRediT contributor roles also expected."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                    # → wiley_bes inherits wiley: Methods OR Acknowledgements (no single mandated section)
+  block:
+    value: >
+      "During the preparation of this work the author(s) used [TOOL/SERVICE incl. version + access date]
+      in order to [REASON, e.g. improve language and readability]. After using this tool/service, the
+      author(s) reviewed and edited the content as needed and take(s) full responsibility for the content
+      of the publication." (Wiley/COPE: generative AI cannot be listed as an author; grammar/spell/general
+      editing tools are exempt from disclosure.)
+    confidence: official
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: Wiley ScholarOne (Manuscript Central)
+    note: "Exact path NOT confirmed this run (Wiley pages 403 to bots). BES sibling J Applied Ecology uses mc.manuscriptcentral.com/jae; the analogous JAE path is most likely mc.manuscriptcentral.com/jane — VERIFY in a human browser. Cover letter must be ANONYMOUS (double-anonymous review)."
+    confidence: unknown
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines
+    last_verified: 2026-06-22
+  pack:
+    value: [anonymized manuscript <=8500 words for a Research Article (references + legends COUNT), numbered structured Summary/Abstract <=350 words (5 points), <=8 alphabetical keywords, SEPARATE title page with author info, anonymous cover letter stating the broad ecological advance, data-availability statement, data + non-standard-analysis/model code archived (Dryad) with private-for-peer-review link, CRediT contributions, conflict-of-interest declaration, funding statement, ORCID for all authors, suggested reviewers, AI-disclosure block if applicable]
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652656/author-guidelines
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

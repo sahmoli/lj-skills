@@ -1,0 +1,20 @@
+FACT: width_mm=182.88
+FACT: height_mm=95.83
+FACT: min_font_pt=6.0
+FACT: vector_stroke_pt=0.30–0.90
+FACT: min_embedded_image_dpi=450
+FACT: panel_labels_observed=a,b,c
+FACT: layout_pages_checked=1
+FACT: layout_text_lines=52
+FACT: layout_small_images=1
+FACT: layout_text_overlap_pairs=0
+FACT: layout_text_icon_overlaps=0
+FACT: layout_low_clearance_pairs=0
+FACT: layout_edge_flags=0
+FACT: layout_edge_clearance_mm=1.5
+FACT: layout_notice=geometry screen only; data-mark collisions and visual hierarchy still require pixel review
+FACT: visual_density=8.5%
+FACT: edge_occupancy=0.3%
+FACT: saturated_colour_clusters=0
+FACT: visual_craft_notice=coarse facts only; hierarchy, spacing rhythm and icon meaning require visual review
+RESULT: PASS (0 warnings)

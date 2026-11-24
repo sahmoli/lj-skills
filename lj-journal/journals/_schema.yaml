@@ -1,0 +1,71 @@
+# lj-journal per-journal card schema.
+# RULE 1: every fact-bearing field is an object {value, confidence, source_url, last_verified}.
+#         confidence ∈ {official, secondary, unknown}. official = read off the publisher's own page.
+# RULE 2: `caps` is a MAP keyed by article_type. NEVER a scalar. Each cap leaf is its own {value,...} object.
+# RULE 3: `ai_disclosure.placement: inherit` → resolve from publisher_profiles[publisher]. Override only with evidence.
+# RULE 4: `my_notes` is Juan's FIRST-HAND layer only (what he observed submitting/reviewing). NEVER AI-fabricate it.
+#         Leave blank until Juan fills it. Sourced editorial-priority/audience info goes in `taste` (with source_url), not here.
+
+slug: <kebab-case-id>
+journal: <display name>
+publisher: <key into publisher_profiles.yaml>   # wiley | wiley_bes | elsevier | nature_portfolio | pnas | aaas
+doi_prefixes: {value: [], confidence: , source_url: , last_verified: }   # DOI stem(s) e.g. "10.1111/cobi"; the sibling-guard checks these FIRST — beats name-matching and works even when the publisher 403s the bot
+society: {value: , confidence: , source_url: , last_verified: }      # null if none
+
+metrics:                                          # for venue choice; seeded from Juan's journal_db frontmatter
+  quartile:      {value: , confidence: , source_url: , last_verified: }
+  impact_factor: {value: , confidence: , source_url: , last_verified: }
+  cite_score:    {value: , confidence: , source_url: , last_verified: }
+  is_top:        {value: , confidence: , source_url: , last_verified: }   # Juan's own flag: 是/否
+open_access:     {value: , confidence: , source_url: , last_verified: }   # gold / hybrid / subscription
+apc_usd:         {value: , confidence: , source_url: , last_verified: }
+
+review_model:    {value: , confidence: , source_url: , last_verified: }   # overrides publisher default if present
+
+scope: {value: , confidence: , source_url: , last_verified: }       # one-paragraph remit
+taste: {value: , confidence: , source_url: , last_verified: }       # what this venue REWARDS (editorial priority)
+
+caps:                                             # MAP keyed by article_type
+  <Article Type>:
+    words:       {value: , excludes: [references, figure_legends, SI, tables, methods], confidence: , source_url: , last_verified: }
+    figs_tables: {value: , confidence: , source_url: , last_verified: }    # combined figs+tables count
+    refs:        {value: , confidence: , source_url: , last_verified: }
+    abstract:    {value: , confidence: , source_url: , last_verified: }    # null if type has no abstract
+    structure:   {value: , confidence: , source_url: , last_verified: }    # IMRAD / unstructured / flexible
+
+artwork:                                          # OPTIONAL; live production contract owned by lj-journal
+  widths:        {value: , confidence: , source_url: , last_verified: }    # final physical widths/heights
+  font:          {value: , confidence: , source_url: , last_verified: }
+  line_weight:   {value: , confidence: , source_url: , last_verified: }
+  panel_labels:  {value: , confidence: , source_url: , last_verified: }
+  raster_dpi:    {value: , confidence: , source_url: , last_verified: }
+  vector_formats:{value: , confidence: , source_url: , last_verified: }
+  raster_formats:{value: , confidence: , source_url: , last_verified: }
+  colour_mode:   {value: , confidence: , source_url: , last_verified: }
+  legend_limit:  {value: , confidence: , source_url: , last_verified: }
+
+desk_reject_triggers:                             # list; each a short "<trigger> → <fix>" string
+  - <trigger and the fix>
+
+reporting:
+  data_availability_statement: {required: , confidence: , source_url: , last_verified: }
+  data_repository:    {value: , confidence: , source_url: , last_verified: }   # e.g. Dryad/Zenodo
+  code_sharing:       {value: , confidence: , source_url: , last_verified: }
+  reporting_guideline:{value: , confidence: , source_url: , last_verified: }   # PRISMA-EcoEvo/ODMAP/STRANGE/null
+  sensitive_locality: {value: , confidence: , source_url: , last_verified: }
+  orcid:              {value: , confidence: , source_url: , last_verified: }
+
+ai_disclosure:
+  placement: inherit                              # "inherit" → publisher_profiles[publisher]; else override string
+  block: {value: , confidence: , source_url: , last_verified: }   # exact paste-in sentence(s)
+
+submission:
+  portal: {value: , confidence: , source_url: , last_verified: }
+  pack:   {value: [], confidence: , source_url: , last_verified: }
+
+my_notes:                                         # ★ Juan's uniquely-his layer (Chinese ok); verbatim
+  reader_profile:     # 读者画像
+  writing_style:      # 写作风格
+  figure_preference:  # 图表偏好
+  cautions:           # 注意事项
+  favorite_articles: []   # [[LIT - ...]] wikilinks

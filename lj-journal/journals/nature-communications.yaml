@@ -1,0 +1,273 @@
+slug: nature-communications
+journal: Nature Communications
+publisher: nature_portfolio                 # Springer Nature / Nature Portfolio (in-house, no society)
+society:
+  value: null                               # no society; Nature Portfolio multidisciplinary OA flagship
+  confidence: official
+  source_url: https://www.nature.com/ncomms/journal-information
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: "Q1 (Multidisciplinary Sciences, ~8/140)", confidence: secondary, source_url: "https://wos-journal.info/journalid/11621", last_verified: 2026-06-22}
+  impact_factor: {value: "~15.7–16.6 (Clarivate JCR; sources vary — impactfactorforjournal lists 15.7 for the 2025 release, manusights/askBisht cite 18.1 for 2024/2025; JCR paywalled); OpenAlex 2-yr mean citedness = 15.79 (a different metric)", confidence: secondary, source_url: "https://impactfactorforjournal.com/nature-communications-impact-factor/", last_verified: 2026-06-22}
+  cite_score:    {value: "~20.4 (Scopus); some listings cite 23.4–24.9 / 97th percentile", confidence: secondary, source_url: "https://www.editage.com/research-solutions/journal/nature-communications/17685", last_verified: 2026-06-22}
+  h_index:       {value: 740, confidence: secondary, source_url: "https://openalex.org/S64187185", last_verified: 2026-06-22}
+  is_top:        {value: "(待人工填 — no journal_db card; widely regarded as a top multidisciplinary OA venue)", confidence: unknown, source_url: "no journal_db card", last_verified: 2026-06-22}
+
+open_access:
+  value: "gold — fully open access, NO subscription track (every accepted paper is OA; CC BY default; CC BY-NC-ND available on request). Online-only since 2010 launch; became fully OA in 2016."
+  confidence: secondary
+  source_url: https://www.nature.com/ncomms/open-access
+  last_verified: 2026-06-22
+apc_usd:
+  value: "7350 (2026; live open-access page lists £5,490 / $7,350 / €6,150). APC set by acceptance date. Waivers for lowest-income countries; many institutions have transformative agreements covering the fee."
+  conflict_note: "OpenAlex cache lists $4,808 / £3,920 — OUTDATED. Live nature.com/ncomms/open-access page 303-redirects to an auth IDP, so $7,350 figure is from a secondary source (manusights) quoting that page — verify in a human browser."
+  confidence: secondary
+  source_url: https://www.nature.com/ncomms/open-access
+  last_verified: 2026-06-22
+
+review_model:
+  value: "single_anonymized by default; DOUBLE-anonymized available on request at submission (author anonymizes the manuscript, identities go in cover letter). TRANSPARENT peer review: reviewer reports + author rebuttals are published as a 'peer review file' for ALL accepted research articles (default since Nov 2022; authors may opt out before acceptance). Reviewers may stay anonymous, sign, and/or be named under the recognition scheme."
+  confidence: official
+  source_url: https://www.nature.com/documents/ncomms-submission-guide.pdf
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    An open-access, multidisciplinary journal publishing high-quality primary research across all
+    of the natural sciences — biological, health, physical, chemical, Earth & environmental,
+    mathematical, applied, engineering, and relevant social sciences — including ecology &
+    evolution. Papers must represent an important advance WITHIN a specific discipline AND be of
+    interest to a wide, cross-disciplinary readership. Online-only, published continuously.
+  confidence: secondary
+  source_url: https://www.nature.com/ncomms/aims
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: 'Nature Communications rewards rigorous, comprehensive work that represents an important advance
+    of significance to SPECIALISTS within a field — high quality, but explicitly not required to have
+    the broad cross-disciplinary "general interest" reach demanded by Nature itself. Its primary editor
+    weighs novelty, potential impact, conceptual/methodological advance, scope fit, and the work''s
+    potential interest to the journal''s readership before sending it to review. The audience is specialists
+    within each field plus readers in adjacent disciplines, so the writing must be cross-disciplinary
+    and accessible: minimize and explain jargon, keep a non-technical abstract, and present a structured
+    Article (Introduction/Results/Discussion/Methods, with topical subheadings in Results and Methods).
+    Practically, a submission gets up to 10 display items with figure legends capped at 350 words.'
+  confidence: secondary
+  source_url: https://www.nature.com/ncomms/aims
+  last_verified: '2026-06-22'
+  audience:
+    value: Specialists within each scientific field, plus readers in related disciplines and the wider
+      scientific community; an open-access journal spanning all areas of the natural sciences. The editor
+      explicitly judges 'potential interest to Nature Communications' readership' as a gatekeeping criterion.
+    confidence: secondary
+    source_url: https://www.nature.com/ncomms/submit/editorial-process
+  writing_style:
+    value: 'Demands cross-disciplinary accessibility: minimize jargon and non-standard abbreviations,
+      explain unavoidable jargon, and state background, rationale and main conclusions clearly. The
+      abstract must be a non-technical summary. Main text capped ~5,000 words; references ~70.'
+    confidence: secondary
+    source_url: https://www.nature.com/ncomms/submit/guide-to-authors
+  figure_preference:
+    value: Articles may include up to 10 display items (figures and/or tables), with figure legends
+      limited to 350 words each.
+    confidence: secondary
+    source_url: https://www.nature.com/ncomms/submit/article
+  signals:
+    value: Structured Article format with Introduction/Results/Discussion/Methods, Results and Methods
+      divided by topical subheadings, Discussion succinct without subheadings, Methods <3000 words.
+      Offers 'Matters Arising' for post-publication critique. Preprint posting does NOT compromise novelty;
+      conceptual overlap with prior work does.
+    confidence: secondary
+    source_url: https://www.nature.com/ncomms/submit/article
+
+caps:                                         # MAP keyed by article_type. NC's primary type is "Article" (no "Letter").
+  Article:                                    # primary original research
+    words:
+      value: "≤5,000 (main text = Introduction + Results + Discussion; Introduction itself <1,000 words)"
+      excludes: [abstract, methods, references, figure_legends, tables]
+      confidence: official                    # read directly from ncomms-submission-guide.pdf + ncomms-manuscript-checklist.pdf this run
+      source_url: https://www.nature.com/documents/ncomms-manuscript-checklist.pdf
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "≤10 total (figures and/or tables combined)"
+      confidence: official
+      source_url: https://www.nature.com/documents/ncomms-manuscript-checklist.pdf
+      last_verified: 2026-06-22
+    refs:
+      value: "up to 70 (guideline, not a hard cap)"
+      confidence: official
+      source_url: https://www.nature.com/documents/ncomms-submission-guide.pdf
+      last_verified: 2026-06-22
+    abstract:
+      value: "~150 (single paragraph, unreferenced; 'Here we show' style)"
+      conflict_note: "NC's own brief guide + manuscript checklist both say ≤150 words. One web-fetch summary claimed 200 — that conflates the flagship Nature template; 150 is correct for Nature Communications."
+      confidence: official
+      source_url: https://www.nature.com/documents/ncomms-manuscript-checklist.pdf
+      last_verified: 2026-06-22
+    structure:
+      value: >
+        Title (≤15 words) / Abstract (~150w) / Introduction (<1,000w, no subheadings, last paragraph
+        summarises results+conclusions) / Results (subheadings <60 chars) / Discussion (no subheadings) /
+        Methods (≤3,000w typically, subheadings) / Data Availability (after Methods, before References) /
+        Code Availability (after Data Availability) / References / End Notes / Figure legends (<350w each) / Tables.
+        Section headings used; footnotes not used. NC is flexible on FORMAT at initial submission.
+      confidence: official
+      source_url: https://www.nature.com/documents/ncomms-manuscript-checklist.pdf
+      last_verified: 2026-06-22
+  Review:                                     # commissioned non-primary; peer reviewed
+    words:
+      value: "<6,000 (main text)"
+      excludes: [references, figure_legends, abstract]
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "up to 8 (figures, tables and/or boxes); boxes ≤750 words; figure legends ≤350 words"
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+    refs:
+      value: "not a fixed cap stated (use Nature-style; keep balanced, not author-self-dominated)"
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+    abstract:
+      value: "<100 (general-audience summary / synopsis)"
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+    structure:
+      value: "Title ≤15 words; authoritative scholarly survey for a broad readership; usually commissioned (unsolicited proposals via presubmission enquiry)"
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+  Perspective:                                # commissioned non-primary; forward-looking/speculative; peer reviewed
+    words:
+      value: "<6,000 (follows Review formatting)"
+      excludes: [references, figure_legends, abstract]
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "up to 8 (figures/tables/boxes; follows Review formatting)"
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+    refs:
+      value: "as Review (no fixed cap stated)"
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+    abstract:
+      value: "synopsis required (general-audience; as Review, <100)"
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+    structure:
+      value: "Personal viewpoint on models/ideas; more forward-looking/speculative than a Review, may be narrower; opinionated but balanced; peer reviewed; follows Review formatting + requires a synopsis"
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+  Comment:                                    # commissioned non-primary; topical/opinion; general audience
+    words:
+      value: "≤1,500 (typical)"
+      excludes: [references]
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "figures/diagrams encouraged but not required"
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+    refs:
+      value: "up to 15 (guide)"
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+    abstract:
+      value: "<40 (general-audience teaser)"
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+    structure:
+      value: "Title ≤15 words; accessible non-technical opinion/topical piece for a general audience; no primary research data"
+      confidence: secondary
+      source_url: https://www.nature.com/ncomms/submit/commissioned-content
+      last_verified: 2026-06-22
+  # Matters Arising — technical-comment-equivalent on NC papers; separate specialist submission process: https://www.nature.com/ncomms/submit/article-types (typically very short, no abstract) — caps NOT verified this run.
+  # Registered Reports — two-stage (Stage 1 protocol → in-principle acceptance → Stage 2) offered by NC: https://www.nature.com/ncomms/submit/registered-reports
+
+desk_reject_triggers:
+  - "Main text over 5,000 words (Methods/refs/legends EXCLUDED) or >10 display items → trim to format; push detail to Methods/Supplementary Information."
+  - "Advance is incremental or of interest only to a narrow specialty with no wider reach → reframe the cross-disciplinary significance, or send to a specialist or Communications-series (e.g. Communications Biology / Earth & Environment) venue."
+  - "No Data Availability statement, or data/code not deposited & accessible to editors+reviewers at submission → add Data Availability + Code Availability sections (after Methods, before References) and stage deposits (structured depository with accession codes; Dryad/figshare/Zenodo for other source data)."
+  - "Missing completed Reporting Summary for life-sciences / behavioural & social / ecological-evolutionary-environmental research → complete and upload it (it is published with the paper)."
+  - "Expecting to avoid the fee → NC is fully open access with NO subscription route; the APC is mandatory unless a waiver (lowest-income countries) or a transformative/institutional agreement applies."
+  - "Choosing double-anonymized review but leaving identifying information in the manuscript → anonymize the manuscript; put author identities in the cover letter only."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: official                      # PDF: "For all papers section 'Data availability' is provided after the Methods section but before the References"
+    source_url: https://www.nature.com/documents/ncomms-submission-guide.pdf
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Certain data types MUST be deposited in an appropriate public structured depository with accession number(s) in the manuscript; full access required at publication (and to reviewers if requested). Other source data encouraged in unstructured depositories (Dryad / figshare) or as Supplementary Information; dataset descriptions can be published in Scientific Data."
+    confidence: official
+    source_url: https://www.nature.com/documents/ncomms-submission-guide.pdf
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Previously-unreported custom code central to the main claims must be available to editors & reviewers on request; a 'Code availability' statement (after Data Availability, before References) is required when such code is central; authors complete a code & software submission checklist; best practice is to release code so readers can repeat results (e.g. Zenodo/GitHub release with DOI)."
+    confidence: official
+    source_url: https://www.nature.com/documents/ncomms-submission-guide.pdf
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "A completed Reporting Summary is required for life-sciences, behavioural & social sciences, AND ecological, evolutionary & environmental sciences research (published with the paper). Domain checklists where applicable: CONSORT (clinical trials), REMARK (tumour-marker prognostic studies), BRISQ (biospecimens). No mandated ecology checklist (e.g. PRISMA-EcoEvo/ODMAP) found."
+    confidence: official
+    source_url: https://www.nature.com/documents/ncomms-submission-guide.pdf
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "No prominent threatened-taxa locality-masking rule found on NC pages this run (unlike conservation journals); Nature Portfolio has general data-availability, biosecurity/dual-use and human-data policies — VERIFY whether precise localities of at-risk species must be coarsened for an ecology submission."
+    confidence: unknown
+    source_url: https://www.nature.com/nature-portfolio/editorial-policies
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID required for the corresponding author (Nature Portfolio policy)"
+    confidence: secondary
+    source_url: https://www.nature.com/nature-portfolio/editorial-policies
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                          # → nature_portfolio: Methods section (or suitable alternative part if no Methods); pure copy-editing exempt
+  block:
+    value: >
+      "Use of [TOOL/SERVICE, e.g. ChatGPT] was documented as follows: [what it was used for and how
+      output was checked]." Place in the Methods section (or a suitable alternative part if no Methods).
+      Large Language Models do NOT meet Nature's authorship criteria and cannot be listed as authors.
+      Pure AI copy-editing (grammar/tone) needs no declaration. Generative-AI images are generally
+      prohibited; non-generative image-ML use is disclosed in the figure caption.
+    confidence: official
+    source_url: https://www.nature.com/nature-portfolio/editorial-policies/ai
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: "Nature manuscript-tracking system (Editorial Manager / snapp family) — https://mts-ncomms.nature.com/"
+    confidence: secondary
+    source_url: https://www.nature.com/ncomms/submit/how-to-submit
+    last_verified: 2026-06-22
+  pack:
+    value: [manuscript file (incl. Methods; flexible format at initial submission), cover letter (optional but encouraged for context/competing-interests/related-work), abstract (~150w, unreferenced), figures/display items (≤10; high-res not required at initial submission), Data Availability statement, Code Availability statement (if applicable), completed Reporting Summary (if applicable), competing-interests statement, author-contributions statement, ORCID (corresponding author), AI-disclosure in Methods if generative AI used, Supplementary Information, optional double-anonymized-review request]
+    confidence: official
+    source_url: https://www.nature.com/documents/ncomms-submission-guide.pdf
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

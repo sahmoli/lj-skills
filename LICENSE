@@ -1,0 +1,14 @@
+# Dual License (`lj-skills`)
+
+Copyright (c) 2026 Juan Li
+
+This repository is dual-licensed by artifact type so that software tooling can be freely integrated into any workflow while methodological prose, scientific guardrails, and educational playbooks retain clear scholarly attribution:
+
+1. **Software & Executable Code (`MIT License` — see [`LICENSES/MIT.txt`](LICENSES/MIT.txt))**
+   Applies to all Python/Shell/JavaScript scripts (`scripts/`, `lint/`, `tests/`, `_shared/*.py`, `install.sh`, `Makefile`) and JSON/YAML configuration schemas.
+
+2. **Skill Prompts, Methodological Documentation & Playbooks (`CC BY 4.0` — see [`LICENSES/CC-BY-4.0.txt`](LICENSES/CC-BY-4.0.txt))**
+   Applies to all `SKILL.md` files, `references/*.md`, `workflows/*.md`, `templates/*.md`, `README.md`, and original conceptual/pedagogical documentation. When adapting, translating, or redistributing these materials, you must provide attribution to **Juan Li (`lj-skills`)** and indicate if changes were made.
+
+3. **Third-Party Assets & External Runtime Dependencies**
+   Third-party assets and optional external packages retain their respective upstream licenses as documented in [`THIRD_PARTY.md`](THIRD_PARTY.md).

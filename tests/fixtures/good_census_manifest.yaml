@@ -1,0 +1,34 @@
+figure_id: fig-census-map
+workflow: {profile: full}
+claim: Complete census records are concentrated in three surveyed regions.
+reader_task: locate
+analysis_unit: grid-cell
+repeating_unit: complete census records for the stated interval
+estimand: count of records per equal-area grid cell
+comparison: grid cells
+panels: [{label: a, role: phenomenon, mark: polygon, quantity_semantics: census-count, axis_policy: spatial, axis_min: 0, zero_is_meaningful: true}]
+uncertainty: {applicable: false, reason: descriptive complete census for the stated frame; no sample-to-population inference}
+encoding: {primary_channel: colour, colour_role: sequential, colour_is_sole_carrier: false, redundant_channel: direct-label}
+presentation: {ordering: spatial, axis_breaks: sequential-counts, unit_display: records-per-cell, abbreviations: {applicable: false, reason: no-long-labels}, label_priority: focal-regions, shared_scale: {comparable: not-applicable, basis: one-map}}
+reference_board:
+  - {source_id: local-map-a, figure_id: Fig-1, borrow: hero map with compact support, avoid: excess inset boxes}
+  - {source_id: local-map-b, figure_id: Fig-2, borrow: direct geographic labels, avoid: decorative north arrows}
+visual_design:
+  direction: spatial
+  hierarchy: {hero_panel: a, support_strategy: quieter-context, area_earned_by: complete mapped census}
+  palette: {namespace: "sequential:count", ink: "#202124", context: "#D9DDE2", missing: "#8B9098", semantic: {low: "#C8DDE9", high: "#397DA7"}, accent_budget: 0, categorical_count: 0, collision_check: true}
+  spacing_mm: {outer: 4, panel: 4, within_panel: 2.5, label_offset: 1.5}
+  typography: {family: Arial, body_pt: 7, panel_label_pt: 8, coloured_text: false, panel_title_strategy: caption-only}
+  scaffolding: {stroke_pt: 0.5, background_gridlines: false, drop_shadows: false, decorative_boxes: false, corner_policy: square}
+  density_strategy: mapped data occupy the canvas; inset only if it locates the study area
+  legend_strategy: compact
+  placement: {collision_check: true, clip_check: true, longest_label_stress_test: true, edge_clearance_mm: 1.5, label_icon_clearance_mm: 1.5, direct_label_ladder: [outside-data, margin-band, leader-line, compact-legend]}
+  icons: {mode: none, purpose: not-applicable, provenance: not-applicable, grammar: none, optical_height_mm: not-applicable, silhouettes: []}
+visual_vocabulary: {applicable: false, reason: standalone regression fixture}
+spatial: {is_map: true, purpose: area, crs: "EPSG:8857", sensitive_locality: {present: true, method: equal-area-grid-aggregation}}
+alternative_explanation: recording effort is part of the mapped quantity
+medium: paper
+provenance: {data: [{path: census.csv, columns: [grid_id, count]}], code: map.R, command: Rscript map.R, transforms: equal-area aggregation}
+output: {width_mm: 183, height_mm: 90, formats: [pdf]}
+build: {status: planned, artifacts: []}
+qc: {stress_render: {status: pending, artifact: pending}, technical_preflight: {status: pending, report: pending}, final_size_reviewed: false, colour_accessibility_reviewed: false, claim_trace_reviewed: false, visual_craft_reviewed: false, visual_craft_verdict: pending}

@@ -1,0 +1,218 @@
+slug: science-advances
+journal: Science Advances
+publisher: aaas                         # AAAS self-published (American Association for the Advancement of Science)
+society:
+  value: American Association for the Advancement of Science (AAAS)
+  confidence: secondary                 # AAAS is the publisher/owner; basic fact, science.org 403'd this run
+  source_url: https://www.science.org/journal/sciadv
+  last_verified: 2026-06-22
+
+metrics:                                # NOTE: science.org pages 403 to automated fetch; metrics are from OpenAlex (aggregator) = secondary
+  quartile:      {value: "Q1 (Multidisciplinary Sciences)", confidence: secondary, source_url: "https://openalex.org/S2737427234", last_verified: 2026-06-22}
+  impact_factor: {value: "~11.7 (OpenAlex 2yr mean citedness = 11.73; JCR JIF in a similar 11–13.6 range, year-dependent — verify on Clarivate/JCR)", confidence: secondary, source_url: "https://openalex.org/S2737427234", last_verified: 2026-06-22}
+  cite_score:    {value: "not separately verified (OpenAlex 2yr-mean-citedness = 11.73 is a different metric; Scopus CiteScore not pulled this run)", confidence: unknown, source_url: "https://openalex.org/S2737427234", last_verified: 2026-06-22}
+  h_index:       {value: 371, confidence: secondary, source_url: "https://openalex.org/S2737427234", last_verified: 2026-06-22}
+  is_top:        {value: "(待人工填) — no journal_db card; Juan's own 是/否 flag not set", confidence: unknown, source_url: "pending-not-in-journal_db", last_verified: 2026-06-22}
+
+open_access:
+  value: gold (fully open access, online-only; CC BY-NC default, CC BY available on request; immediate OA, indexed in DOAJ)
+  confidence: secondary                 # OpenAlex is_oa=true + in DOAJ; licensing page 403'd, verify on page
+  source_url: https://openalex.org/S2737427234
+  last_verified: 2026-06-22
+apc_usd:
+  value: "~5450 (base APC for CC BY-NC or CC BY, 2025–2026). Hinari A/B full waivers; partial waivers for financial hardship. AAAS-member + institutional discounts may apply."
+  conflict_note: "OpenAlex still lists 4500 (outdated/lagging); a 2015 AAAS promo PDF showed a $3000 base (historical). Current figure 5450 corroborated by multiple 2026 secondary sources but NOT read off science.org directly this run."
+  confidence: secondary
+  source_url: https://www.science.org/content/page/science-advances-licensing-and-charges
+  last_verified: 2026-06-22
+
+review_model:
+  value: "single-anonymized (single-blind): reviewer identities withheld from authors; reviewers know author identities and may sign their reviews. Matches AAAS publisher default."
+  confidence: secondary                 # science.org reviewer page 403'd; corroborated by secondary sources
+  source_url: https://www.science.org/content/page/science-advances-information-reviewers
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    The open-access multidisciplinary journal of AAAS / the Science family. Publishes original
+    research representing a significant advance across the full range of natural sciences,
+    physical sciences, engineering, computational, environmental and social sciences. As an
+    ecology/conservation venue it rewards work whose significance reaches beyond a single
+    subfield — broad, generalizable, mechanism- or theory-advancing science rather than local
+    description. Companion to Science with a higher acceptance volume but the same prestige tier.
+  confidence: secondary
+  source_url: https://www.science.org/journal/sciadv
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: Science Advances rewards work that significantly advances the boundaries of knowledge with
+    impact that is "more than incremental," and whose significance is legible to readers outside its
+    own field — its defining filter is cross-disciplinary reach. It is highly selective (rejecting roughly
+    90%, many without review) and serves a broad, multidisciplinary scientific readership, with decisions
+    made by active-scientist deputy/associate editors backed by leading-expert reviewers. Writing should
+    be concise and framed for a general audience (overstatement is penalized; titles, abstracts and
+    figure captions must be intelligible across disciplines), and figures plus self-explanatory captions
+    carry heavy evaluative weight. As an open-access journal with flexible formats, it permits longer,
+    deeper papers than Science.
+  confidence: official
+  source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11325918/
+  last_verified: '2026-06-22'
+  audience:
+    value: Broad, multidisciplinary scientific readership. Editors deliberately select work readable
+      beyond its own field. Decisions are made by deputy/associate editors who are active research scientists,
+      supported by peer reviewers who are leaders in their fields.
+    confidence: official
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11325918/
+  writing_style:
+    value: Concise and framed for a general scientific audience; abstracts should state why the work
+      is interesting broadly. Overstatement is penalized and attention to detail (no typos/grammar errors)
+      matters. Title, abstract and figure captions must be comprehensible to scientists in other disciplines.
+    confidence: official
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11325918/
+  figure_preference:
+    value: 'Figures and captions carry heavy evaluative weight: the handling editor forms a second impression
+      from them and many reviewers start there. Captions should be self-explanatory and intelligible
+      to outside-field readers. Flexible/longer formats allow finer detail than Science.'
+    confidence: official
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11325918/
+  signals:
+    value: Defining filter is cross-disciplinary reach ('entice readers outside your field') with more-than-incremental
+      significance. Open-access journal using flexible formats that permit longer papers with greater
+      depth than Science; explicitly welcomes cross-, inter-, and trans-disciplinary work across all
+      of STEM and social sciences.
+    confidence: official
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5462495/
+
+caps:                                   # MAP keyed by article type. Verified types: Research Article, Review.
+  Research Article:
+    words:
+      value: "flexible 'short or long' format, up to ~15,000 words"
+      excludes: [unclear]               # count basis NOT confirmed: one secondary source claims the limit INCLUDES main text + figure legends + reference list (i.e. ~10,000 effective body); the official-quoted figure is 15,000 — basis unverified
+      conflict_note: "Official-quoted text says up to 15,000 words (flexible short/long). A separate secondary blog claims ~10,000 words INCLUSIVE of legends+references. Cannot reconcile without reading science.org directly (403)."
+      confidence: secondary
+      source_url: https://www.science.org/content/page/science-advances-information-authors
+      last_verified: 2026-06-22
+    figs_tables:
+      value: 10                         # "up to 10 figures and/or tables (combined)"
+      confidence: secondary
+      source_url: https://www.science.org/content/page/science-advances-information-authors
+      last_verified: 2026-06-22
+    refs:
+      value: 80
+      confidence: secondary
+      source_url: https://www.science.org/content/page/science-advances-information-authors
+      last_verified: 2026-06-22
+    abstract:
+      value: 150                        # "no more than 150 words, single paragraph, general readership, NO citations"
+      conflict_note: "One secondary blog says 200 words — contradicted by the official-quoted 150 (likely confused with parent Science). Treat 150 as correct; verify on page."
+      confidence: secondary
+      source_url: https://www.science.org/content/page/science-advances-information-authors
+      last_verified: 2026-06-22
+    structure:
+      value: "IMRAD but flexible: open directly (no formal 'Introduction' heading), Results, Discussion (may combine), Materials & Methods at END before references; mandatory <125-character one-sentence summary (teaser) at submission."
+      confidence: secondary
+      source_url: https://www.science.org/content/page/science-advances-information-authors
+      last_verified: 2026-06-22
+  Review:
+    words:
+      value: "up to ~10,000 words"
+      excludes: [unclear]
+      conflict_note: "Official-quoted text: Reviews limited to 10,000 words. One secondary formatting blog instead lists ~12,000 — unresolved; verify on page."
+      confidence: secondary
+      source_url: https://www.science.org/content/page/science-advances-information-authors
+      last_verified: 2026-06-22
+    figs_tables:
+      value: 10
+      confidence: secondary
+      source_url: https://www.science.org/content/page/science-advances-information-authors
+      last_verified: 2026-06-22
+    refs:
+      value: "150 (more may be permitted on request)"
+      confidence: secondary
+      source_url: https://www.science.org/content/page/science-advances-information-authors
+      last_verified: 2026-06-22
+    abstract:
+      value: 150
+      confidence: secondary
+      source_url: https://www.science.org/content/page/science-advances-information-authors
+      last_verified: 2026-06-22
+    structure:
+      value: "Synthesize recent significant developments in one field or across disciplines and highlight future directions; general-readership 150-word abstract; <125-char one-sentence summary."
+      confidence: secondary
+      source_url: https://www.science.org/content/page/science-advances-information-authors
+      last_verified: 2026-06-22
+
+desk_reject_triggers:
+  - "Incremental or locally-scoped result with no general-science significance → reframe the broad 'why this matters to all of science' before submitting (this is the editorial bar)."
+  - "Missing the mandatory <125-character one-sentence summary / teaser → manuscripts are returned without it."
+  - "Abstract over 150 words, has subheadings, or contains citations → rewrite as a single citation-free general-readership paragraph."
+  - "'Data available from the corresponding author on request' → NOT accepted; deposit all data in a public repository with accession numbers/DOIs BEFORE submission."
+  - "Custom code central to the findings not deposited/shared → archive (e.g. Zenodo) and cite it."
+  - "AI-generated figures/images included without prior editor permission → remove or obtain explicit advance approval from the handling editor."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: secondary               # Science journals editorial policy; science.org 403'd — corroborated by secondary sources
+    source_url: https://www.science.org/content/page/science-journals-editorial-policies
+    last_verified: 2026-06-22
+  data_repository:
+    value: "All data needed to evaluate the conclusions must be in the paper, the Supplementary Materials, OR a public repository with accession numbers/DOIs. Discipline repositories expected (GenBank/GEO/PDB/EMDB etc.); general repositories Dryad/Zenodo/Figshare for ecology data. 'Available on request' is explicitly NOT accepted."
+    confidence: secondary
+    source_url: https://www.science.org/content/page/science-journals-editorial-policies
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Custom code/software central to the findings must be made available (deposit + cite, e.g. Zenodo/GitHub-with-archive)."
+    confidence: secondary
+    source_url: https://www.science.org/content/page/science-journals-editorial-policies
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "No ecology-specific checklist mandated (no PRISMA-EcoEvo/ODMAP/STRANGE requirement found). CONSORT/clinical-trial registration applies to trials; general statistical-reporting rigor expected."
+    confidence: unknown
+    source_url: https://www.science.org/content/page/science-journals-editorial-policies
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "No species-locality masking rule found specific to Science Advances; AAAS has a general dual-use-research-of-concern / biosecurity review process. Apply the conservation norm (mask precise localities of threatened/trafficked taxa) and verify with the editor."
+    confidence: unknown
+    source_url: https://www.science.org/content/page/science-journals-editorial-policies
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID iD required for the corresponding author at submission; encouraged for co-authors."
+    confidence: secondary
+    source_url: https://www.science.org/content/page/science-advances-information-authors
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: "Disclose in THREE places — the cover letter, the Acknowledgments (published, so it is visible in the article), AND Methods or Supplementary Materials. AI cannot be an author; AI-generated text allowed since Nov 2023 WITH disclosure; AI-generated figures/images PROHIBITED without explicit prior editor permission. (Override of the publisher_profiles[aaas] 'fetch separately' placeholder — but science.org 403'd this run, so secondary; verify on page.)"
+  block:
+    value: >
+      Cover letter: "During preparation of this manuscript, we used [TOOL, e.g. ChatGPT (OpenAI) /
+      Claude (Anthropic)] to assist with [task, e.g. language editing of the Results and Discussion].
+      All AI-assisted text was reviewed, verified, and edited by the authors, who take full
+      responsibility for the content." Acknowledgments (published): "The authors acknowledge the use
+      of [TOOL] for [task] during manuscript preparation." Also document technical details in Methods
+      or Supplementary Materials. (Science/AAAS policy: AI tools may not be authors; AI-generated
+      images/figures require explicit advance editor approval.)
+    confidence: secondary               # consistent across secondary sources; science.org editorial-policies page 403'd this run
+    source_url: https://www.science.org/content/page/science-journals-editorial-policies
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: "AAAS / Science submission system (Science 'cts') — https://cts.sciencemag.org"
+    confidence: secondary
+    source_url: https://www.science.org/content/page/science-advances-information-authors
+    last_verified: 2026-06-22
+  pack:
+    value: [manuscript (Research Article flexible up to ~15k words / Review up to ~10k), <=10 figures and/or tables, abstract <=150 words (single paragraph, no citations), mandatory <125-character one-sentence summary, data-and-materials availability statement, code/software availability, author contributions (free text or CRediT), competing-interests statement (required even if none), funding info with grant numbers, AI-disclosure (cover letter + Acknowledgments + Methods/SM), ORCID for corresponding author, line numbers, references in Science numbered superscript style]
+    confidence: secondary
+    source_url: https://www.science.org/content/page/science-advances-information-authors
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

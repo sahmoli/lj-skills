@@ -1,0 +1,12 @@
+# Deliberately broken card: slug != filename, an unknown top-level key, and a template tell.
+# The linter MUST fail this.
+slug: wrong-slug-not-filename
+journal: <display name>
+publisher: nature_portfolio
+foobar: this key is not in the schema allowlist
+
+scope: {value: "remit", confidence: official, source_url: "https://example.org", last_verified: 2026-06-23}
+
+my_notes:
+  reader_profile:
+  favorite_articles: []

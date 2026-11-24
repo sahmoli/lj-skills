@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "lj-skills: Epistemically Grounded Agent Skills & Workflows for Scientific Research"
+message: "If you use or adapt lj-skills in your research, teaching, or agent workflows, please cite it using this metadata."
+type: software
+authors:
+  - family-names: Li
+    given-names: Juan
+    affiliation: "Xi'an Jiaotong-Liverpool University (XJTLU)"
+    website: "https://juanli.me"
+repository-code: "https://github.com/sahmoli/lj-skills"
+url: "https://juanli.me/resources/skills/"
+license:
+  - MIT
+  - CC-BY-4.0
+version: "2.1.0"
+date-released: "2026-11-24"
+keywords:
+  - scientific-research
+  - ecology
+  - conservation-biology
+  - agent-skills
+  - research-methodology
+  - reproducibility
+  - open-science

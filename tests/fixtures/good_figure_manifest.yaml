@@ -1,0 +1,47 @@
+figure_id: fig-effect
+workflow: {profile: full}
+claim: "Treatment is associated with a negative estimated effect."
+reader_task: compare
+analysis_unit: site-year
+repeating_unit: independent sites
+estimand: model coefficient
+comparison: treatment effect against null zero
+panels:
+  - label: a
+    role: main-comparison
+    mark: point
+    quantity_semantics: estimate
+    axis_policy: null-centred
+    axis_min: -2
+    zero_is_meaningful: true
+uncertainty: {applicable: true, target: model-parameter, type: 95%-confidence-interval, level: 0.95, reason: ""}
+encoding: {primary_channel: position, colour_role: categorical, colour_is_sole_carrier: false, redundant_channel: shape}
+presentation: {ordering: effect-size, axis_breaks: interpretable, unit_display: coefficient, abbreviations: {applicable: false, reason: short-labels}, label_priority: focal-first, shared_scale: {comparable: true, basis: same-estimand}}
+reference_board:
+  - {source_id: local-corpus-a, figure_id: Fig-2, borrow: compact direct labels, avoid: dense overlap}
+  - {source_id: local-corpus-b, figure_id: Fig-3, borrow: aligned small multiples, avoid: redundant legends}
+visual_design:
+  direction: quiet-analytical
+  hierarchy: {hero_panel: a, support_strategy: quieter-context, area_earned_by: estimate-and-interval marks}
+  palette: {namespace: evidence, ink: "#202124", context: "#D9DDE2", missing: "#8B9098", semantic: {focal: "#4477AA", comparison: "#CCBB44"}, critical_pairs: [[focal, comparison]], accent_budget: 1, categorical_count: 2, collision_check: true}
+  spacing_mm: {outer: 4, panel: 4, within_panel: 2.5, label_offset: 1.5}
+  typography: {family: Arial, body_pt: 7, panel_label_pt: 8, coloured_text: false, panel_title_strategy: caption-only}
+  scaffolding: {stroke_pt: 0.5, background_gridlines: false, drop_shadows: false, decorative_boxes: false, corner_policy: square}
+  density_strategy: data occupy the panel without explanatory UI cards
+  legend_strategy: direct-label
+  placement: {collision_check: true, clip_check: true, longest_label_stress_test: true, edge_clearance_mm: 1.5, label_icon_clearance_mm: 1.5, direct_label_ladder: [outside-data, margin-band, leader-line, compact-legend]}
+  icons: {mode: none, purpose: not-applicable, provenance: not-applicable, grammar: none, optical_height_mm: not-applicable, silhouettes: []}
+visual_vocabulary: {applicable: false, reason: standalone regression fixture}
+spatial: {is_map: false, purpose: not-applicable, crs: not-applicable, sensitive_locality: {present: false, method: none}}
+alternative_explanation: site-level confounding remains
+medium: paper
+provenance:
+  data: [{path: data/effects.csv, columns: [term, estimate, lo, hi]}]
+  code: figures/fig-effect.py
+  command: python3 figures/fig-effect.py
+  transforms: model coefficients read without re-estimation
+  filters: none
+  exclusions: none
+output: {width_mm: 89, height_mm: 70, formats: [pdf, png]}
+build: {status: planned, artifacts: []}
+qc: {stress_render: {status: pending, artifact: pending}, technical_preflight: {status: pending, report: pending}, final_size_reviewed: false, colour_accessibility_reviewed: false, claim_trace_reviewed: false, visual_craft_reviewed: false, visual_craft_verdict: pending}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJ Review"
+  short_description: "批评生态保护稿件或规划审稿意见回复"
+  default_prompt: "Use $lj-review to give this manuscript the narrowest useful evidence-based critique or reply plan."

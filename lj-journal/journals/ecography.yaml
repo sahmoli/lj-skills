@@ -1,0 +1,210 @@
+slug: ecography
+journal: Ecography
+publisher: wiley                       # Wiley on behalf of the Nordic Society Oikos (NSO)
+society:
+  value: Nordic Society Oikos (NSO)
+  confidence: official
+  source_url: https://www.ecography.org/about-journal/journal-information
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: Q1,   confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  impact_factor: {value: 5.8,  confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  cite_score:    {value: 11.9, confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  h_index:       {value: 198,  confidence: secondary, source_url: "https://openalex.org/S25093289 (OpenAlex check_venue_quality)", last_verified: 2026-06-22}   # journal_db said 120 — stale
+  is_top:        {value: 是,    confidence: official,  source_url: "Juan", last_verified: 2026-06-22}
+
+open_access:
+  value: gold (FULL Gold Open Access since Jan 2021; all accepted papers CC-BY; no subscription/hybrid option)
+  confidence: official
+  source_url: https://www.ecography.org/OA2020
+  last_verified: 2026-06-22
+apc_usd:
+  value: "3190 USD (also £2,500 / €2,730). Brevia: 50% waiver; News and Views: fully waived (no APC). No submission charges. Country waivers/discounts + Wiley OA Account (WOAA) deals apply."
+  confidence: secondary               # Wiley APC hub page (nsojournals.../16000587/apc) returned 403 to fetch; figure quoted by search from that page
+  source_url: https://nsojournals.onlinelibrary.wiley.com/hub/journal/16000587/apc
+  last_verified: 2026-06-22
+
+review_model:
+  value: double_anonymized            # journal_db frontmatter said double-blind (correct) but its own "Key Metrics" line said Single-blind (WRONG). Confirmed double-blind on official guidelines.
+  confidence: official
+  source_url: https://www.ecography.org/authors/author-guidelines
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Research on ecological and geographical patterns of biodiversity in space and time — population,
+    community, and ecosystem ecology, macroecology, biogeography, and the methods that underpin them
+    (incl. species distribution modelling). Emphasis on novel, significant contributions that test
+    theory/methodology or deliver new analytical tools; purely descriptive local studies are discouraged.
+  confidence: official
+  source_url: https://www.ecography.org/authors/author-guidelines
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: Ecography rewards work that significantly advances understanding of ecological or biodiversity
+    patterns in space or time, prizing originality, broad general interest, and the development or testing
+    of theory, methodology, or new analytical tools. Manuscripts are expected to address general principles
+    in ecology (a specific model system is fine only if framed against a generalized question); purely
+    descriptive papers are considered only if breaking new ground, and single-species or single-location
+    studies are discouraged unless they meaningfully advance general theory. Its audience spans spatial
+    ecology, macroecology, biogeography, and community/population ecology, with explicitly no biases
+    regarding taxon, biome, or biogeographical area. Distinctive article types (Forum for new conceptual
+    ideas, Brevia, Software Notes for spatial-temporal analysis tools, Review and Synthesis, and News
+    and Views) signal a strong methods-and-theory orientation.
+  confidence: official
+  source_url: https://www.ecography.org/authors/aims-scope
+  last_verified: '2026-06-22'
+  audience:
+    value: Researchers in spatial ecology, macroecology, biogeography, community/population ecology,
+      and ecological conservation. Judged by originality and appeal to general interest, with no biases
+      regarding taxon, biome, or biogeographical area; conservation work must advance general theory
+      beyond a single case.
+    confidence: official
+    source_url: https://www.ecography.org/authors/aims-scope
+  writing_style:
+    value: Manuscripts must address general principles in ecology; a specific model system is acceptable
+      only if framed relative to a generalized ecological question. Purely descriptive papers are considered
+      only if breaking new ground and/or describing patterns seldom explored.
+    confidence: official
+    source_url: https://nso-journals.org/ecography-for-authors
+  figure_preference:
+    value: 'Display items are capped per article type, counting figures, tables AND boxes together:
+      Original Research max 6 (within 5000 words), Forum max 4, Review and Synthesis max 10, Software
+      Notes 2, and Brevia/News and Views 1-2 items. Boxes are an accepted display format.'
+    confidence: official
+    source_url: https://nso-journals.org/ecography-for-authors
+  signals:
+    value: 'Named article types reveal priorities: Forum (short empirical/conceptual/theoretical papers
+      about new and exciting ideas), Brevia (concise presentation of important new results), Software
+      Notes (new non-commercial software for spatial-temporal analysis), Review and Synthesis, and News
+      and Views commenting on recent original research.'
+    confidence: official
+    source_url: https://nso-journals.org/ecography-for-authors
+
+caps:                                 # MAP keyed by article_type
+  Original Research Paper:            # primary research article type ("regular article")
+    words:
+      value: 5000
+      excludes: [references, figure_legends, abstract, tables]   # "main text: introduction through to discussion"
+      confidence: official
+      source_url: https://www.ecography.org/authors/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables:
+      value: 6                        # figures, tables OR boxes combined; journal_db said "No strict limit" — WRONG
+      confidence: official
+      source_url: https://www.ecography.org/authors/author-guidelines
+      last_verified: 2026-06-22
+    refs:
+      value: "no stated numeric limit"
+      confidence: official
+      source_url: https://www.ecography.org/authors/author-guidelines
+      last_verified: 2026-06-22
+    abstract:
+      value: 300                      # journal_db said 250 — WRONG
+      confidence: official
+      source_url: https://www.ecography.org/authors/author-guidelines
+      last_verified: 2026-06-22
+    structure:
+      value: "IMRAD (Introduction, Material and Methods, Results, Discussion, References)"
+      confidence: official
+      source_url: https://www.ecography.org/authors/author-guidelines
+      last_verified: 2026-06-22
+  Forum Paper:                        # short empirical/conceptual/theoretical "new and exciting ideas"
+    words:        {value: 3500, excludes: [references, figure_legends, abstract], confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+    figs_tables:  {value: 4, confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+    abstract:     {value: 300, confidence: secondary, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+    structure:    {value: "flexible (concept-first; not rigid IMRAD)", confidence: secondary, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+  Review and Synthesis:               # mostly solicited; unsolicited considered
+    words:        {value: 7500, excludes: [references, figure_legends, abstract], confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+    figs_tables:  {value: 10, confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}   # journal_db said "No strict limit" — WRONG
+    abstract:     {value: 300, confidence: secondary, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+    structure:    {value: "flexible synthesis; critical assessment of literature on a current topic", confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+  Brevia:                             # very short note; 50% APC waiver
+    words:        {value: 1500, excludes: [], confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}   # INCLUDES references, notes, captions
+    figs_tables:  {value: "1-2", confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+    refs:         {value: 15, confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+    abstract:     {value: null, confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}   # no formal abstract; opening paragraph states problem + summary; Methods go in Supporting Information
+    structure:    {value: "continuous main text, no sections/subheadings", confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+  News and Views:                     # invited-style commentary on recent Ecography papers; APC fully waived
+    words:        {value: 1500, excludes: [], confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}   # INCLUDES text, author details, legends, references
+    figs_tables:  {value: "1-2", confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+    refs:         {value: 15, confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+    abstract:     {value: null, confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+    structure:    {value: "light, constructive commentary; not a technical comment/rebuttal", confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+  Software Note:                      # announce new/published software; must be open-access software
+    words:        {value: "see separate Software Note guidelines (special formatting)", confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+    abstract:     {value: "per Software Note template", confidence: unknown, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+    structure:    {value: "specialised; commercial-only products not considered", confidence: official, source_url: https://www.ecography.org/authors/author-guidelines, last_verified: 2026-06-22}
+
+desk_reject_triggers:
+  - "Author identity left in the main text file → double-blind: keep names/affiliations ONLY in a separate title-page file."
+  - "Over the per-type word cap (Research 5000 main text; Forum 3500; Review 7500; Brevia/News&Views 1500 all-in) or over the display-item cap (Research 6, Forum 4, Review 10) → trim to format before submitting."
+  - "No code/data uploaded at FIRST submission → Ecography requires data + custom code at submission so reviewers can verify replication (it need not be public yet)."
+  - "Missing Significance statement (why it matters + why Ecography) → write it; the journal uses it for triage."
+  - "Purely descriptive single-locality result with no spatial/temporal-pattern inference or method/theory advance → reframe the general contribution."
+  - "Sensitive species localities exposed → anonymise data; use Dryad private-for-review and state masking."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: official
+    source_url: https://www.ecography.org/authors/author-guidelines
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Public repository with persistent DOI required upon acceptance; data + custom code REQUIRED already at first submission for review. Dryad Digital Repository free for Ecography authors; Zenodo/Figshare/GitHub-archived-to-Zenodo also fine."
+    confidence: official
+    source_url: https://www.ecography.org/authors/author-guidelines
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Mandatory: custom code (simulations, non-standard stats) and bespoke software required at first submission and publicly archived with a DOI on acceptance."
+    confidence: official
+    source_url: https://www.ecography.org/authors/author-guidelines
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "ODMAP protocol (Zurell et al. 2020, published in Ecography) is the de-facto standard for SDM/biodiversity-model papers — provide the full checklist (preferably in the appendix). Not explicitly mandated in the current guidelines text read this run."
+    confidence: secondary
+    source_url: https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.04960
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "Anonymise sensitive data (e.g. threatened-species locations) before archiving; Dryad private-for-review option encouraged to conceal identity during review."
+    confidence: official
+    source_url: https://www.ecography.org/authors/author-guidelines
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID iD MANDATORY for corresponding author at submission (entered in ScholarOne profile); co-authors strongly encouraged."
+    confidence: official
+    source_url: https://www.ecography.org/authors/author-guidelines
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                  # → wiley: Methods OR Acknowledgements (no AI-specific rule found on the Ecography page this run)
+  block:
+    value: >
+      "During the preparation of this work the author(s) used [TOOL/SERVICE] in order to
+      [REASON, e.g. improve language and readability]. After using this tool/service, the author(s)
+      reviewed and edited the content as needed and take(s) full responsibility for the content of
+      the publication." (Wiley/COPE: generative AI cannot be listed as an author.)
+    confidence: official
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: Wiley ScholarOne — https://mc.manuscriptcentral.com/ecogra
+    confidence: official
+    source_url: https://www.ecography.org/authors/author-guidelines
+    last_verified: 2026-06-22
+  pack:
+    value: [separate title-page file, BLINDED main-text file (no author info), Supporting Information (optional), Significance statement, Data archiving statement, Conflict-of-interest statement, Ethics statement (if applicable), Funding statement, ORCID (corresponding author), CRediT (at revision), EDI declaration, data+code uploaded for review]
+    confidence: official
+    source_url: https://www.ecography.org/authors/author-guidelines
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

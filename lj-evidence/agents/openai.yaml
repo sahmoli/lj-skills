@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJ Evidence"
+  short_description: "建立证据集并核验来源支持关系"
+  default_prompt: "Use $lj-evidence to build the evidence base or verify the citations supporting this claim."

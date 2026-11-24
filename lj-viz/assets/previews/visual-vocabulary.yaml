@@ -1,0 +1,61 @@
+schema_version: 1
+paper_id: lj-viz-corpus-craft-preview
+scope: figure-set
+
+reference_board:
+  selected:
+    - source_id: 2025-pigot-macroecological-rules-predict-biomass
+      figure_id: Fig-3
+      borrow: repeated biological identity cues and aligned comparison grammar
+      avoid: assigning a separate colour to every taxon
+    - source_id: juan-cost-scaling-surrogate-portfolios
+      figure_id: Fig-2
+      borrow: pair-versus-singleton contrast carried consistently through the figure
+      avoid: crowded silhouette-label combinations at final size
+
+semantic_namespaces:
+  entity_identity:
+    channels: [silhouette, black-text]
+  portfolio_role:
+    channels: [colour, fill, line_type]
+
+palette:
+  namespace: portfolio
+  semantic_roles:
+    pair: "#2C7F8E"
+    singleton: "#D98570"
+  collision_rule: one hue has one meaning throughout the figure set
+
+neutral_roles:
+  ink: "#202124"
+  context: "#D9DDE2"
+  missing: "#8B9098"
+
+typography_physical:
+  body_pt: 7
+  tick_pt: 6
+  panel_label_pt: 8
+
+entities:
+  snow-leopard:
+    label: Snow leopard
+    scientific_name: Panthera uncia
+    silhouette:
+      registry_id: panthera-uncia-phylopic-cb44ff49
+      intended_taxon: Panthera uncia
+      depicted_taxon: Panthera uncia
+      match_level: exact
+      approximation_disclosed: false
+      source_file: lj-viz/assets/silhouettes/panthera-uncia__phylopic-cb44ff49.svg
+      sha256: 9d72232e1fc58f916c0cfe0f4e445bf0e1fe1b76f83fb0b07dc4cbc7a38c44cb
+      license: CC0-1.0
+      creator: Margot Michaud
+    canonical_treatment:
+      fill_role: ink
+      orientation: facing-right
+      label_required: true
+
+locked_across_figures:
+  - pair is blue-teal, filled and solid; singleton is salmon, open and dashed
+  - taxon identity is carried by silhouette or black text, never by portfolio colours
+  - category order, units, sign convention, and terminology

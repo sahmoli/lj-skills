@@ -1,0 +1,53 @@
+{
+  "schema_version": "lj.annotate.packet.1",
+  "packet_id": "lj-annotate-synthetic-preview-v2",
+  "title": "虚构记录快速审核",
+  "mode": "assisted_review",
+  "return_filename": "synthetic-review.json",
+  "fields": [
+    {
+      "key": "scope",
+      "label": "是否属于目标内容",
+      "hint": "只根据左侧可见文字判断",
+      "options": [
+        {"value": "yes", "label": "是", "key": "1", "tone": "yes"},
+        {"value": "no", "label": "不是", "key": "2", "tone": "no"},
+        {"value": "unclear", "label": "不确定", "key": "3", "tone": "unclear", "requires_note": true}
+      ]
+    },
+    {
+      "key": "action",
+      "label": "是否明确提到行动",
+      "hint": "可与其他内容同时出现",
+      "options": [
+        {"value": "yes", "label": "有", "key": "q", "tone": "yes"},
+        {"value": "no", "label": "没有", "key": "w", "tone": "no"},
+        {"value": "NA", "label": "不适用", "key": "e", "tone": "structural", "structural_only": true}
+      ]
+    }
+  ],
+  "structural_rules": [
+    {"when": {"field": "scope", "equals": "no"}, "set": {"action": "NA"}, "lock": ["action"]}
+  ],
+  "highlighting": {
+    "enabled": true,
+    "groups": [
+      {"label": "目标词", "terms": ["虚构物种", "synthetic species"]},
+      {"label": "行动词", "terms": ["恢复", "restore"]}
+    ]
+  },
+  "records": [
+    {
+      "record_key": "SYN-001",
+      "primary_text": "The synthetic species will restore its fictional habitat next spring.",
+      "secondary_text": "这种虚构物种将在明年春天恢复它的虚构栖息地。",
+      "ai_draft": {"scope": "yes", "action": "yes"}
+    },
+    {
+      "record_key": "SYN-002",
+      "primary_text": "A deliberately long synthetic record repeats neutral context so the browser test can verify that evidence length does not move the decision controls or footer. This sentence is invented and contains no real person, project, source, identifier, or research result. A deliberately long synthetic record repeats neutral context so the browser test can verify that evidence length does not move the decision controls or footer. This sentence is invented and contains no real person, project, source, identifier, or research result.",
+      "secondary_text": "这是为界面测试而写的完全虚构长文本，不含任何真实数据。",
+      "ai_draft": {"scope": "no", "action": "NA"}
+    }
+  ]
+}

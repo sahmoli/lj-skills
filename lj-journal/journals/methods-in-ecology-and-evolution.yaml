@@ -1,0 +1,332 @@
+slug: methods-in-ecology-and-evolution
+journal: Methods in Ecology and Evolution
+publisher: wiley_bes                    # British Ecological Society on Wiley (inherits wiley)
+society:
+  value: British Ecological Society (BES)
+  confidence: secondary
+  source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+  last_verified: 2026-06-22             # corroborated by OpenAlex societies=[British Ecological Society]
+
+metrics:
+  quartile:      {value: Q1,   confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  impact_factor: {value: 6.6,  confidence: secondary, source_url: "journal_db; web ~6.64 (JCR 2024)", last_verified: 2026-06-22}
+  cite_score:    {value: 13.6, confidence: secondary, source_url: "web (CiteScore 2024); journal_db had 12.6 — outdated", last_verified: 2026-06-22}
+  is_top:        {value: 是,    confidence: official,  source_url: "Juan", last_verified: 2026-06-22}
+
+open_access:
+  value: gold (fully OA; submissions from 6 Jul 2022 OA on publication, all back-content free from 1 Jan 2023; CC BY / CC BY-NC / CC BY-NC-ND)
+  confidence: secondary
+  source_url: https://www.britishecologicalsociety.org/methods-in-ecology-and-evolution-to-become-a-fully-open-access-journal/
+  last_verified: 2026-06-22             # also corroborated by OpenAlex is_oa=true, is_in_doaj=true
+apc_usd:
+  value: "3500 (non-members; ~20% Society-Member discount). Reduced APC ~2600 for Application/Workflow/Practical Tools/Perspective. Forum & Guest Editorial = no APC."
+  confidence: secondary
+  source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210X/about/apc
+  last_verified: 2026-06-22             # $3500 corroborated by OpenAlex apc_usd=3500 and journal_db
+
+review_model:
+  value: double_anonymized             # AND transparent (Publons-linked reports). OVERRIDES nothing — matches wiley_bes default. journal_db said "Single-blind" = WRONG.
+  confidence: secondary
+  source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Promotes the development of NEW methods across ecology and evolutionary biology
+    (analytical, practical, or conceptual) and accelerates their dissemination and uptake
+    by the research community. Strong preference for methods demonstrably applicable
+    BROADLY across taxa or systems; emphasises description and validation of the novel
+    method itself (not merely applying an existing technique), with accessible
+    implementation (open code, packages, worked examples, vignettes). New computational
+    methods normally must be tested with simulations or benchmark datasets.
+  confidence: secondary
+  source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/aims-and-scope/read-full-aims-and-scope
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: 'MEE rewards papers whose center of gravity is the description and analysis of a NEW method
+    — analytical, practical, or conceptual — rather than the results of applying one; the method must
+    be broadly applicable across taxa or systems, so a tool demonstrated on a single group must argue
+    cross-taxon generality. It deliberately serves a dual audience: both the developers of methods and
+    the users/practitioners who apply them, drawn together from previously disparate sub-disciplines
+    into a single forum for tracking methodological developments. Writing is expected to be clear, concise,
+    and accessible (accessibility is treated as central to method uptake), with figures that convey
+    the key result at a glance. A distinctive structural signal is the named ''Applications'' article
+    type for new open-source software, requiring a worked example/vignette and a mandatory open-source
+    license.'
+  confidence: secondary
+  source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/aims-and-scope/read-full-aims-and-scope
+  last_verified: '2026-06-22'
+  audience:
+    value: Both developers of new methods and the users/practitioners who apply them, drawn from previously
+      disparate sub-disciplines across ecology and evolutionary biology, served by a single cross-cutting
+      forum for tracking methodological developments.
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2010.00016.x
+  writing_style:
+    value: Clear, concise, accessible prose. Title brief and clear; abstract digestible within strict
+      word limit; methods may use jargon to stay concise but must stay comprehensible; each paragraph's
+      first sentence signals its topic. Accessibility is treated as central to method uptake.
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210X/journal-resources/guide-to-scientific-writing
+  figure_preference:
+    value: Use figures and tables strategically to cut lengthy explanation; the best figures convey
+      the key result at a glance. Use a figure or table whenever a text section would be better presented
+      visually; tables suit summary/auxiliary data.
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210X/journal-resources/guide-to-scientific-writing
+  signals:
+    value: 'Named ''Applications'' article type: short (3000-4000 word) descriptions of new open-source
+      software, requiring at least one worked example (vignette strongly encouraged) and a mandatory
+      open-source license; standard IMRaD structure not required. Other types: hardware/tool notes,
+      reviews, perspectives.'
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/features/applicationpapers
+
+caps:                                   # NOTE: all word caps INCLUDE references, tables, figure captions and statements
+  Research Article:                     # journal's primary type (a.k.a. "Standard Article")
+    words:
+      value: "7000-8000 (INCLUDES references, tables, figure captions, statements)"
+      excludes: []                      # nothing excluded; count is all-inclusive
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "no explicit numeric cap; figure/table captions count toward the word limit, so display items are constrained indirectly"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    refs:
+      value: "no separate cap (references are inside the 7000-8000 word count)"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    abstract:
+      value: 350
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    structure:
+      value: "Numbered abstract (1-4); Data/Code-for-peer-review statement; Keywords (<=8); Introduction; Materials & Methods; Results; Discussion; Figures & Tables with captions (IMRAD)"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+  Review:
+    words:
+      value: "10000-12500 (INCLUDES references, tables, figure captions, statements)"
+      excludes: []
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "no explicit numeric cap (captions count toward word limit)"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    refs:
+      value: "no separate cap (inside word count)"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    abstract:
+      value: 350
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    structure:
+      value: "flexible (more flexible than a Research Article); numbered abstract; timely synthesis + benchmarks; may be commissioned"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+  Perspective:
+    words:
+      value: "up to 5000 (structured per Manuscript Specifications)"
+      excludes: []
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "no explicit numeric cap"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    refs:
+      value: "no separate cap"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    abstract:
+      value: 350
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    structure:
+      value: "short commentary; conceptual advance / opinion / knowledge-gap; flexible org; less literature to draw on than a Review"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+  Application:
+    words:
+      value: "up to 4000 total (INCLUDES references, tables, figure captions, statements)"
+      excludes: []
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "no explicit numeric cap"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    refs:
+      value: "no separate cap (inside word count)"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    abstract:
+      value: 350
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    structure:
+      value: "short description of new software script/package; MUST include a Code Checklist file + >=1 worked example; vignette encouraged; anonymise CRAN/repo links for review"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+  Practical Tools:
+    words:
+      value: "3000-4000 (INCLUDES references, tables, figure captions, statements)"
+      excludes: []
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "no explicit numeric cap; online SI may include build instructions"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    refs:
+      value: "no separate cap (inside word count)"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    abstract:
+      value: 350
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    structure:
+      value: "short description of new field technique / hardware / equipment / lab protocol; must show adaptability beyond the specific system"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+  Forum:
+    words:
+      value: "normally up to 1000 (INCLUDES references, tables, figure captions, statements)"
+      excludes: []
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "no explicit numeric cap"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    refs:
+      value: "no separate cap (inside word count)"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    abstract:
+      value: null                       # short communication; no formal abstract
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+    structure:
+      value: "short communication: opinion on / response to published material; reanalysis OK, no new data; submit within ~12 months; published open-access but NO APC; original authors invited to respond"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+      last_verified: 2026-06-22
+  # Workflow: NEW article type accepting submissions from 2026 (chains existing methods into a reusable pipeline);
+  #   reduced-APC tier. Add full caps here once the live guidelines publish its word/figure spec.
+
+desk_reject_triggers:
+  - "Author-identifying text/SI breaks DOUBLE-anonymous review → anonymise all self-references ('a previous study by X et al', not 'our previous study'), mask repo/CRAN links and permit numbers."
+  - "Method works for only a single taxon/ecosystem → demonstrate broad applicability across taxa or systems, or it is unlikely to be considered a 'new method'."
+  - "Submission is just a workflow chaining existing methods sent as a Research Article → reframe as a genuine new method, or use the dedicated Workflow type."
+  - "Over the word cap — remember it INCLUDES references + tables + figure captions + statements → trim to the type limit (RA 7000-8000; Review 10000-12500; Perspective 5000; Application 4000; Practical Tools 3000-4000; Forum ~1000)."
+  - "No code/data available for peer review in anonymised form → upload a zip/CSV/txt or a private-for-peer-review Dryad/Zenodo link, noted under the Abstract; Applications must add a Code Checklist."
+  - "New computational method with no simulation/benchmark testing → add simulation tests (describe simulations before any empirical use)."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Curated, version-controlled DOI-minting archive (Dryad or Zenodo). At submission supply an anonymised private-for-peer-review link OR upload files (zip/CSV/txt/md/rmd); list database + accession/DOI; formal Data Availability Statement added at acceptance. Personal GitHub/website does NOT count as a permanent archive."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Code required and reviewed; deposit in a DOI-minting repo (Zenodo/Code Ocean), cited in references. A zipped folder of all code is acceptable for review. Application papers must submit a Code Checklist."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "No single mandated reporting guideline (no PRISMA-EcoEvo/ODMAP/STRANGE requirement found); new computational methods must be validated with simulations or benchmark datasets."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "Not explicitly addressed in the MEE author guidelines; BES Research Ethics policy applies (animal-use permit numbers in a Methods subsection, may be anonymised at submission). Mask sensitive/threatened-species localities per general best practice."
+    confidence: unknown
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID expected for the corresponding author (Wiley default)."
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/submission/orcid.html
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: "Methods section"          # OVERRIDE of wiley_bes default (Methods OR Acknowledgements): MEE has an EXPLICIT on-page rule putting AI/LLM disclosure in METHODS.
+  block:
+    value: >
+      MEE explicit rule: "If LLMs or other comparable AI tools are used to produce the work
+      described in a manuscript, there must be a clear statement to that effect in the Methods
+      section of the manuscript, and the corresponding or senior author must take responsibility
+      for any code (or text) generated by the AI platform... The application name and version also
+      should be reported, and code generated by the LLM/AI should be annotated to that effect."
+      Paste-in: "We used [TOOL name + version] to [role, e.g. generate/assist code] on [date].
+      AI-generated code is annotated as such; the corresponding author takes full responsibility
+      for all AI-generated code and text." (Wiley/COPE: generative AI cannot be an author.
+      Pure grammar/spell-check tools such as Writefull need no Methods statement.)
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: "Wiley ScholarOne — https://mc.manuscriptcentral.com/mee-besjournals"
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+    last_verified: 2026-06-22
+  pack:
+    value: [anonymised Main Document PDF (no author-identifying text/SI), separate title page uploaded as 'Supplemental Document Not For Review', numbered abstract <=350, <=8 keywords, Data/Code-for-peer-review statement + private repo link or uploaded code, Conflict of Interest statement (all types), Data Availability statement, author contributions statement, ORCID, AI/LLM statement in Methods if used, Code Checklist (Applications), permit documentation if animal use, cover letter, suggested reviewers]
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+    last_verified: 2026-06-22
+  reference_style:
+    value: "Author-date (BES house style; author-year in text, alphabetical list; DOI required where available; up to 20 author names listed). NOT literally APA, though similar."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/2041210x/author-guidelines
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

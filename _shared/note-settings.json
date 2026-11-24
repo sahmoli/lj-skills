@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "env_override": "LJ_NOTES_DIR",
+  "windows_directory": "~/Documents/lj-notes",
+  "other_directory": "~/Documents/lj-notes",
+  "timezone": "Asia/Shanghai",
+  "filename": "{YYYYMMDDTHHMMSS}--{title}__{skill_without_lj_prefix}.md"
+}

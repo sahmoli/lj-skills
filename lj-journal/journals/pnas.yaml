@@ -1,0 +1,258 @@
+slug: pnas
+journal: Proceedings of the National Academy of Sciences (PNAS)
+publisher: pnas                        # self-published by the National Academy of Sciences (not a big-publisher mirror)
+society:
+  value: National Academy of Sciences (NAS)
+  confidence: secondary                # OpenAlex host_organization confirms NAS this run; pnas.org pages 403 to bots
+  source_url: https://openalex.org/S125754415
+  last_verified: 2026-06-22
+
+# NOTE: every pnas.org page returned HTTP 403 to automated fetch/curl this run.
+# All "publisher" facts below are PNAS's OWN quoted text recovered via search → marked `secondary`, not `official`.
+# A human browser pass on pnas.org is needed to upgrade these to `official` (see verify_live in the run report).
+
+metrics:
+  quartile:      {value: Q1, confidence: secondary, source_url: "https://openalex.org/S125754415", last_verified: 2026-06-22}   # Multidisciplinary Sciences, top decile
+  impact_factor: {value: "OpenAlex 2-yr mean citedness ≈7.8 (read this run); JCR IF ~9–11 (Multidisciplinary Sciences) — approx", confidence: secondary, source_url: "https://openalex.org/S125754415", last_verified: 2026-06-22}
+  cite_score:    {value: "(待人工填) — not verified this run", confidence: unknown, source_url: "", last_verified: 2026-06-22}
+  is_top:        {value: "(待人工填) — Juan has no journal_db card for PNAS", confidence: unknown, source_url: "", last_verified: 2026-06-22}
+
+open_access:
+  value: >
+    hybrid — subscription journal with paid immediate-OA option (CC BY / CC BY-NC / CC BY-ND).
+    All articles become free 6 months after publication (delayed OA). Brief Reports are always
+    immediately OA. Did NOT transition to full OA in Jan 2025 — remains hybrid.
+  confidence: secondary
+  source_url: https://www.pnas.org/author-center/publication-charges
+  last_verified: 2026-06-22
+apc_usd:
+  value: >
+    2025 (vol. 122) rates: immediate OA $4,975 WITH institutional site license / $5,475 without;
+    delayed OA $2,575. Plus EXCESS-PAGE charge ~$375 per typeset page over the limit (billed at acceptance,
+    based on production layout not manuscript page count).
+  confidence: secondary
+  source_url: https://www.pnas.org/author-center/publication-charges
+  last_verified: 2026-06-22
+
+review_model:
+  value: >
+    single_anonymized for Direct Submissions (reviewer names confidential unless reviewer consents);
+    Contributed Submissions (sponsored by an NAS member) use OPEN/named peer review. Overrides nothing —
+    matches publisher default but the Contributed open-review track is PNAS-specific.
+  confidence: secondary
+  source_url: https://www.pnas.org/author-center/editorial-and-journal-policies
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Multidisciplinary flagship publishing high-impact original research across the biological, physical,
+    and social sciences, plus Perspectives, Reviews and Colloquium papers. Rewards work of broad significance
+    that is accessible and important to a general scientific audience — not narrow single-field incremental results.
+  confidence: secondary
+  source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: PNAS rewards high-impact, original research of broad significance that spans the biological,
+    physical, and social sciences, prizing demonstrable impact and cross-disciplinary breadth over narrow
+    specialist advances. Its audience is a broad, multidisciplinary scientific readership worldwide
+    (plus interested nonspecialists), with editorial decisions guided by NAS members who value the journal's
+    breadth of coverage. A defining feature is the mandatory 120-word Significance Statement, written
+    so an undergraduate-educated scientist outside the field can grasp why the work matters — the key
+    gate for articulating broad impact.
+  confidence: secondary
+  source_url: https://www.pnas.org/about
+  last_verified: '2026-06-22'
+  audience:
+    value: A broad, multidisciplinary scientific readership across the biological, physical, and social
+      sciences worldwide, plus interested nonspecialists. Editorial decisions are made by NAS members,
+      scientific leaders who value the journal's breadth of coverage.
+    confidence: secondary
+    source_url: https://www.pnas.org/doi/10.1073/pnas.0800528105
+  writing_style:
+    value: Mandatory 120-word Significance Statement must explain the work's importance to nonspecialists,
+      written for an undergraduate-educated scientist outside the field; avoid jargon, references, numbers,
+      and acronyms.
+    confidence: secondary
+    source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+  figure_preference:
+    value: 'Per Digital Art Guidelines: submit TIFF, EPS, or PDF; color files in original RGB; line
+      art 1000-1200 ppi, combination halftones 600-900 ppi, halftones minimum 300 ppi at publication
+      size; vector text preferred, at least 6 points after reduction.'
+    confidence: secondary
+    source_url: https://www.pnas.org/pb-assets/authors/digitalart-1675347574760.pdf
+  signals:
+    value: Mandatory 120-word Significance Statement printed on the article's first page (a defining
+      PNAS feature signaling broad-impact framing). Plus distinct submission tracks (Direct Submission,
+      Member-Contributed) under NAS-member editing.
+    confidence: secondary
+    source_url: https://www.pnas.org/doi/10.1073/pnas.1509912112
+
+caps:                                   # PAGE-based, not word-based. The page count INCLUDES title, author list,
+                                        # abstract, Significance Statement, main text, references, AND figure legends.
+                                        # (SI is separate and not counted.) Word figures below are PNAS's own approximations.
+  Direct Submission Research Article:   # default research-article track (no NAS-member sponsor)
+    words:
+      value: "~4,000 words ≈ 6 typeset pages (standard); HARD max 12 pages; ~$375/extra page"
+      excludes: []                      # nothing excluded — page count INCLUDES references + figure legends + abstract + Significance Statement
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "~4 medium-size display items (figures + tables) for a standard 6-page article"
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+    refs:
+      value: "~50 references for a standard 6-page article (count toward the page budget)"
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+    abstract:
+      value: 250
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+    significance_statement:
+      value: "MANDATORY 120-word max (50-word min) Significance Statement for a general scientific audience"
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+    structure:
+      value: "Flexible IMRAD-style main text; required: 250-word abstract + 120-word Significance Statement; SI allowed and uncounted"
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+  Contributed Submission (NAS member):  # sponsored/communicated by a National Academy of Sciences member
+    words:
+      value: "Same length budget as Direct Submission (~6 pages standard, max 12); routed via an NAS-member sponsor"
+      excludes: []
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/editorial-and-journal-policies
+      last_verified: 2026-06-22
+    abstract:
+      value: 250
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+    significance_statement:
+      value: "MANDATORY 120-word max (50-word min)"
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+    structure:
+      value: "As Direct Submission, but OPEN/named peer review arranged through the NAS-member sponsor"
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/editorial-and-journal-policies
+      last_verified: 2026-06-22
+  Brief Report:                         # short, high-immediacy report; always immediately open access
+    words:
+      value: "Limited to 3 pages ≈ 1,600 words (INCLUDES title page, abstract, main text, figure legends)"
+      excludes: []
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+    refs:
+      value: 15
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+    abstract:
+      value: 250
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+    structure:
+      value: "Concise single advance / compelling new data on a controversy or long-standing question; always immediate OA"
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+  Perspective:                          # typically invited; broad, accessible synthesis/viewpoint
+    words:
+      value: "Up to a maximum of 10 typeset pages"
+      excludes: []
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+    abstract:
+      value: 250
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+    structure:
+      value: "Flexible narrative; focuses on an important research area; must be accessible to a broad scientific audience"
+      confidence: secondary
+      source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+      last_verified: 2026-06-22
+
+desk_reject_triggers:
+  - "Significance Statement missing, >120 words, or jargon-dense → write a 50–120-word statement aimed at a general scientific reader."
+  - "Final typeset article over the page budget → trim to ~6 pages or plan for ~$375/extra page (hard cap 12 pages)."
+  - "Narrow / incremental single-field result with no broad significance → reframe broad importance or pick a specialty journal."
+  - "Data/code 'available upon request', missing accession numbers, or proprietary restrictions → deposit in a FAIR public repository before acceptance (enforced at acceptance)."
+  - "AI/LLM use in drafting/editing not disclosed in Methods (or Acknowledgments) with tool + version → add the disclosure; AI cannot be an author."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: secondary
+    source_url: https://www.pnas.org/author-center/editorial-and-journal-policies
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Deposit in community-approved public repositories following FAIR principles before publication; general fallback: figshare, Dryad, or OSF. Enforced at acceptance (no 'available upon request')."
+    confidence: secondary
+    source_url: https://www.pnas.org/author-center/editorial-and-journal-policies
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Code underlying the manuscript must be made fully available; deposited before publication, not 'upon request'."
+    confidence: secondary
+    source_url: https://www.pnas.org/author-center/editorial-and-journal-policies
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "(待人工填) — no PNAS-mandated ecology reporting guideline (e.g. PRISMA/ODMAP) confirmed this run"
+    confidence: unknown
+    source_url: https://www.pnas.org/author-center/editorial-and-journal-policies
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "(待人工填) — PNAS has biosecurity/dual-use-research-of-concern review; a specific sensitive-species-locality masking rule was not confirmed this run"
+    confidence: unknown
+    source_url: https://www.pnas.org/author-center/editorial-and-journal-policies
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID required for the corresponding author at submission; strongly encouraged for all authors"
+    confidence: secondary
+    source_url: https://www.pnas.org/author-center/editorial-and-journal-policies
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: "Materials and Methods section (or Acknowledgments if no Materials and Methods section is available)"  # PNAS-specific override; publisher_profiles[pnas] said 'fetch separately'. Recovered from PNAS's own quoted policy text (page 403 to bots) → secondary; confirm live.
+  block:
+    value: >
+      "The authors used [TOOL NAME and specific model/version, e.g. GPT-4 / Claude 3.5 Sonnet] during the
+      preparation of this manuscript to [REASON, e.g. draft/edit text]. The authors reviewed and fact-checked
+      all output and take full responsibility for the content of the publication." Disclose in Materials and Methods
+      (or Acknowledgments if no Methods). AI/LLMs may NOT be listed as authors. AI-generated images/graphics are NOT
+      permitted (incl. cover art) unless the software itself is the subject of the work.
+    confidence: secondary
+    source_url: https://www.pnas.org/post/update/pnas-policy-for-chatgpt-generative-ai
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: "PNAScentral (https://www.pnascentral.org)"
+    confidence: secondary
+    source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+    last_verified: 2026-06-22
+  pack:
+    value: [manuscript ≤6 typeset pages (~4,000 words; hard max 12), 250-word abstract, mandatory 120-word Significance Statement, ~50 refs, ~4 display items, data-availability statement + repository deposit, AI/LLM disclosure (Methods/Acknowledgments), corresponding-author ORCID, cover letter, suggested/excluded editors & reviewers]
+    confidence: secondary
+    source_url: https://www.pnas.org/author-center/submitting-your-manuscript
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

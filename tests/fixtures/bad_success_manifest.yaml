@@ -1,0 +1,17 @@
+figure_id: fig-counterfeit-success
+claim: An artifact exists.
+reader_task: inspect
+analysis_unit: figure
+repeating_unit: not-applicable
+estimand: rendered artifact
+comparison: not-applicable
+panels: [{label: a, role: phenomenon, mark: point, quantity_semantics: estimate, axis_policy: domain, axis_min: 0, zero_is_meaningful: false}]
+uncertainty: {applicable: false, reason: deterministic build-contract test}
+encoding: {primary_channel: position, colour_role: none, colour_is_sole_carrier: false, redundant_channel: label}
+spatial: {is_map: false, purpose: not-applicable, crs: not-applicable, sensitive_locality: {present: false, method: none}}
+alternative_explanation: none; this fixture tests artifact honesty
+medium: paper
+provenance: {data: [{path: tests/fixtures/input-does-not-exist.csv, columns: [x]}], code: tests/fixtures/viz_e2e_python.py, command: python3 tests/fixtures/viz_e2e_python.py, transforms: none}
+output: {width_mm: 89, height_mm: 70, formats: [pdf]}
+build: {status: success, artifacts: [tests/fixtures/output-does-not-exist.pdf]}
+qc: {final_size_reviewed: false, colour_accessibility_reviewed: false, claim_trace_reviewed: false}

@@ -1,0 +1,36 @@
+schema_version: 1
+last_verified: "2026-08-15"
+curation_policy: >-
+  Publication assets only: exact taxon identity where available, commercially reusable
+  licence, downloaded official vector preserved unchanged, and file hash verified. Near-taxon substitutes are
+  never selected silently.
+source:
+  provider: PhyloPic
+  homepage: https://www.phylopic.org/
+  api_documentation: https://api-docs.phylopic.org/v2/index.html
+  image_usage: https://www.phylopic.org/articles/image-usage
+assets:
+  panthera-uncia-phylopic-cb44ff49:
+    common_names: [snow leopard, "雪豹"]
+    intended_taxon: Panthera uncia
+    depicted_taxon: Panthera uncia
+    match_level: exact
+    approximation_disclosed: false
+    fallback_reason: not-applicable
+    file: panthera-uncia__phylopic-cb44ff49.svg
+    sha256: 9d72232e1fc58f916c0cfe0f4e445bf0e1fe1b76f83fb0b07dc4cbc7a38c44cb
+    source:
+      image_uuid: cb44ff49-165e-4c97-9a94-98f512dda64f
+      node_uuid: 127b0c66-2e05-4306-972e-a271db867080
+      image_api: https://api.phylopic.org/images/cb44ff49-165e-4c97-9a94-98f512dda64f
+      source_url: https://images.phylopic.org/images/cb44ff49-165e-4c97-9a94-98f512dda64f/source.svg
+      vector_url: https://images.phylopic.org/images/cb44ff49-165e-4c97-9a94-98f512dda64f/vector.svg
+    license:
+      id: CC0-1.0
+      url: https://creativecommons.org/publicdomain/zero/1.0/
+      commercial_use: true
+      attribution_required: false
+    creator: Margot Michaud
+    recommended_credit: "Snow leopard silhouette: Margot Michaud / PhyloPic, CC0 1.0."
+    modified: false
+    modification_note: not-applicable

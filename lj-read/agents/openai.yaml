@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJ Read"
+  short_description: "深读指定论文或书籍并制作可追溯伴读"
+  default_prompt: "Use $lj-read to deeply read this specified paper or book into an evidence-traceable companion."

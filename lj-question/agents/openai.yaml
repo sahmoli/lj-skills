@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJ Question"
+  short_description: "发展或评估生态与保护研究问题"
+  default_prompt: "Use $lj-question to develop or evaluate this ecology or conservation research question."

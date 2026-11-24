@@ -1,0 +1,214 @@
+slug: journal-of-applied-ecology
+journal: Journal of Applied Ecology
+publisher: wiley_bes                   # British Ecological Society on Wiley (inherits wiley)
+society:
+  value: British Ecological Society (BES)
+  confidence: official
+  source_url: https://www.britishecologicalsociety.org/content/journal-of-applied-ecology/
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: Q1,   confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  impact_factor: {value: 4.8,  confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  cite_score:    {value: 10.7, confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  is_top:        {value: 是,    confidence: official,  source_url: "Juan", last_verified: 2026-06-22}
+  # OpenAlex (this run): h-index 316, 2yr mean citedness 4.03, works 9279. Juan's journal_db h_index=181 is a
+  # different database (likely Scopus); both can be "right" — methodology differs, so not a hard error.
+open_access:
+  value: hybrid (subscription Transformative Journal; gold OA optional)
+  confidence: secondary
+  source_url: https://openalex.org/S82098733
+  last_verified: 2026-06-22
+apc_usd:
+  value: 3400
+  note: "OpenAlex confirms $3,400 USD ( = £2,270 / €2,830 ); matches Juan's journal_db. Subscription/hybrid — APC only if gold-OA chosen."
+  confidence: secondary
+  source_url: https://openalex.org/S82098733
+  last_verified: 2026-06-22
+
+review_model:
+  value: double_anonymized            # BES moved ALL journals to double-anonymous in Aug 2023. Anonymize MS + author identity (title page separate) or desk reject.
+  confidence: secondary               # corroborated by multiple sources; official Wiley page 403s to bots this run
+  source_url: https://besjournals.onlinelibrary.wiley.com/hub/editorial-policies
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    High-impact research at the interface of ecological science and the management of biological resources —
+    conservation biology, global change, environmental pollution, wildlife/pest management, restoration ecology.
+    Papers must test or apply ecological concepts with explicit, concrete potential to improve environmental
+    management or policy; not basic ecology without an applied payoff, and not purely local description.
+  confidence: secondary
+  source_url: https://besjournals.onlinelibrary.wiley.com/journal/13652664
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: 'Journal of Applied Ecology rewards novel, broad-reaching research at the interface of ecological
+    science and environmental management that builds a high-quality evidence base for real-world decisions;
+    submissions must point to concrete management or policy applications rather than theory alone. It
+    explicitly serves a tri-partite audience of scientists, managers and policymakers, so papers must
+    be useful and accessible beyond the authors'' subfield. This applied bar is enforced in the writing:
+    a mandatory final subheading (''Synthesis and applications'' for management recommendations, or
+    ''Policy implications'' for broader policy links) and a final synthesis that is ''generic, seminal
+    and accessible to non-specialists''.'
+  confidence: secondary
+  source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/aims-and-scope/read-full-aims-and-scope
+  last_verified: '2026-06-22'
+  audience:
+    value: Explicitly serves a tri-partite audience of scientists, managers and policymakers; papers
+      are expected to be useful and accessible beyond specialists in the authors' subfield.
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/aims-and-scope/read-full-aims-and-scope
+  writing_style:
+    value: Structured abstract following a fixed formula (context/need; approach; main results; wider
+      management/policy implications) as simple factual numbered statements, max ~350 words. The final
+      synthesis point is the most important and must be generic, seminal and accessible to non-specialists,
+      signalling a clear premium on clarity and applied framing.
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines
+  figure_preference:
+    value: null
+    confidence: unknown
+    source_url: null
+  signals:
+    value: 'Mandatory final-section subheading: ''Synthesis and applications'' for papers giving management
+      recommendations, or ''Policy implications'' for less hands-on policy/conservation links. Structured
+      numbered abstract. Welcomes non-standard types: reviews, Practitioner''s Perspectives, Policy
+      Directions, Forum articles. Double-anonymous peer review since Aug 2023; Editor''s Choice feature.'
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines
+
+caps:                                  # MAP keyed by article_type. Caps are confidence=secondary: official Wiley page 403s to automated fetch.
+  Research Article:                    # a.k.a. "Standard Paper" — the primary research type
+    words:
+      value: 7000
+      excludes: [references, tables, SI]
+      includes_note: "7000 is INCLUSIVE of figure legends (JAE counts figure legends inside the cap, unlike many journals)."
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "~10 or fewer typical (no hard numeric cap stated; keep display items lean, overflow to SI)"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines
+      last_verified: 2026-06-22
+    refs:
+      value: "no fixed numeric cap"
+      confidence: unknown
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines
+      last_verified: 2026-06-22
+    abstract:
+      value: 350
+      note: "BES structured 'Summary', numbered points: (1) context/need; (2) approach & methods; (2–3) main results; final point subheaded 'Synthesis and applications' = wider management/policy relevance."
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/journal-resources/guide-to-scientific-writing
+      last_verified: 2026-06-22
+    structure:
+      value: "IMRAD-style body + numbered structured Summary ending in 'Synthesis and applications'"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/journal-resources/guide-to-scientific-writing
+      last_verified: 2026-06-22
+  Review:
+    words:
+      value: 8000
+      excludes: []
+      includes_note: "Inclusive of all parts of the paper. Some secondary listings say up to 10000 — VERIFY on live page."
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables: {value: "no hard cap stated", confidence: unknown, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines, last_verified: 2026-06-22}
+    refs:        {value: "no fixed cap", confidence: unknown, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines, last_verified: 2026-06-22}
+    abstract:    {value: 350, confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/journal-resources/guide-to-scientific-writing, last_verified: 2026-06-22}
+    structure:   {value: "synthesis of a topical theme offering new insight/perspective to guide future research", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines, last_verified: 2026-06-22}
+  Practitioner's Perspective:
+    words:
+      value: 4000
+      excludes: []
+      includes_note: "Inclusive of all parts of the main manuscript. Personal view from hands-on practitioners on the direction of applied ecological research."
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines
+      last_verified: 2026-06-22
+    figs_tables: {value: "minimal (no hard cap stated)", confidence: unknown, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines, last_verified: 2026-06-22}
+    refs:        {value: "fewer than 20", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines, last_verified: 2026-06-22}
+    abstract:    {value: "300 or fewer", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines, last_verified: 2026-06-22}
+    structure:   {value: "argument-first opinion/perspective; bridges applied research and on-the-ground practice", confidence: secondary, source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines, last_verified: 2026-06-22}
+  # Other types seen but without published specs: Editorial, Commentary, Perspective (general). Add as keys when verified.
+
+desk_reject_triggers:
+  - "Standard Paper over 7000 words (figure legends COUNT) → trim to cap before submitting; push detail to SI."
+  - "Strong basic ecology but no concrete management/policy implication → reframe the applied 'so what' and write a real 'Synthesis and applications' final Summary point."
+  - "Manuscript not anonymized (double-anonymous since Aug 2023) → strip author identity from MS; upload title page separately."
+  - "No data-availability statement / data+code not archived (Dryad/Zenodo) at submission → deposit now and supply a private-for-peer-review link."
+  - "Missing inclusion / stakeholder-collaboration statement (JAE requires it at submission) → add it."
+  - "Sensitive species localities exposed → mask/coarsen precise coordinates and state that you did."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/data_archiving_policy
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Public archive mandatory as a condition of publication — Dryad (common) or domain-specific/Zenodo; must allow full reproduction of every result. Private-for-peer-review upload supported."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/data_archiving_policy
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "New scripts for non-standard analyses must be archived alongside the data in a suitable repository (Dryad/Zenodo); provide anonymized at submission."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/data_archiving_policy
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "No single mandated checklist; BES encourages best-practice reporting (e.g. PRISMA-EcoEvo for systematic reviews/meta-analyses, STRANGE for behavioural studies). VERIFY current wording."
+    confidence: unknown
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/editorial-policies
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "Mask/coarsen precise locations of threatened or trafficked taxa; state masking (BES editorial policy)."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/editorial-policies
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID iD required for all authors at submission. CRediT contributor roles also required."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines
+    last_verified: 2026-06-22
+  inclusion_statement:
+    value: "JAE-specific: statement on inclusion required at submission (collaboration with, intellectual input from, and outcome-sharing with stakeholders in the study region); optional in published Author Contributions."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/editorial-policies
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                   # → wiley_bes inherits wiley: Methods OR Acknowledgements (no single mandated section)
+  block:
+    value: >
+      "During the preparation of this work the author(s) used [TOOL/SERVICE incl. version + access date]
+      in order to [REASON, e.g. improve language and readability]. After using this tool/service, the
+      author(s) reviewed and edited the content as needed and take(s) full responsibility for the content
+      of the publication." (Wiley/COPE: generative AI cannot be listed as an author; grammar/spell/general
+      editing tools are exempt from disclosure.)
+    confidence: official
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: Wiley ScholarOne — https://mc.manuscriptcentral.com/jae
+    note: "Verified site path is /jae (manusights + secondary). Juan's old note said /jappl — appears wrong/outdated."
+    confidence: secondary
+    source_url: https://manusights.com/blog/journal-of-applied-ecology-submission-guide
+    last_verified: 2026-06-22
+  pack:
+    value: [anonymized manuscript ≤7000 words (Standard Paper), numbered structured Summary ≤350 words ending in 'Synthesis and applications', separate title page with author info, data-availability statement, data+code archived (Dryad/Zenodo) with private-for-peer-review link, inclusion/stakeholder statement, CRediT contributions, conflict-of-interest declaration, funding statement, ORCID for all authors, cover letter naming the applied-ecology contribution, 3–5 suggested reviewers, AI-disclosure block if applicable]
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/13652664/about/author-guidelines
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

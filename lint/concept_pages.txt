@@ -1,0 +1,52 @@
+# Concept pages MANAGED by lj-concept (one slug per line; '#' = comment).
+# Only these are linted against the lj-concept contract — the wiki concepts/ dir
+# also holds many pages authored by other workflows with different conventions, which
+# are NOT in this skill's scope. lj-concept appends a slug here when it ships a page.
+spatial-scale
+occupancy-model
+species-interaction
+llm-species-interaction-extraction
+carrying-capacity
+logistic-growth
+density-dependence
+exponential-growth
+allee-effect
+minimum-viable-population
+extinction-vortex
+population-viability-analysis
+competitive-exclusion
+lotka-volterra
+functional-response
+mutualism
+facilitation
+coexistence-mechanisms
+ecological-niche
+niche-partitioning
+habitat-fragmentation
+metapopulation
+source-sink-dynamics
+ecological-succession
+disturbance-ecology
+alternative-stable-states
+island-biogeography
+species-area-relationship
+keystone-species
+food-web
+primary-production
+nutrient-cycling
+energy-flow
+decomposition
+ecosystem-services
+landscape-ecology
+habitat-connectivity
+ecological-resilience
+ecological-tipping-points
+conservation-genetics
+effective-population-size
+inbreeding-depression
+genetic-drift
+extinction-debt
+rewilding
+habitat-restoration
+biodiversity-hotspots
+biodiversity-ecosystem-multifunctionality

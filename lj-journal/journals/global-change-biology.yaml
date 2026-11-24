@@ -1,0 +1,238 @@
+slug: global-change-biology
+journal: Global Change Biology
+publisher: wiley                       # Wiley journal; no owning society (confirmed via OpenAlex: societies=[])
+society:
+  value: null
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/S74970393
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: Q1,   confidence: secondary, source_url: "https://www.journalmetrics.org/journal/global-change-biology", last_verified: 2026-06-22}
+  impact_factor: {value: 12.0, confidence: secondary, source_url: "https://www.journalmetrics.org/journal/global-change-biology", last_verified: 2026-06-22}   # JCR 2024/2025 dataset; OpenAlex 2yr-mean-citedness=9.4 (different metric)
+  cite_score:    {value: 20.5, confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  is_top:        {value: 是,    confidence: official,  source_url: "Juan", last_verified: 2026-06-22}
+
+open_access:
+  value: hybrid (subscription, no charge; OR Wiley OnlineOpen gold-OA option)
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/S74970393
+  last_verified: 2026-06-22
+apc_usd:
+  value: "≈4120–4550 (OnlineOpen option only; subscription route is free)"
+  conflict_note: "OpenAlex: 4120 USD; secondary submission guides: 4550 USD. Juan's journal_db said 'N/A' — WRONG, it is hybrid with an OA APC."
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/S74970393
+  last_verified: 2026-06-22
+
+review_model:
+  value: single_anonymized            # Wiley non-BES default; sister journal GCB Communications is single-anonymized. Main-journal page not readable this run (403).
+  confidence: secondary
+  source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Promotes new understanding of the interface between biological systems and ALL aspects of
+    environmental change affecting a substantial part of the globe. Studies must concern biological
+    systems (aquatic or terrestrial, managed or natural), at any level of organization from molecular
+    to biome, covering both biological responses AND feedbacks to change. Approaches may be theoretical,
+    modeling, analytical, experimental, observational, or historical — and should be exploratory rather
+    than confirmatory. Publishes Research Articles, Technical Advances, Reviews, Opinions, Perspectives,
+    Letters and Commentaries.
+  confidence: secondary                 # quoted from journal aims&scope via journal_db; live Wiley page 403 this run
+  source_url: https://onlinelibrary.wiley.com/journal/13652486
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: Global Change Biology rewards work that advances understanding of how environmental change
+    affecting a substantial part of the globe interacts with biological systems — spanning aquatic and
+    terrestrial, managed and natural systems, from the molecular to the biome level — and explicitly
+    prefers exploratory over confirmatory studies, whether theoretical, modeling, analytical, experimental,
+    observational, or historical in approach. Its broad article-type taxonomy (Research Articles, Technical
+    Advances, Reviews/GCB Reviews/Mini Reviews, Opinions, Perspectives, plus an editor-reviewed "Science
+    Behind the News" section tying current environmental crises to biological systems) signals appetite
+    for both primary research and synthesis with global relevance. Communication is expected to be timely,
+    objective, data-driven, and accessible to a broad readership.
+  confidence: secondary
+  source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/productinformation.html
+  last_verified: '2026-06-22'
+  audience:
+    value: null
+    confidence: unknown
+    source_url: null
+  writing_style:
+    value: Stated expectation is timely, objective, data-driven, accessible scientific communication
+      for a broad readership; the editor-reviewed 'Science Behind the News' pieces are short (around
+      800 words) and provide timely, objective, data-driven analysis of the current environmental crisis
+      on biological systems. No distinctive house tone beyond accessibility and broad relevance is officially
+      asserted.
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+  figure_preference:
+    value: null
+    confidence: unknown
+    source_url: null
+  signals:
+    value: 'Broad article-type taxonomy signals what GCB wants: Research Articles, Technical Advances,
+      Reviews, GCB Reviews, Mini Reviews, Opinions, Perspectives, Editorials, Science Behind the News,
+      Research Highlights, Letters to the Editor, and Responses — including the distinctive editor-reviewed
+      ''Science Behind the News'' front-material section tying current environmental crises to biological
+      systems.'
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/productinformation.html
+
+caps:                                    # MAP keyed by article_type. Wiley forauthors page 403 to automated fetch — values from publisher-quoted snippets; confidence=secondary, VERIFY LIVE.
+  Research Article:                      # primary research type
+    words:
+      value: 8000
+      excludes: [references, abstract, figure_legends, tables, SI]
+      note: "Cap = MAIN BODY ONLY (Introduction + Materials and Methods + Results + Discussion + ACKNOWLEDGEMENTS). Acknowledgements ARE counted — different inclusion rule than Nature Ecology & Evolution. References/abstract/figures/tables excluded."
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "up to 8 figures (≤6 panels each); tables in main text"
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+      last_verified: 2026-06-22
+    refs:
+      value: "no stated numeric cap (references excluded from the 8000-word count)"
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+      last_verified: 2026-06-22
+    abstract:
+      value: 250
+      conflict_note: "Some aggregators report a STRUCTURED abstract (Aim/Location/Time Period/Major Taxa Studied/Methods/Results/Main Conclusions) — but that headings set is the Diversity & Distributions / Global Ecology & Biogeography format, almost certainly wrong-journal contamination. GCB main research articles use a single-paragraph ~250-word abstract. VERIFY on live page."
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+      last_verified: 2026-06-22
+    structure:
+      value: IMRAD (Introduction, Materials and Methods, Results, Discussion); no strict formatting required at initial submission (references in any consistent style)
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+      last_verified: 2026-06-22
+  Technical Advance:                     # new tools/methods/modelling approaches; must be broadly generalizable
+    words:
+      value: 4000
+      excludes: [references, abstract, figure_legends, tables, SI]
+      note: "Main body = Introduction + Materials and Methods + Results & Discussion + Acknowledgements."
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+      last_verified: 2026-06-22
+    abstract: {value: 250, confidence: secondary, source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html, last_verified: 2026-06-22}
+    structure: {value: "Introduction, Materials and Methods, Results & Discussion; method must be broadly applicable (not single-species/system)", confidence: secondary, source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html, last_verified: 2026-06-22}
+  Review:                                # incl. GCB Reviews / Mini Reviews; often commissioned
+    words:
+      value: 8000
+      excludes: []
+      note: "Word count INCLUDES Abstract, Introduction, body, Conclusions AND Acknowledgements (unlike Research Article, where abstract is excluded)."
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+      last_verified: 2026-06-22
+    abstract: {value: 250, confidence: secondary, source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html, last_verified: 2026-06-22}
+    structure: {value: "Abstract + Introduction + up to 10 logically developed sections + Conclusion", confidence: secondary, source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html, last_verified: 2026-06-22}
+  Opinion:                               # factually-based argument anchored in peer-reviewed literature
+    words:
+      value: "3000–5000"
+      excludes: []
+      note: "Includes Abstract/body/Conclusion. Not a topic review, not a statement of un-reasoned opinion, not primarily the authors' own work."
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+      last_verified: 2026-06-22
+    figs_tables: {value: "multiple figures/tables allowed", confidence: secondary, source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html, last_verified: 2026-06-22}
+    structure: {value: "Abstract + Introduction + up to 6 body sections + Conclusion", confidence: secondary, source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html, last_verified: 2026-06-22}
+  Perspective:                           # concise variant: review/re-analysis challenging prevailing views
+    words:
+      value: 1500
+      excludes: []
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+      last_verified: 2026-06-22
+    figs_tables: {value: "1 figure", confidence: secondary, source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html, last_verified: 2026-06-22}
+    structure: {value: "Concise challenge to prevailing views / emerging framework synthesis; anchored in peer-reviewed literature", confidence: secondary, source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html, last_verified: 2026-06-22}
+  Letter to the Editor:                  # well-reasoned challenge to a recently published article
+    words:
+      value: 1500
+      excludes: []
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+      last_verified: 2026-06-22
+    figs_tables: {value: "1 figure OR 1 table", confidence: secondary, source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html, last_verified: 2026-06-22}
+    refs: {value: 10, confidence: secondary, source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html, last_verified: 2026-06-22}
+    abstract: {value: null, confidence: secondary, source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html, last_verified: 2026-06-22}
+    structure: {value: "No abstract, no separate sections; a well-reasoned challenge to a recently published GCB article (or a high-profile article elsewhere)", confidence: secondary, source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html, last_verified: 2026-06-22}
+
+desk_reject_triggers:
+  - "Single-site / single-species / single-system result with no demonstrated generality → reframe so the signal is genuinely global ('substantial part of the globe')."
+  - "Research Article main body (Intro+M&M+Results+Discussion+Acknowledgements) over 8000 words → trim; remember Acknowledgements ARE counted here (unlike NEE)."
+  - "Confirmatory / incremental study → GCB explicitly wants exploratory questions; sharpen the novel hypothesis."
+  - "Data-availability statement missing or 'available upon request' → deposit in a public repository and name it; 'on request' is rejected as insufficient."
+  - "Misfiled article type (e.g. a 3000-word 'Letter') → GCB Letters to the Editor are 1500-word challenges with no abstract; pick the right type/limit."
+  - "ORCID missing for authors → register and link before submitting."
+
+reporting:
+  data_availability_statement:
+    required: true
+    note: "Mandatory; must name the repository and access procedure. 'Available upon request' is explicitly insufficient."
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/pb-assets/assets/13652486/docs/GCB-initial-submission-checklist-February-2024-1709282929637.pdf
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Public repository required (Dryad common in ecology; Zenodo/Figshare). Wiley data-sharing policy applies."
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/data-sharing-citation/data-sharing-policy.html
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Share code/scripts with a persistent identifier where applicable (Wiley open-science practices)"
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/data-sharing-citation/data-sharing-policy.html
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "Statistics checklist required for any manuscript using inferential statistics"
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/pb-assets/assets/13652486/docs/GCB-initial-submission-checklist-February-2024-1709282929637.pdf
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "Mask/coarsen precise locations of threatened or trafficked taxa where relevant (Wiley/ecology norm); not separately documented this run"
+    confidence: unknown
+    source_url: https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID iD REQUIRED for all authors at submission"
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/pb-assets/assets/13652486/docs/GCB-initial-submission-checklist-February-2024-1709282929637.pdf
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                     # → wiley: Methods OR Acknowledgements (no GCB-specific on-page override found this run)
+  block:
+    value: >
+      "During the preparation of this work the author(s) used [TOOL/SERVICE incl. version + access date] in order to
+      [REASON, e.g. improve language and readability]. After using this tool/service, the author(s) reviewed and
+      edited the content as needed and take(s) full responsibility for the content of the publication."
+      (Wiley/COPE: describe substantial AI use transparently — tool + version + access date + role + how output
+      was verified; grammar/spell/general-editing tools are exempt; generative AI cannot be listed as an author.)
+    confidence: official
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: Wiley ScholarOne — https://mc.manuscriptcentral.com/gcb
+    confidence: secondary
+    source_url: https://mc.manuscriptcentral.com/gcb
+    last_verified: 2026-06-22
+  pack:
+    value: [manuscript (type-correct word cap), figures (≤8, ≤6 panels), tables in-text, abstract (~250w unless type has none), data-availability statement naming a repository, statistics checklist if inferential stats, author-contribution statement, ORCID for all authors, AI-disclosure block, cover letter, suggested reviewers]
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/pb-assets/assets/13652486/docs/GCB-initial-submission-checklist-February-2024-1709282929637.pdf
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

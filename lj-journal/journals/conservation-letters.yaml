@@ -1,0 +1,208 @@
+slug: conservation-letters
+journal: Conservation Letters
+publisher: wiley                       # Wiley on behalf of the Society for Conservation Biology
+doi_prefixes:
+  value: ["10.1111/conl"]
+  confidence: secondary
+  source_url: "DOI stem from this journal's Wiley articles — verify against a live DOI"
+  last_verified: 2026-06-23
+society:
+  value: Society for Conservation Biology (SCB)
+  confidence: official
+  source_url: https://conbio.org/publications/conservation-letters/
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: "Q1 (Biodiversity Conservation, ~2/74)", confidence: secondary, source_url: "https://www.bioxbio.com/journal/CONSERV-LETT", last_verified: 2026-06-22}
+  impact_factor: {value: "~5.5 (latest, 2024 JCR per BioxBio 2026 update); 5.9 = prior year; web also cites 6.86", confidence: secondary, source_url: "https://www.bioxbio.com/journal/CONSERV-LETT", last_verified: 2026-06-22}
+  cite_score:    {value: 18.7, confidence: secondary, source_url: "journal_db (not re-verified; OpenAlex 2yr-mean-citedness = 4.47, a different metric)", last_verified: 2026-06-22}
+  h_index:       {value: 152, confidence: secondary, source_url: "https://openalex.org/S133530468", last_verified: 2026-06-22}
+  is_top:        {value: 是, confidence: official, source_url: "Juan", last_verified: 2026-06-22}
+
+open_access:
+  value: gold (fully open access since Jan 2015; CC BY required for all accepted articles)
+  confidence: official
+  source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/1755263x/homepage/open-access
+  last_verified: 2026-06-22
+apc_usd:
+  value: "UNRESOLVED — OpenAlex/DOAJ list ≈2300; Juan's journal_db: 3230; prior web research: ≈3900. SCB members get 20% discount; editorial waivers available."
+  conflict_note: "Three divergent figures (2300 / 3230 / 3900). Wiley OA page 403s to automated fetch — needs human browser check."
+  confidence: unknown
+  source_url: https://openalex.org/S133530468
+  last_verified: 2026-06-22
+
+review_model:
+  value: "UNRESOLVED — journal_db says single-blind; but a secondary submission guide notes 'lack of author anonymity' causes review delays, implying author anonymization is required → possibly DOUBLE-anonymous (SCB's flagship Conservation Biology is double-blind). Not confirmed on the official page."
+  confidence: unknown
+  source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/1755263x/homepage/forauthors.html
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Publishes empirical and theoretical research with immediate, direct implications for the
+    conservation of biological diversity worldwide. Prizes concise, original, timely papers that
+    influence policy debate and management solutions across marine, terrestrial and freshwater
+    contexts, bridging biological and social sciences — not local description.
+  confidence: official
+  source_url: https://conbio.org/publications/conservation-letters/
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: 'Conservation Letters rewards concise papers renowned for their originality, timeliness, and
+    influence on policy debates and management solutions; the bar is novelty plus demonstrable impact
+    on conservation policy and practice. Papers are short (no more than 2500-3000 words and no more
+    than 8 tables/figures), and authors are expected to clearly articulate the significance of their
+    findings for conservation policy and practice. Five article types structure the journal: Letters,
+    Reviews, Policy Perspectives, Correspondence, and Viewpoint.'
+  confidence: official
+  source_url: https://conbio.org/publications/conservation-letters/
+  last_verified: '2026-06-22'
+  audience:
+    value: null
+    confidence: unknown
+    source_url: null
+  writing_style:
+    value: 'Brevity and immediacy are core: submissions are no more than 2500-3000 words. Letters present
+      novel findings of high relevance, and authors are expected to articulate how findings apply to
+      conservation policy and practice.'
+    confidence: official
+    source_url: https://conbio.org/publications/conservation-letters/
+  figure_preference:
+    value: 'Caps display items: no more than 8 tables and/or figures per submission, reinforcing the
+      concise, high-signal format.'
+    confidence: official
+    source_url: https://conbio.org/publications/conservation-letters/
+  signals:
+    value: 'Five named article types reveal intent: Letters (novel findings for practice/policy), Reviews,
+      Policy Perspectives, Correspondence, and editor-facing Viewpoint. Authors must clearly articulate
+      the significance of findings for conservation policy and practice.'
+    confidence: official
+    source_url: https://conbio.org/publications/conservation-letters/
+
+caps:                                   # MAP keyed by article type. Conservation Letters has FIVE types.
+  Letter:                               # primary research article type
+    words:
+      value: "2500–3000"
+      excludes: [references, figure_legends, table_legends, SI]
+      confidence: official              # direct quote on conbio.org society page this run
+      source_url: https://conbio.org/publications/conservation-letters/
+      last_verified: 2026-06-22
+    figs_tables:
+      value: 8                          # "no more than 8 tables and/or figures" (combined displays)
+      conflict_note: "conbio.org society page (2026) says ≤8; Juan's journal_db & one older listing say ≤6 — society page wins, but confirm on Wiley forauthors page."
+      confidence: official
+      source_url: https://conbio.org/publications/conservation-letters/
+      last_verified: 2026-06-22
+    refs:
+      value: 40
+      conflict_note: "40 appears in a source CONTAMINATED with Conservation Biology guidelines; treat as unverified."
+      confidence: unknown
+      source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/1755263x/homepage/forauthors.html
+      last_verified: 2026-06-22
+    abstract:
+      value: 200
+      conflict_note: "journal_db: 200; not reconfirmed on official page this run (one contaminated source even implies Letters need no abstract — that is Conservation BIOLOGY's rule, not Conservation Letters)."
+      confidence: secondary
+      source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/1755263x/homepage/forauthors.html
+      last_verified: 2026-06-22
+    structure:
+      value: flexible (brief, argument-first; no rigid IMRAD)
+      confidence: secondary
+      source_url: https://conbio.org/publications/conservation-letters/
+      last_verified: 2026-06-22
+  Review:
+    words:        {value: 5000, excludes: [references, figure_legends, SI], confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    figs_tables:  {value: "no explicit cap stated", confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    refs:         {value: 80, confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    abstract:     {value: 250, confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+    structure:    {value: "synthetic overview / synthesis of emerging or under-covered topics", confidence: secondary, source_url: "https://conbio.org/publications/conservation-letters/", last_verified: 2026-06-22}
+  Policy Perspective:                   # brief essays on conservation & society for a general audience
+    words:        {value: 3000, confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    figs_tables:  {value: 5, confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    refs:         {value: "fewer than 30", confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    abstract:     {value: "not confirmed (likely 150 by analogy; verify)", confidence: unknown, source_url: "https://conbio.onlinelibrary.wiley.com/hub/journal/1755263x/homepage/forauthors.html", last_verified: 2026-06-22}
+    structure:    {value: "brief essay for a general audience on conservation-and-society issues", confidence: secondary, source_url: "https://conbio.org/publications/conservation-letters/", last_verified: 2026-06-22}
+  Correspondence:                       # substantive concerns re previously published articles
+    words:        {value: 500, confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    figs_tables:  {value: "few/none", confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    refs:         {value: 6, confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    abstract:     {value: null, confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    structure:    {value: "no abstract; short critique of a published article", confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+  Viewpoint:                            # typically invited / Editor-in-Chief, to stimulate debate
+    words:        {value: 1000, confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    figs_tables:  {value: "few/none", confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    refs:         {value: "very few / none", confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    abstract:     {value: null, confidence: secondary, source_url: "https://manusights.com/blog/conservation-letters-submission-guide", last_verified: 2026-06-22}
+    structure:    {value: "no abstract; typically single-authored and invited (Editor-in-Chief) to stimulate debate", confidence: secondary, source_url: "https://conbio.org/publications/conservation-letters/", last_verified: 2026-06-22}
+
+desk_reject_triggers:
+  - "Over the 3000-word Letter cap or >8 display items → trim to the format BEFORE submitting."
+  - "Local/descriptive result with no transferable policy or management implication → reframe the 'so what for conservation'."
+  - "No data-availability statement / data not in a public repository → stage the deposit (Dryad/Zenodo) now."
+  - "Author identity not anonymized when submitting → a secondary guide flags this as a delay/return cause; prepare an anonymized version (review model unconfirmed — assume anonymization may be required)."
+  - "Sensitive species localities exposed → mask/coarsen and state that you did."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: official
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/data-sharing-citation/data-sharing-policy.html
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Deposit in a public repository before publication (Dryad common in ecology; Zenodo/Figshare; domain-specific archives)"
+    confidence: secondary
+    source_url: https://manusights.com/blog/conservation-letters-submission-guide
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Share code/scripts with a persistent identifier where applicable (Wiley data-sharing policy)"
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/data-sharing-citation/data-sharing-policy.html
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: null
+    confidence: unknown
+    source_url: https://conbio.onlinelibrary.wiley.com/hub/journal/1755263x/homepage/forauthors.html
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "Mask/coarsen precise locations of threatened or trafficked taxa; state masking (conservation norm; not reconfirmed on page this run)"
+    confidence: secondary
+    source_url: https://conbio.org/publications/conservation-letters/
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID expected (Wiley default)"
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/submission/orcid.html
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                    # → wiley: Methods OR Acknowledgements (Wiley does not mandate one fixed section)
+  block:
+    value: >
+      "During the preparation of this work the author(s) used [TOOL/SERVICE] in order to
+      [REASON, e.g. improve language and readability]. After using this tool/service, the author(s)
+      reviewed and edited the content as needed and take(s) full responsibility for the content of
+      the publication." (Wiley/COPE: disclose tool + version + access date + role + how output was
+      verified; grammar/spell/general-editing tools exempt; generative AI cannot be listed as an author.)
+    confidence: official
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: Wiley ScholarOne (Manuscript Central) — https://mc.manuscriptcentral.com/conl
+    confidence: secondary
+    source_url: https://manusights.com/blog/conservation-letters-submission-guide
+    last_verified: 2026-06-22
+  pack:
+    value: [manuscript (2500–3000 words for a Letter), ≤8 display items, abstract (~200), data-availability statement, AI-disclosure block, ORCID, cover letter, suggested reviewers, possibly an anonymized version, free-format references (any consistent style at initial submission — NOT mandated APA)]
+    confidence: secondary
+    source_url: https://manusights.com/blog/conservation-letters-submission-guide
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

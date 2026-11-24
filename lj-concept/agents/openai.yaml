@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJ Concept"
+  short_description: "跨学科概念解剖、认知校准与 D:/hub 图解笔记沉淀"
+  default_prompt: "Use $lj-concept to dissect and master this concept with surgical clarity, primary-source honesty, and optional D:/hub/20_wiki handoff."

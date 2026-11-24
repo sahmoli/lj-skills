@@ -1,0 +1,207 @@
+slug: global-ecology-and-biogeography
+journal: Global Ecology and Biogeography
+publisher: wiley                       # Wiley proprietary journal (no society); ISSN 1466-822X / 1466-8238
+society:
+  value: null                          # GEB is NOT a society journal (OpenAlex societies: [])
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/S169694011
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: Q1,   confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  impact_factor: {value: 6.4,  confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}   # OpenAlex 2yr mean citedness ~4.98 (different metric)
+  cite_score:    {value: 11.0, confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  is_top:        {value: 是,    confidence: official,  source_url: "Juan", last_verified: 2026-06-22}
+
+open_access:
+  value: hybrid (subscription journal with Wiley OnlineOpen OA option; is_oa=false, not in DOAJ)
+  confidence: secondary
+  source_url: https://api.openalex.org/sources/S169694011
+  last_verified: 2026-06-22
+apc_usd:
+  value: "CONFLICT — OpenAlex $4,530; secondary 2026 guide $5,250; journal_db $4,760 — VERIFY on Wiley fundedaccess page"
+  conflict_note: "journal_db: 4760; OpenAlex: 4530; manusights 2026 guide: 5250 (USD)"
+  confidence: unknown
+  source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/fundedaccess.html
+  last_verified: 2026-06-22
+
+review_model:
+  value: double_anonymized            # GEB went double-blind 1 Jan 2018 ("GEB goes double blind", McGill 2017 editorial). OVERRIDES Wiley single-anon default.
+  confidence: secondary               # official editorial + multiple submission guides corroborate; could not read Wiley page (Cloudflare 403) this run
+  source_url: https://onlinelibrary.wiley.com/doi/full/10.1111/geb.12674
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Macro-scale ecology and biogeography: ecological and biogeographical patterns and processes at large
+    spatial, temporal and taxonomic scales. Welcomes broad-scale studies of the organization of ecological
+    systems and assemblages, using macroecological methods, comparative analyses, meta-analyses and modelling
+    to draw general, conceptual conclusions relevant to ecologists and biogeographers worldwide — NOT local
+    or single-site description.
+  confidence: secondary
+  source_url: https://onlinelibrary.wiley.com/journal/14668238
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: 'Global Ecology and Biogeography is the macroecology journal: it rewards work that uncovers
+    broad, consistent patterns in the ecological characteristics of organisms and ecosystems across
+    large spatial, temporal, or taxonomic scales, and it insists that papers be presented in a way that
+    emphasizes their generality rather than the specific study system. Its audience is macroecologists
+    and biogeographers working at broad scales, so studies must reach general, conceptual conclusions
+    — favoring comparative analyses, meta-analyses, reviews, spatial analyses, and modelling. Practically,
+    a Research Article runs ~5000 words with ~50 references and six to eight display pieces, and submissions
+    carry a distinctive structured abstract (Motivation; Main types of variable contained; Spatial location
+    and grain; Time period and grain; Major taxa and level of measurement; Software format) that forces
+    explicit reporting of scale, grain, and taxon.'
+  confidence: secondary
+  source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+  last_verified: '2026-06-22'
+  audience:
+    value: Macroecologists and biogeographers working at broad scales — researchers on global biodiversity
+      patterns, species range/abundance, ecosystem responses to global change, and historical/evolutionary
+      biogeography. Work is judged by a generality-focused, quantitative-pattern community.
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/productinformation.html
+  writing_style:
+    value: Framing must foreground generality rather than the specific study system. Standard Research
+      Article ~5000 words and ~50 references; structured abstract ≤300 words; required sections (abstract,
+      introduction, methods, results, conclusions). Free Format submission allowed; references in any
+      consistent style.
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+  figure_preference:
+    value: Research Articles allow six to eight display pieces (tables and figures combined). Figures
+      and tables must carry legends; figures should be uploaded at the highest resolution possible.
+      Data Articles are capped at ~2000 words plus two figures.
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+  signals:
+    value: 'Mandatory STRUCTURED ABSTRACT with fixed headings: Motivation; Main types of variable contained;
+      Spatial location and grain; Time period and grain; Major taxa and level of measurement; Software
+      format — forcing explicit scale/grain/taxon reporting. Article types include Perspective, Meta-analyses,
+      Research Reviews, Method, Data Article, Correspondence.'
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+
+caps:                                             # MAP keyed by article_type. Could NOT read the official Wiley page (Cloudflare 403); values corroborated across submission guides → secondary/unknown.
+  Research Paper:                                 # primary research article type
+    words:
+      value: 5000
+      excludes: [references, figure_legends, tables, SI]
+      conflict_note: "Classic GEB guideline: ~5000 words main text within ~10 printed pages; journal_db said 'No strict limit'"
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "6-8 (display items: figures + tables combined)"
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+      last_verified: 2026-06-22
+    refs:
+      value: "~50"
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+      last_verified: 2026-06-22
+    abstract:
+      value: 300
+      conflict_note: "Most sources & journal headings: structured ≤300 words; one secondary listing said 250; journal_db said 350"
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+      last_verified: 2026-06-22
+    structure:
+      value: >
+        Structured (IMRAD). Structured abstract headings: Aim; Location; Time period; Major taxa studied;
+        Methods; Results; Main conclusions.
+      confidence: secondary
+      source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+      last_verified: 2026-06-22
+  Concepts and Synthesis:                          # GEB's review/synthesis category
+    words:        {value: "longer-form synthesis; no hard word cap stated (negotiate with editor)", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html", last_verified: 2026-06-22}
+    figs_tables:  {value: "not strictly limited", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html", last_verified: 2026-06-22}
+    refs:         {value: "not strictly limited", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html", last_verified: 2026-06-22}
+    abstract:     {value: 300, confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html", last_verified: 2026-06-22}
+    structure:    {value: "structured abstract with 3-5 headings matching the paper; flexible body", confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html", last_verified: 2026-06-22}
+  Macroecological Methods:                          # new analytical techniques / software / critical method evaluation
+    words:        {value: "not separately specified (treat like Research Paper)", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html", last_verified: 2026-06-22}
+    abstract:     {value: "structured ≤300; headings Aim; Innovation; Main conclusions", confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html", last_verified: 2026-06-22}
+    figs_tables:  {value: "not strictly limited", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html", last_verified: 2026-06-22}
+    refs:         {value: "not strictly limited", confidence: unknown, source_url: "https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html", last_verified: 2026-06-22}
+  Data Paper:                                       # dataset description article
+    abstract:     {value: "structured ≤300; headings Motivation; Main types of variable contained; Spatial location and grain; Time period and grain; Major taxa and level of measurement; Software format", confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html", last_verified: 2026-06-22}
+    structure:    {value: "data-descriptor; dataset deposited in a public repository", confidence: secondary, source_url: "https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html", last_verified: 2026-06-22}
+  Perspective:                                      # forward-looking opinion piece
+    words:        {value: 2500, conflict_note: "journal_db: 2500; one secondary guide implied ~4000 — VERIFY", confidence: unknown, source_url: "journal_db", last_verified: 2026-06-22}
+    abstract:     {value: 350, conflict_note: "journal_db: 350; likely ≤300 like other types — VERIFY", confidence: unknown, source_url: "journal_db", last_verified: 2026-06-22}
+    figs_tables:  {value: 4, confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+    refs:         {value: "not specified", confidence: unknown, source_url: "journal_db", last_verified: 2026-06-22}
+    structure:    {value: "forward-looking viewpoint; flexible", confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+
+desk_reject_triggers:
+  - "Scale too small / single-site or regional with no transferable general conclusion → reframe at macro/global scale or target a regional journal (Juan's own gate: '尺度够大吗')."
+  - "Manuscript, acknowledgements, or the data/code-availability statement reveal author identity (GEB is double-anonymous) → fully anonymize, put names+affiliations+ORCID on a SEPARATE title-page file, keep the data/code statement author-blind."
+  - "Abstract not structured to the required headings or over ~300 words → restructure (Aim; Location; Time period; Major taxa studied; Methods; Results; Main conclusions)."
+  - "No data- and code-availability statement, or data not deposited in a stable public repository before review → deposit (Dryad/Zenodo/GBIF/TreeBASE) and add an anonymized statement."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Stable public repository: Dryad / Zenodo / Figshare; GBIF for occurrence data; TreeBASE for phylogenies; GitHub for code"
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Code/scripts expected with the data-availability statement; archive with a persistent identifier (Zenodo/GitHub). Statement must NOT identify authors (double-anonymous)."
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "No single mandated guideline; meta-analyses expected to follow systematic-review norms (PRISMA-EcoEvo)"
+    confidence: unknown
+    source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "Mask/coarsen precise localities of threatened or trafficked taxa (Wiley/general ecology norm)"
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID iDs collected for authors at submission (Wiley default)"
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/submission/orcid.html
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                    # → wiley: Methods OR Acknowledgements (Wiley does not mandate one fixed section)
+  block:
+    value: >
+      "During the preparation of this work the author(s) used [TOOL/SERVICE] in order to
+      [REASON, e.g. improve language and readability]. After using this tool/service, the author(s)
+      reviewed and edited the content as needed and take(s) full responsibility for the content of
+      the publication." (Wiley/COPE: generative AI cannot be listed as an author.)
+    confidence: official
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: Wiley ScholarOne — https://mc.manuscriptcentral.com/geb
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+    last_verified: 2026-06-22
+  pack:
+    value: [anonymized manuscript (~5000 words main text for Research Papers), separate title page (names/affiliations/ORCID), structured abstract ≤300 words, 6-8 display items, ~50 refs in APA author-year style, data- and code-availability statement (author-blind), cover letter, suggested reviewers, AI-disclosure block]
+    confidence: secondary
+    source_url: https://onlinelibrary.wiley.com/page/journal/14668238/homepage/forauthors.html
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

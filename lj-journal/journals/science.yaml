@@ -1,0 +1,64 @@
+slug: science
+journal: Science
+publisher: aaas
+doi_prefixes: {value: [10.1126/science], confidence: official, source_url: "https://www.science.org/journal/science", last_verified: 2026-08-15}
+society: {value: "American Association for the Advancement of Science (AAAS)", confidence: official, source_url: "https://www.science.org/", last_verified: 2026-08-15}
+metrics:
+  quartile: {value: unknown, confidence: unknown, source_url: null, last_verified: 2026-08-15}
+  impact_factor: {value: unknown, confidence: unknown, source_url: null, last_verified: 2026-08-15}
+  cite_score: {value: unknown, confidence: unknown, source_url: null, last_verified: 2026-08-15}
+  is_top: {value: 是, confidence: official, source_url: "Juan", last_verified: 2026-08-15}
+open_access: {value: hybrid, confidence: official, source_url: "https://www.science.org/content/page/open-access-aaas", last_verified: 2026-08-15}
+apc_usd: {value: unknown, confidence: unknown, source_url: "https://www.science.org/content/page/open-access-aaas", last_verified: 2026-08-15}
+review_model: {value: single-anonymized, confidence: official, source_url: "https://www.science.org/content/page/science-information-reviewers", last_verified: 2026-08-15}
+scope: {value: "Research of broad significance across science, selected for importance beyond a single specialty.", confidence: official, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+taste: {value: "A concise, broadly legible advance whose central evidence survives close reading of figures and captions.", confidence: secondary, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+
+caps:
+  Research Article:
+    words: {value: "verify live by current article format", excludes: [references, figure_legends], confidence: unknown, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+    figs_tables: {value: "usually 3–5 display items; extended format up to 6; >4 figures may be full-digital with print summary", confidence: official, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+    refs: {value: "verify live", confidence: unknown, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+    abstract: {value: "verify live", confidence: unknown, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+    structure: {value: "Research Article; brief legends; extended/full-digital format possible", confidence: official, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+  Review:
+    words: {value: "verify live", excludes: [references, figure_legends], confidence: unknown, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+    figs_tables: {value: "up to 4 display items", confidence: official, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+    refs: {value: "verify live", confidence: unknown, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+    abstract: {value: "verify live", confidence: unknown, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+    structure: {value: "Review", confidence: official, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+
+artwork:
+  widths: {value: "final print: 5.7 cm one column, 12.1 cm two columns, 18.4 cm three columns", confidence: official, source_url: "https://www.science.org/content/page/instructions-preparing-revised-manuscript", last_verified: 2026-08-15}
+  font: {value: "sans-serif, Helvetica preferred; about 7 pt and never below 5 pt after reduction; symbols at least 6 pt", confidence: official, source_url: "https://www.science.org/content/page/instructions-preparing-initial-manuscript", last_verified: 2026-08-15}
+  line_weight: {value: "minimum 0.5 pt at final reduced size; avoid light lines and screen shading", confidence: official, source_url: "https://www.science.org/content/page/instructions-preparing-initial-manuscript", last_verified: 2026-08-15}
+  panel_labels: {value: "uppercase A, B, C; 10 pt bold at final size, generally upper-left; avoid subpanel labels", confidence: official, source_url: "https://www.science.org/content/page/instructions-preparing-initial-manuscript", last_verified: 2026-08-15}
+  raster_dpi: {value: "minimum 300 dpi at final size for raster line art, grayscale, and colour; preferably higher; do not upsample", confidence: official, source_url: "https://www.science.org/content/page/instructions-preparing-revised-manuscript", last_verified: 2026-08-15}
+  vector_formats: {value: "preferred PDF, EPS, AI for vector illustrations; PDF/EPS for vector+raster combinations", confidence: official, source_url: "https://www.science.org/content/page/instructions-preparing-revised-manuscript", last_verified: 2026-08-15}
+  raster_formats: {value: "TIFF minimum 300 dpi for raster illustrations and photographs/microscopy; submit each figure separately; revised figures not embedded in Word/PowerPoint", confidence: official, source_url: "https://www.science.org/content/page/instructions-preparing-revised-manuscript", last_verified: 2026-08-15}
+  colour_mode: {value: "unknown; current accessible Science-main official pages specify accessibility but not RGB/sRGB/CMYK", confidence: unknown, source_url: "https://www.science.org/content/page/instructions-preparing-revised-manuscript", last_verified: 2026-08-15}
+  legend_limit: {value: "each figure caption ≤200 words; brief bold whole-figure title first; describe panels in order; full-digital summary-figure caption ≤65 words", confidence: official, source_url: "https://www.science.org/content/page/instructions-preparing-initial-manuscript", last_verified: 2026-08-15}
+
+desk_reject_triggers:
+  - "The main advance is not legible beyond the specialty → sharpen the general scientific consequence."
+  - "Display-item budget is exceeded without a necessary evidence dependency → compress or move support online."
+  - "Caption or artwork requirements are remembered from another Science-family journal → use the Science-main card and verify live."
+reporting:
+  data_availability_statement: {required: true, confidence: official, source_url: "https://www.science.org/content/page/science-journals-editorial-policies", last_verified: 2026-08-15}
+  data_repository: {value: "data needed to evaluate conclusions must be in the paper, supplement, or public repository", confidence: official, source_url: "https://www.science.org/content/page/science-journals-editorial-policies", last_verified: 2026-08-15}
+  code_sharing: {value: "custom code central to findings must be made available", confidence: official, source_url: "https://www.science.org/content/page/science-journals-editorial-policies", last_verified: 2026-08-15}
+  reporting_guideline: {value: "apply the relevant Science journals policy", confidence: official, source_url: "https://www.science.org/content/page/science-journals-editorial-policies", last_verified: 2026-08-15}
+  sensitive_locality: {value: "no Science-main threatened-species locality rule verified; apply conservation governance and verify with editor", confidence: unknown, source_url: "https://www.science.org/content/page/science-journals-editorial-policies", last_verified: 2026-08-15}
+  orcid: {value: "corresponding-author ORCID required", confidence: official, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+ai_disclosure:
+  placement: inherit
+  block: {value: "Use the current AAAS AI-disclosure policy and publisher profile; verify live.", confidence: official, source_url: "https://www.science.org/content/page/science-journals-editorial-policies", last_verified: 2026-08-15}
+submission:
+  portal: {value: "Science submission system", confidence: official, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+  pack: {value: [manuscript, separate figures, captions, reporting statements, data and code availability], confidence: official, source_url: "https://www.science.org/content/page/science-information-authors", last_verified: 2026-08-15}
+my_notes:
+  reader_profile:
+  writing_style:
+  figure_preference:
+  cautions:
+  favorite_articles: []

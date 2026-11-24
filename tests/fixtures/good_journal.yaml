@@ -1,0 +1,30 @@
+slug: good_journal
+journal: Good Fixture Journal
+publisher: nature_portfolio
+society: {value: null, confidence: official, source_url: "https://example.org/about", last_verified: 2026-06-23}
+
+metrics:
+  is_top: {value: "是", confidence: official, source_url: "https://example.org/metrics", last_verified: 2026-06-23}
+open_access: {value: hybrid, confidence: official, source_url: "https://example.org/oa", last_verified: 2026-06-23}
+
+scope: {value: "A one-paragraph remit.", confidence: official, source_url: "https://example.org/scope", last_verified: 2026-06-23}
+taste: {value: "What this venue rewards.", confidence: official, source_url: "https://example.org/taste", last_verified: 2026-06-23}
+
+caps:
+  Article:
+    words: {value: 5000, excludes: [references, figure_legends], confidence: official, source_url: "https://example.org/caps", last_verified: 2026-06-23}
+    abstract: {value: 150, confidence: official, source_url: "https://example.org/caps", last_verified: 2026-06-23}
+
+desk_reject_triggers:
+  - "out of scope -> not sent for review"
+
+ai_disclosure:
+  placement: inherit
+  block: {value: "AI use disclosed in Methods.", confidence: official, source_url: "https://example.org/ai", last_verified: 2026-06-23}
+
+my_notes:
+  reader_profile:
+  writing_style:
+  figure_preference:
+  cautions:
+  favorite_articles: []

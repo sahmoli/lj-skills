@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJ Viz"
+  short_description: "设计、构建或审计生态与保护科学图"
+  default_prompt: "Use $lj-viz to route this scientific figure as quick, full, or revision work and preserve its evidence contract."

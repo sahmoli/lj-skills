@@ -1,0 +1,101 @@
+# Publisher-level defaults. A journal card inherits these via `publisher:`; card fields override.
+# The load-bearing inherited field is AI-disclosure PLACEMENT (differs by publisher, not journal).
+# last_verified: 2026-06-22 (re-verify quarterly; some publisher pages 403 to automated fetch).
+
+nature_portfolio:        # Springer Nature: Nature Ecology & Evolution, Nature Sustainability, Nature Communications
+  ai_disclosure:
+    placement: "Methods section (or a suitable alternative part if no Methods)"
+    note: "Document use of generative AI / LLM-assisted tech in Methods. Pure AI copy-editing (grammar/tone) needs NO declaration. AI tools cannot be authors. Generative-AI images generally prohibited; non-generative image ML disclosed in the figure caption."
+    source_url: "https://www.nature.com/nature-portfolio/editorial-policies/ai"
+    confidence: official
+    last_verified: 2026-06-22
+  review_model_default: single_anonymized   # double-anonymous available on request across Nature Portfolio
+  portal_family: "editorial-manager / snapp"
+  reviewer_ai_policy:
+    value: prohibits-upload
+    note: "Springer Nature: reviewers must not upload manuscripts or parts (including figures/tables) into generative AI tools."
+    source_url: "https://www.springernature.com/gp/editors/resources-tools-for-editors/ai-policies"
+    confidence: official
+    last_verified: 2026-08-18
+
+elsevier:                # Biological Conservation; Cell Press (Current Biology, One Earth) follow this
+  ai_disclosure:
+    placement: "Named section 'Declaration of generative AI and AI-assisted technologies in the writing process', placed at the END immediately ABOVE the References — and it is PUBLISHED in the article"
+    note: "Required regardless of task. Standard grammar/spell checkers are EXEMPT. AI cannot be an author."
+    source_url: "https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier"
+    confidence: official
+    last_verified: 2026-06-22
+  review_model_default: single_anonymized
+  portal_family: "editorial-manager"
+  reviewer_ai_policy:
+    value: prohibits-upload
+    note: "Elsevier: reviewers must not upload a submitted manuscript or any part of it into an AI tool. From 2026-06, background literature search on a private non-retaining tool is separately permitted."
+    conflict_note: "private-tool-limited for background literature search only; manuscript upload remains prohibited"
+    source_url: "https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals"
+    confidence: official
+    last_verified: 2026-08-18
+
+wiley:                   # Conservation Letters, Conservation Biology (SCB), Ecology Letters, GEB, GCB,
+                         # Ecography, Diversity & Distributions, J Biogeography
+  ai_disclosure:
+    placement: "Methods OR Acknowledgements section (Wiley does not mandate one fixed section)"
+    note: "Wiley/COPE: describe substantial AI use transparently (tool + version + access date + role + how output was verified). Grammar/spell/general-editing tools exempt. AI cannot be an author."
+    source_url: "https://authorservices.wiley.com/ethics-guidelines/index.html"
+    confidence: official
+    last_verified: 2026-06-22
+  review_model_default: single_anonymized
+  portal_family: "scholarone / research-exchange"
+  reviewer_ai_policy:
+    value: prohibits-upload
+    note: "Wiley: editors and reviewers must not upload manuscripts or any parts including figures and tables into AI tools."
+    source_url: "https://www.wiley.com/en-us/publish/ai-insights/research-publishing-faq/"
+    confidence: official
+    last_verified: 2026-08-18
+
+wiley_bes:               # British Ecological Society on Wiley: J Applied Ecology, Methods in Ecology & Evolution,
+                         # J Animal Ecology, People and Nature (and J Ecology, Functional Ecology)
+  inherits: wiley
+  review_model_default: double_anonymized
+  review_model_note: "All BES journals moved to DOUBLE-anonymous peer review in Aug 2023 — anonymize manuscript AND author identity, else desk reject."
+  review_model_source_url: "https://besjournals.onlinelibrary.wiley.com/"
+  review_model_confidence: secondary
+  review_model_last_verified: 2026-06-22
+  reviewer_ai_policy:
+    value: prohibits-upload
+    note: "Inherits Wiley: reviewers must not upload manuscripts or parts into generative AI tools."
+    source_url: "https://www.wiley.com/en-us/publish/ai-insights/research-publishing-faq/"
+    confidence: official
+    last_verified: 2026-08-18
+
+pnas:                    # PNAS — self-published by the National Academy of Sciences; NOT a big-publisher mirror
+  ai_disclosure:
+    placement: "FETCH SEPARATELY — PNAS sets its own policy; verify the current section on the PNAS author center"
+    fetch_separately: true
+    source_url: "https://www.pnas.org/author-center/editorial-and-journal-policies"
+    confidence: unknown
+    last_verified: 2026-06-22
+  review_model_default: single_anonymized
+  note: "PNAS is PAGE-based not word-based (~6 pages standard, max 12, ~$375/extra page; 120-word Significance Statement mandatory). Do NOT model PNAS caps as a word scalar."
+  portal_family: "pnascentral"
+  reviewer_ai_policy:
+    value: unknown
+    note: "PNAS reviewer AI policy is not copied here; verify live before referee-mode use."
+    source_url: "https://www.pnas.org/author-center/editorial-and-journal-policies"
+    confidence: unknown
+    last_verified: 2026-08-18
+
+aaas:                    # Science Advances — AAAS self-published
+  ai_disclosure:
+    placement: "FETCH SEPARATELY — AAAS/Science family policy; verify current requirement"
+    fetch_separately: true
+    source_url: "https://www.science.org/content/page/science-journals-editorial-policies"
+    confidence: unknown
+    last_verified: 2026-06-22
+  review_model_default: single_anonymized
+  portal_family: "science-cts"
+  reviewer_ai_policy:
+    value: unknown
+    note: "AAAS/Science reviewer AI policy is not copied here; verify live before referee-mode use."
+    source_url: "https://www.science.org/content/page/science-journals-editorial-policies"
+    confidence: unknown
+    last_verified: 2026-08-18

@@ -1,0 +1,79 @@
+schema_version: 1
+paper_id: replace-with-manuscript-id
+scope: paper
+
+# A channel has one semantic job. Do not use colour simultaneously for taxon identity,
+# treatment, habitat condition, and effect direction. Pick references before styling.
+reference_board:
+  selected:
+    - source_id: 2025-pigot-macroecological-rules-predict-biomass
+      figure_id: Fig-3
+      borrow: repeated small silhouettes and aligned comparison grammar
+      avoid: unnecessary taxon-colour proliferation
+    - source_id: juan-cost-scaling-surrogate-portfolios
+      figure_id: Fig-2
+      borrow: stable pair-versus-singleton language
+      avoid: labels too close to trajectories
+semantic_namespaces:
+  entity_identity:
+    channels: [silhouette, text]
+  analytical_role:
+    channels: [colour]
+  condition:
+    channels: [marker, line_type]
+
+palette:
+  namespace: evidence
+  semantic_roles:
+    focal: "#4477AA"
+    comparison: "#CCBB44"
+  collision_rule: "focal/comparison colours cannot be reused for entity identity"
+neutral_roles:
+  ink: "#202124"
+  context: "#D9DDE2"
+  missing: "#8B9098"
+
+typography_physical:
+  body_pt: 7
+  tick_pt: 6
+  panel_label_pt: 8
+
+entities:
+  snow-leopard:
+    label: Snow leopard
+    scientific_name: Panthera uncia
+    silhouette:
+      registry_id: panthera-uncia-phylopic-cb44ff49
+      intended_taxon: Panthera uncia
+      depicted_taxon: Panthera uncia
+      match_level: exact
+      approximation_disclosed: false
+      source_file: assets/silhouettes/panthera-uncia__phylopic-cb44ff49.svg
+      sha256: 9d72232e1fc58f916c0cfe0f4e445bf0e1fe1b76f83fb0b07dc4cbc7a38c44cb
+      license: CC0-1.0
+      creator: Margot Michaud
+    canonical_treatment:
+      fill_role: ink
+      orientation: facing-right
+      label_required: true
+
+analytical_tokens:
+  reference:
+    colour_role: context
+    marker: circle
+    line_type: solid
+  focal-result:
+    colour_role: focal
+    marker: circle
+    line_type: solid
+  exception:
+    colour_role: comparison
+    marker: triangle
+    line_type: dashed
+
+locked_across_figures:
+  - entity labels and scientific names
+  - silhouette registry IDs and orientation
+  - semantic meaning of colour roles
+  - marker and line-type meanings
+  - category order, units, sign convention, and terminology

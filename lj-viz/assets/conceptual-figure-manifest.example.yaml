@@ -1,0 +1,85 @@
+figure_id: fig-system
+figure_family: conceptual
+workflow: {profile: full}
+claim: "Chronic pressure disrupts a buffering mechanism, creating a reinforcing decline that a targeted safeguard can interrupt."
+reader_task: trace-mechanism
+alternative_explanation: "The depicted relations are a scoped synthesis; the figure does not establish effect size or universal causality."
+medium: paper
+semantic_model:
+  thesis: "A perturbation matters because it breaks the mechanism that normally damps a reinforcing decline."
+  scope: "Conceptual synthesis of the stated system; quantitative strength, timing and unobserved pathways remain outside the figure."
+  source_anchors:
+    - id: system-review
+      source: "User-provided review or manuscript section"
+      locator: "Mechanism synthesis paragraph"
+      supports: [baseline, pressure, buffering, outcome, feedback]
+      status: synthesized
+    - id: intervention-study
+      source: "User-provided intervention evidence"
+      locator: "Results and discussion"
+      supports: [intervention, safeguard, failure]
+      status: direct
+  nodes:
+    - {id: baseline, label: "Buffered baseline", role: baseline, evidence: [system-review], status: synthesized}
+    - {id: intervention, label: "Targeted intervention", role: insertion-point, evidence: [intervention-study], status: direct}
+    - {id: pressure, label: "Chronic pressure", role: driver, evidence: [system-review], status: synthesized}
+    - {id: buffering, label: "Buffering mechanism", role: mechanism, evidence: [system-review], status: synthesized}
+    - {id: outcome, label: "System decline", role: outcome, evidence: [system-review], status: synthesized}
+    - {id: feedback, label: "Reinforcing feedback", role: feedback, evidence: [system-review], status: synthesized}
+    - {id: failure, label: "Failure pathway", role: failure, evidence: [intervention-study], status: direct}
+    - {id: safeguard, label: "Restoration safeguard", role: safeguard, evidence: [intervention-study], status: direct}
+  edges:
+    - {id: e-baseline-pressure, from: baseline, to: pressure, relation: transforms, sign: negative, evidence: [system-review], status: synthesized}
+    - {id: e-pressure-buffering, from: pressure, to: buffering, relation: inhibits, sign: negative, evidence: [system-review], status: synthesized}
+    - {id: e-buffering-outcome, from: buffering, to: outcome, relation: transforms, sign: negative, evidence: [system-review], status: synthesized}
+    - {id: e-outcome-feedback, from: outcome, to: feedback, relation: activates, sign: positive, evidence: [system-review], status: synthesized}
+    - {id: e-feedback-pressure, from: feedback, to: pressure, relation: feeds-back, sign: positive, evidence: [system-review], status: synthesized}
+    - {id: e-buffering-failure, from: buffering, to: failure, relation: inhibits, sign: negative, evidence: [intervention-study], status: direct}
+    - {id: e-safeguard-buffering, from: safeguard, to: buffering, relation: restores, sign: positive, evidence: [intervention-study], status: direct}
+    - {id: e-intervention-safeguard, from: intervention, to: safeguard, relation: activates, sign: positive, evidence: [intervention-study], status: direct}
+  topology:
+    type: feedback
+    dominant_path: [baseline, pressure, buffering, outcome]
+    feedback_loops: [[pressure, buffering, outcome, feedback]]
+    insertion_points: [intervention]
+  constraints:
+    must_show: [baseline, intervention, pressure, buffering, outcome, feedback, failure, safeguard]
+    must_not_show: [unanchored-causal-arrow, decorative-feedback-loop]
+    locked_labels:
+      baseline: "Buffered baseline"
+      intervention: "Targeted intervention"
+      pressure: "Chronic pressure"
+      buffering: "Buffering mechanism"
+      outcome: "System decline"
+      feedback: "Reinforcing feedback"
+      failure: "Failure pathway"
+      safeguard: "Restoration safeguard"
+    invariants: [pressure, buffering, outcome, e-feedback-pressure]
+    redundant_encoding: [arrow-direction, line-style, direct-label]
+representation:
+  canonical_editable: svg
+  ai_image_role: draft
+reference_board:
+  - {source_id: local-corpus-mechanism, figure_id: Fig-4, borrow: "left-to-right causal spine with a visibly closed feedback loop", avoid: "decorative circular arrows"}
+  - {source_id: local-corpus-intervention, figure_id: Fig-2, borrow: "intervention callout tied to its mechanism", avoid: "outcomes floating without causal attachment"}
+visual_design:
+  direction: mechanism
+  hierarchy: {hero_panel: system, support_strategy: quieter-context, area_earned_by: "the dominant causal path and its evidenced intervention point"}
+  palette: {namespace: evidence, ink: "#202124", context: "#D9DDE2", missing: "#8B9098", semantic: {pressure: "#AA3377", safeguard: "#228833"}, critical_pairs: [[pressure, safeguard]], accent_budget: 2, categorical_count: 2, collision_check: true}
+  spacing_mm: {outer: 6, panel: 4, within_panel: 2.5, label_offset: 1.5}
+  typography: {family: Arial, body_pt: 7, panel_label_pt: 8, coloured_text: false, panel_title_strategy: short-header}
+  scaffolding: {stroke_pt: 0.5, background_gridlines: false, drop_shadows: false, decorative_boxes: false, corner_policy: square}
+  density_strategy: "One dominant logical topology; only causal nodes, outcomes and safeguards earn visual weight."
+  legend_strategy: direct-label
+  placement: {collision_check: true, clip_check: true, longest_label_stress_test: true, edge_clearance_mm: 1.5, label_icon_clearance_mm: 1.5, direct_label_ladder: [outside-data, margin-band, leader-line, compact-legend]}
+  icons: {mode: none, purpose: not-applicable, provenance: not-applicable, grammar: none, optical_height_mm: not-applicable, silhouettes: []}
+visual_vocabulary: {applicable: false, reason: "Standalone conceptual figure example."}
+provenance:
+  code: figures/fig-system.svg
+  command: "manual SVG assembly from semantic_model; validate before export"
+  transforms: "No numerical data are redrawn; source anchors define only the depicted conceptual relations."
+  filters: none
+  exclusions: "Quantitative strength, timing and unanchored mechanisms are excluded."
+output: {width_mm: 178, height_mm: 125, formats: [svg, pdf, png]}
+build: {status: planned, artifacts: []}
+qc: {stress_render: {status: pending, artifact: pending}, technical_preflight: {status: pending, report: pending}, final_size_reviewed: false, colour_accessibility_reviewed: false, claim_trace_reviewed: false, visual_craft_reviewed: false, visual_craft_verdict: pending}

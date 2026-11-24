@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJ Write"
+  short_description: "在不改变科学含义下写作或编辑生态保护论文"
+  default_prompt: "Use $lj-write to draft or revise this ecology manuscript or response-letter prose while preserving its scientific meaning."

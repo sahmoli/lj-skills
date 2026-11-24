@@ -1,0 +1,240 @@
+slug: one-earth
+journal: One Earth
+publisher: elsevier                     # Cell Press = Elsevier; inherits Elsevier generative-AI placement
+society:
+  value: null                           # Cell Press flagship sustainability journal; no external society
+  confidence: official
+  source_url: https://www.cell.com/one-earth/information-for-authors
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: Q1,   confidence: secondary, source_url: "journal_db; SCImago", last_verified: 2026-06-22}
+  impact_factor: {value: "15.3 (journal_db); current 2024 JCR JIF reported ~15.5", confidence: secondary, source_url: "journal_db; aggregators (resurchify/JCR June-2025 release)", last_verified: 2026-06-22}
+  cite_score:    {value: 18.7, confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  is_top:        {value: 是,    confidence: official,  source_url: "Juan", last_verified: 2026-06-22}
+
+open_access:
+  value: "hybrid (subscription journal with a gold OA option; OpenAlex is_oa=false, not in DOAJ)"
+  confidence: secondary
+  source_url: https://www.cell.com/one-earth/information-for-authors/publishing-options
+  last_verified: 2026-06-22
+apc_usd:
+  value: "≈8,900–9,170 for the gold OA option (NOT free). OpenAlex: 8,900; Cell Press 2026 standard listing: ~9,170 (discounted ~6,878 before Jul-2026); one third-party guide: 4,800."
+  conflict_note: "Juan's journal_db said APC 'N/A' — WRONG. There IS a substantial OA fee; exact figure varies by source (4,800 vs 8,900 vs 9,170)."
+  confidence: secondary
+  source_url: https://www.cell.com/open-access
+  last_verified: 2026-06-22
+
+review_model:
+  value: single_anonymized (default) — double-anonymous peer review available as an OPT-IN at submission (One Earth is one of few Cell Press journals offering it; not available for Letters)
+  confidence: official                  # read off cell.com info-for-authors "Double-anonymous peer review option" (Aug-2025 archive) + corroborated 2026
+  source_url: https://www.cell.com/one-earth/information-for-authors
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Cell Press' flagship sustainability journal. Publishes high-quality research and perspectives that
+    significantly advance our ability to understand and address today's sustainability challenges across
+    the natural, social, and applied sciences and the humanities. Monthly thematic issues; spans
+    biodiversity & ecosystem services, climate adaptation/mitigation, food/water/energy systems,
+    land-use change, governance & policy, sustainable development. Disciplinary work considered, but
+    cross-disciplinary submissions with a significant conceptual advance are particularly encouraged.
+  confidence: official
+  source_url: https://www.cell.com/one-earth/information-for-authors
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: 'One Earth rewards work that delivers a significant conceptual advance across the full spectrum
+    of environmental change and sustainability, with an explicit editorial appetite for cross- and transdisciplinary
+    research (especially projects involving end users at the design stage) and transformative solutions
+    over narrow disciplinary studies. It is deliberately a single journal for a diverse audience, uniting
+    the natural, social, and applied sciences, and is written to reach non-experts and decision makers.
+    Its defining structural tell is the mandatory plain-language "Science for Society" box on every
+    research article, which must be jargon-free and propose transdisciplinary pathways forward.'
+  confidence: secondary
+  source_url: https://crosstalk.cell.com/blog/a-qa-with-lewis-collins-the-editor-in-chief-of-one-earth
+  last_verified: '2026-06-22'
+  audience:
+    value: A single journal with a deliberately diverse audience uniting the natural, social, and applied
+      sciences; also explicitly written for non-experts and decision makers via the mandated plain-language
+      societal-impact statement.
+    confidence: official
+    source_url: https://crosstalk.cell.com/blog/a-qa-with-lewis-collins-the-editor-in-chief-of-one-earth
+  writing_style:
+    value: The mandatory "science for society" statement must be jargon-free and understandable to a
+      non-scientist (1-2 paragraphs, max ~300 words), translating societal relevance and impact for
+      broad audiences. No broader prose-style mandate stated beyond this accessibility requirement.
+    confidence: secondary
+    source_url: https://www.cell.com/one-earth/information-for-authors/article-types
+  figure_preference:
+    value: 'Only formatting guidance located: at final submission, main figures/schemes are not embedded
+      in the main document and figure legends are provided as one consolidated list (not interspersed
+      in text). No stated aesthetic or display-item taste preference.'
+    confidence: secondary
+    source_url: https://www.cell.com/one-earth/information-for-authors/final-submission
+  signals:
+    value: 'Signature mandatory "Science for Society" box on all research articles: a plain-language
+      statement of societal relevance/impact (positive or negative) that proposes transdisciplinary
+      pathways forward. This box is the journal''s defining structural tell of its applied, decision-relevant
+      ambitions.'
+    confidence: secondary
+    source_url: https://www.cell.com/one-earth/information-for-authors/article-types
+
+caps:                                   # MAP keyed by article_type — Cell Press One Earth official article-types page
+  Article:                              # "Research article" — One Earth publishes all original research in one format
+    words:
+      value: 5000
+      excludes: [methods, references]
+      confidence: official
+      source_url: https://www.cell.com/one-earth/information-for-authors/article-types
+      last_verified: 2026-06-22
+    figs_tables:
+      value: 7                          # "up to 7 display items" (figures + tables combined)
+      confidence: official
+      source_url: https://www.cell.com/one-earth/information-for-authors/article-types
+      last_verified: 2026-06-22
+    refs:
+      value: "no fixed cap stated (references excluded from the 5,000-word count)"
+      confidence: secondary
+      source_url: https://www.cell.com/one-earth/information-for-authors/article-types
+      last_verified: 2026-06-22
+    abstract:
+      value: "conventional 'Summary' (Cell Press; no explicit word cap on the article-types page — commonly ~150 words) PLUS a MANDATORY 'Science for Society' box of ≤1,000 characters incl. spaces"
+      conflict_note: "journal_db frontmatter says abstract 300; Juan's own table says 150. Neither is stated on the official article-types page; the ≤1,000-char limit applies to the Science-for-Society box, not the abstract."
+      confidence: secondary
+      source_url: https://www.cell.com/one-earth/information-for-authors/article-types
+      last_verified: 2026-06-22
+    structure:
+      value: "IMRAD — Title, Author list, Summary, Keywords, Introduction, Results, Discussion, Methods, Resource availability, Acknowledgments, Author contributions, Declaration of interests, Declaration of generative AI, figure legends, tables, references; + Science for Society box + graphical abstract"
+      confidence: official
+      source_url: https://www.cell.com/one-earth/information-for-authors
+      last_verified: 2026-06-22
+  Resource:
+    words:       {value: "3,000–5,000", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    figs_tables: {value: "3–5", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    refs:        {value: 100, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    abstract:    {value: "conventional Summary", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    structure:   {value: "brief intro + Results subsections: method summary, resource description, technical validation, limitations", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+  Review:
+    words:       {value: "5,000–8,000", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    figs_tables: {value: "5–8", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    refs:        {value: 120, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    abstract:    {value: "conventional Summary; must indicate societal relevance + outlook section", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    structure:   {value: "tutorial overview + outlook (future research/policy directions); usually commissioned", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+  Perspective:
+    words:       {value: "4,000–6,000", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    figs_tables: {value: "4–6", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    refs:        {value: 100, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    abstract:    {value: "conventional Summary; must indicate societal relevance", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    structure:   {value: "focused, forward-looking/speculative viewpoint; usually commissioned", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+  Commentary:
+    words:       {value: 2000, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    figs_tables: {value: 2, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    refs:        {value: 15, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    structure:   {value: "topical, evidence-supported opinion; MUST discuss solutions/pathways, not just the problem; jargon-free; usually commissioned single-author", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+  Preview:
+    words:       {value: 1500, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    figs_tables: {value: 1, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    refs:        {value: 10, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    structure:   {value: "highlights a paper in the same/recent issue from a related field; mostly commissioned", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+  Primer:
+    words:       {value: "2,500–3,500", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    figs_tables: {value: "3–4", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    refs:        {value: "recommended reading list (not traditional references)", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    structure:   {value: "short jargon-free introductory article on a sub-discipline; mostly commissioned", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+  Reflection:
+    words:       {value: 3000, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    figs_tables: {value: 2, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    refs:        {value: 15, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    structure:   {value: "reflects on recently published gray literature (gov/NGO/policy reports); proposes a research/policy pathway", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+  Voices:
+    words:       {value: "200–250 (≤1,600 characters incl. spaces)", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    figs_tables: {value: "0 (author headshot only)", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    refs:        {value: "none permitted", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    structure:   {value: "short multi-author responses to a topical question; editor/advisory-board solicited", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+  Letter:                               # short comment on a One Earth paper published within the past 3 months
+    words:       {value: 1500, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    figs_tables: {value: "1 small supplemental display item", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    refs:        {value: 10, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+    structure:   {value: "comment/clarification on a One Earth paper from the past 3 months; must first engage the original authors; double-anonymous NOT available for Letters", confidence: secondary, source_url: https://www.cell.com/one-earth/information-for-authors/article-types, last_verified: 2026-06-22}
+
+desk_reject_triggers:
+  - "No substantive cross-disciplinary integration / no significant conceptual advance → reframe around an integrated socio-environmental question, not a single-discipline result."
+  - "Missing or weak 'Science for Society' box (≤1,000 chars) → it is MANDATORY on research articles; write a jargon-free societal-relevance + pathways-forward statement."
+  - "Describes the problem but offers no solution or pathway forward → add explicit solution-orientation (Commentaries especially must discuss solutions)."
+  - "Over ~5,000 words (excl. methods/refs) or >7 display items → trim to the format before submitting."
+  - "No data- AND code-availability statements with deposit accessions → stage public-repository deposits at first submission."
+  - "Unsolicited Review/Perspective without a fit check → most are commissioned; send a presubmission inquiry / short synopsis first."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: official
+    source_url: https://www.cell.com/one-earth/information-for-authors
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Public repository with accession numbers required; deposit data (and metadata) for editorial/peer review at submission. Env-data repos: Dryad/Zenodo/Figshare; domain-specific archives where they exist."
+    confidence: secondary
+    source_url: https://www.cell.com/one-earth/information-for-authors
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Code-availability statement required; deposit code with a persistent identifier (Zenodo/GitHub-archived) where computation underlies the results"
+    confidence: official
+    source_url: https://www.cell.com/one-earth/information-for-authors
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "No ecology-specific guideline mandated (no PRISMA-EcoEvo/ODMAP/STRANGE requirement found). Cell Press expects Sex- and Gender-Based Analysis (SGBA) reporting where relevant; One Earth does NOT use STAR Methods."
+    confidence: secondary
+    source_url: https://www.cell.com/one-earth/information-for-authors
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "No explicit species-coordinate masking policy found; general Cell Press 'sensitive human data' policy applies. VERIFY whether threatened-taxa localities must be masked."
+    confidence: unknown
+    source_url: https://www.cell.com/one-earth/information-for-authors
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID required for the corresponding author (Cell Press/Elsevier default); iDs in the author byline"
+    confidence: secondary
+    source_url: https://www.cell.com/one-earth/information-for-authors
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                    # → elsevier: named section "Declaration of generative AI and AI-assisted technologies in the writing process", at END immediately ABOVE References, PUBLISHED in the article. One Earth lists exactly this section (confirmed).
+  block:
+    value: >
+      "During the preparation of this work the author(s) used [NAME TOOL / SERVICE] in order to
+      [REASON, e.g. improve the language and readability]. After using this tool/service, the author(s)
+      reviewed and edited the content as needed and take(s) full responsibility for the content of the
+      publication." Place under the header "Declaration of generative AI and AI-assisted technologies in
+      the writing process" immediately before the References. Required regardless of task; standard
+      grammar/spell checkers are EXEMPT; AI cannot be an author. (Generative-AI-created/altered images
+      are not permitted unless part of the research methods and disclosed.)
+    confidence: official
+    source_url: https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: "Cell Press Editorial Manager — https://www.editorialmanager.com/one-earth/ ; presubmission inquiry: https://info.cell.com/one-earth-pre-submission"
+    confidence: official
+    source_url: https://www.cell.com/one-earth/information-for-authors
+    last_verified: 2026-06-22
+  pack:
+    value: [manuscript ≤5000 words & ≤7 display items, conventional abstract/Summary, mandatory Science-for-Society box (≤1000 chars), graphical abstract (at revision/final), cover letter (significance + One Earth fit), data- & code-availability statements with accessions, declaration of interests, CRediT author-contribution statement, declaration of generative AI, ORCID, suggested reviewers, optional double-anonymous opt-in]
+    confidence: official
+    source_url: https://www.cell.com/one-earth/information-for-authors
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

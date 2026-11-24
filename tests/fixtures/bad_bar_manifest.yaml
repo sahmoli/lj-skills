@@ -1,0 +1,24 @@
+figure_id: fig-bad-bar
+claim: Absolute biomass differs between groups.
+reader_task: compare
+analysis_unit: plot
+repeating_unit: independent plots
+estimand: mean biomass
+comparison: two habitats
+panels:
+  - label: a
+    role: main-comparison
+    mark: bar
+    quantity_semantics: absolute-magnitude
+    axis_policy: truncated
+    axis_min: 90
+    zero_is_meaningful: true
+uncertainty: {applicable: true, target: sampling, type: unknown, level: unknown}
+encoding: {primary_channel: length, colour_role: categorical, colour_is_sole_carrier: true, redundant_channel: ""}
+spatial: {is_map: false, purpose: not-applicable, crs: not-applicable, sensitive_locality: {present: false, method: none}}
+alternative_explanation: unknown
+medium: paper
+provenance: {data: [{path: data.csv, columns: [group, biomass]}], code: plot.py, command: python3 plot.py, transforms: group means}
+output: {width_mm: 89, height_mm: 70, formats: [pdf]}
+build: {status: success, artifacts: []}
+qc: {final_size_reviewed: false, colour_accessibility_reviewed: false, claim_trace_reviewed: false}

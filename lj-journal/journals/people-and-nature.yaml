@@ -1,0 +1,226 @@
+slug: people-and-nature
+journal: People and Nature
+publisher: wiley_bes                    # British Ecological Society on Wiley (inherits wiley AI policy + double-anon default)
+society:
+  value: British Ecological Society (BES)
+  confidence: secondary
+  source_url: https://openalex.org/S4210220774
+  last_verified: 2026-06-22
+
+metrics:
+  quartile:      {value: "Q1 (Juan's journal_db; not re-verified against latest JCR/Scopus this run)", confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  impact_factor: {value: "~6.1 (Juan's journal_db; not re-verified vs latest JCR). NOTE: OpenAlex 2yr-mean-citedness = 3.84 is a DIFFERENT metric, not the JCR IF.", confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  cite_score:    {value: "9.6 (Juan's journal_db; Scopus CiteScore, not re-verified this run)", confidence: secondary, source_url: "journal_db", last_verified: 2026-06-22}
+  h_index:       {value: 62, confidence: secondary, source_url: "https://openalex.org/S4210220774", last_verified: 2026-06-22}
+  is_top:        {value: 否, confidence: official, source_url: "Juan", last_verified: 2026-06-22}
+open_access:
+  value: "gold (fully open access; every article immediately OA, free to read/download/share — no subscription. In DOAJ.)"
+  confidence: official
+  source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines
+  last_verified: 2026-06-22
+apc_usd:
+  value: "≈2400 USD (≈£1800 / €2180) per 2025 web check."
+  conflict_note: "Three divergent figures: 2025 web ≈$2,400/£1,800/€2,180; OpenAlex lists 2000; Juan's journal_db says $2,330. Wiley APC page 403s to automated fetch and APCs are raised annually — confirm the live figure in a human browser."
+  confidence: secondary
+  source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/about/article-processing-charges
+  last_verified: 2026-06-22
+
+review_model:
+  value: "double_anonymised (anonymize BOTH manuscript and author identity). BES moved its journals to double-anonymous review on the back of the 2023 Functional Ecology trial; publisher default for wiley_bes."
+  conflict_note: "NOT fully nailed down for THIS journal: the only fetchable primary text (besjournals author_guidelines, Wayback 2021) still said 'single-blind ... author names are not concealed' — that PREDATES the change. The 2023 rollout coverage explicitly named the 5 core BES journals (J Ecology, J Animal Ecology, J Applied Ecology, Functional Ecology, MEE) but did NOT name People and Nature. Current live page 403s. Treat as double-anon but VERIFY on the live page before submitting."
+  confidence: secondary
+  source_url: https://www.britishecologicalsociety.org/double-anonymous-peer-review-reduces-reviewer-bias-find-three-year-trial/
+  last_verified: 2026-06-22
+
+scope:
+  value: >
+    Broad-scope, fully open-access BES journal for high-quality work on the relationships between
+    humans and nature. Deliberately interdisciplinary: rooted in ecological relevance but drawing on
+    economics, sociology, geography, psychology, political science and the humanities. Welcomes
+    empirical, conceptual and theoretical submissions and explicitly embraces qualitative, quantitative
+    and mixed-methods research. Fosters innovation and debate across the natural- and social-science
+    divide rather than single-discipline description.
+  confidence: official
+  source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines
+  last_verified: 2026-06-22
+# what THIS journal rewards + audience. AUTHORITATIVE sources only (official/editorial/society); null = no reliable source found, left blank by design.
+taste:
+  value: People and Nature rewards work that says something meaningful about BOTH the "People" and the
+    "Nature" of its title — research sitting at the nexus where human–nature literatures converge, with
+    broad, relational, interdisciplinary thinking prized over single-discipline depth and conceptual
+    and empirical work welcomed equally. Its primary audience is academic researchers across many disciplines,
+    but it explicitly engages and invites practitioners and policymakers, so papers must reach beyond
+    disciplinary silos. The journal is deliberately non-prescriptive about word limits and section headings
+    to respect differing disciplinary conventions, and every article carries a mandatory plain-language
+    summary published alongside it to keep the work accessible to a broad readership.
+  confidence: official
+  source_url: https://kar.kent.ac.uk/71486/1/Gaston_et_al-2018-People_and_Nature.pdf
+  last_verified: '2026-06-22'
+  audience:
+    value: Primary audience is academic researchers across many disciplines, but explicitly extends
+      to practitioners and policymakers, whom the journal actively engages and invites to submit. Anticipates
+      a very broad readership; papers must reach beyond single-discipline silos.
+    confidence: official
+    source_url: https://kar.kent.ac.uk/71486/1/Gaston_et_al-2018-People_and_Nature.pdf
+  writing_style:
+    value: Deliberately non-prescriptive on word limits and section headings, respecting differing disciplinary
+      conventions. Every article carries a mandatory plain-language summary; authors may also publish
+      the abstract in another language alongside English. Work should be accessible to a broad, cross-disciplinary
+      audience.
+    confidence: official
+    source_url: https://kar.kent.ac.uk/71486/1/Gaston_et_al-2018-People_and_Nature.pdf
+  figure_preference:
+    value: null
+    confidence: unknown
+    source_url: null
+  signals:
+    value: Mandatory plain-language summary published alongside every article (in supporting information).
+      A 'Perspective' article type aimed at non-academic audiences. Optional non-English abstract. Reviewers
+      asked to specify which aspects of a manuscript they feel most comfortable assessing — a structured
+      interdisciplinary-review device.
+    confidence: official
+    source_url: https://kar.kent.ac.uk/71486/1/Gaston_et_al-2018-People_and_Nature.pdf
+
+caps:                                   # MAP keyed by article type. P&N deliberately avoids hard caps for Research Articles.
+  Research Article:                     # empirical, conceptual OR theoretical; qual/quant/mixed all accepted
+    words:
+      value: "no strict cap — 'We do not impose strict length restrictions'; Research Articles tend to be ~8000 words. Over-length papers must be justified in the cover letter."
+      excludes: []                      # the ~8000 is described as INCLUSIVE of title page, abstract, keywords and references
+      confidence: official              # publisher's own author_guidelines text (read via Wayback capture this run)
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines
+      last_verified: 2026-06-22
+    figs_tables:
+      value: "no explicit cap (journal imposes no strict limits; keep appropriate to purpose; figures/tables may be embedded in text for review)"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines
+      last_verified: 2026-06-22
+    refs:
+      value: "no explicit cap"
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines
+      last_verified: 2026-06-22
+    abstract:
+      value: 350
+      conflict_note: "Current page (2025 search snippet): abstract must not exceed 350 words, written as simple factual NUMBERED statements. The 2021 archived page only said 'abstract split into numbered sections' without a number. Juan's journal_db said 200 — that is WRONG."
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines
+      last_verified: 2026-06-22
+    structure:
+      value: "flexible — clearly labelled sections that best suit the story of the article (NOT forced IMRAD). Numbered-statement abstract; keywords 3–8 (alphabetical); ethics/consent statement where human participants/data involved."
+      confidence: official
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines
+      last_verified: 2026-06-22
+  Review and Synthesis:                 # must identify evidence gaps / interpret evidence for stakeholders; standard lit reviews NOT considered
+    words:
+      value: "≤7000"
+      excludes: [tables, figure_legends, references]
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines
+      last_verified: 2026-06-22
+    figs_tables: {value: "no explicit cap", confidence: secondary, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+    refs:        {value: "no explicit cap", confidence: secondary, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+    abstract:    {value: 350, confidence: secondary, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+    structure:   {value: "synthesis that identifies evidence gaps or interprets evidence for stakeholders; a regular (NOT invitation-only) submission type", confidence: official, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+  Perspective:                          # shorter, literature-grounded but more speculative/personal; novel cross-field links; practitioners welcome
+    words:
+      value: "≤3500 (including references); generally no new data"
+      excludes: []
+      confidence: secondary
+      source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines
+      last_verified: 2026-06-22
+    figs_tables: {value: "few/none (concise format)", confidence: secondary, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+    refs:        {value: "no explicit cap (counts toward the 3500-word total)", confidence: secondary, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+    abstract:    {value: "350 (by journal default; verify — Perspectives may use a shorter/unstructured abstract)", confidence: unknown, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+    structure:   {value: "solidly grounded in published literature but may be speculative/personal; rewards novel links between fields, stimulating debate, new research directions; UNSOLICITED Perspectives welcome (including from practitioners) — NOT invite-only", confidence: official, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+  Correspondence:                       # short comments on articles published in the journal
+    words:       {value: "short comment (no fixed number published; keep brief)", confidence: secondary, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+    figs_tables: {value: "few/none", confidence: secondary, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+    refs:        {value: "no explicit cap", confidence: secondary, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+    abstract:    {value: null, confidence: secondary, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+    structure:   {value: "short comment on an article published in P&N (ideally within 12 months); assessed by Editorial Board, may be peer reviewed; original authors invited to respond and the pair published together", confidence: official, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines", last_verified: 2026-06-22}
+  Registered Report:                    # dedicated Registered Reports stream (Stage 1 protocol + Stage 2)
+    words:       {value: "not specified (two-stage RR format; follow the dedicated Registered Reports guidelines)", confidence: unknown, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/registered-reports-author-guidelines", last_verified: 2026-06-22}
+    figs_tables: {value: "n/a (Stage 1 protocol)", confidence: unknown, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/registered-reports-author-guidelines", last_verified: 2026-06-22}
+    refs:        {value: "no explicit cap", confidence: unknown, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/registered-reports-author-guidelines", last_verified: 2026-06-22}
+    abstract:    {value: 350, confidence: secondary, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/registered-reports-author-guidelines", last_verified: 2026-06-22}
+    structure:   {value: "two-stage: Stage 1 (intro + methods + analysis plan, in-principle acceptance before data collection) then Stage 2 (results + discussion)", confidence: secondary, source_url: "https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/registered-reports-author-guidelines", last_verified: 2026-06-22}
+  Research Highlight:                    # UNVERIFIED for P&N — kept only because Juan's note lists it
+    words:       {value: "UNVERIFIED — Juan's journal_db says 750 words (invited). 'Research Highlight' is NOT in P&N's official article-type list (Research Article / Review and Synthesis / Perspective / Correspondence / Registered Report). A separate BES source describes Research Highlights as ≤2500 words, invited, no abstract — but that appears to be a DIFFERENT BES journal, not People and Nature.", confidence: unknown, source_url: "journal_db", last_verified: 2026-06-22}
+    figs_tables: {value: "unknown", confidence: unknown, source_url: "journal_db", last_verified: 2026-06-22}
+    refs:        {value: "unknown", confidence: unknown, source_url: "journal_db", last_verified: 2026-06-22}
+    abstract:    {value: "unknown", confidence: unknown, source_url: "journal_db", last_verified: 2026-06-22}
+    structure:   {value: "unknown — confirm whether P&N actually offers this type before relying on it", confidence: unknown, source_url: "journal_db", last_verified: 2026-06-22}
+
+desk_reject_triggers:
+  - "Out of scope: single-discipline / descriptive work with no genuine people–nature or cross-disciplinary contribution → reframe around the human–nature relationship and a broad readership, or it is rejected without review."
+  - "Standard literature review submitted as 'Review and Synthesis' → must instead identify evidence gaps or interpret evidence for stakeholders."
+  - "No data-availability statement / data not archived in a public repository (or dumped as Supporting Information, which BES forbids) → state intended archive (Dryad/Zenodo/Figshare) at submission."
+  - "Human participants/data without an ethics + informed-consent statement in Methods (Declaration of Helsinki) → add it; missing ethics can stop a social-science P&N paper."
+  - "Author identity not anonymised → BES default is double-anonymous; prepare an anonymized manuscript (VERIFY live, since the journal's own older text said single-blind)."
+  - "Abstract not as numbered factual statements or over 350 words; keywords outside 3–8 → fix to format."
+  - "Sensitive species localities / sensitive social data exposed → transform/coarsen localities (or request an archiving waiver with explanation in the DAS)."
+
+reporting:
+  data_availability_statement:
+    required: true
+    confidence: official
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/data_archiving_policy
+    last_verified: 2026-06-22
+  data_repository:
+    value: "Archive data in an approved public repository per the BES Data Archiving Policy (Dryad common in ecology; Zenodo/Figshare; domain-specific archives). Data sets may NOT be uploaded as Supporting Information."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/data_archiving_policy
+    last_verified: 2026-06-22
+  code_sharing:
+    value: "Code/scripts expected to be archived alongside data with a persistent identifier (BES reproducibility expectation)"
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/data_archiving_policy
+    last_verified: 2026-06-22
+  reporting_guideline:
+    value: "STRANGE encouraged for behaviour/animal-sampling studies (BES-wide); discipline-appropriate reporting standards expected. No single mandated checklist across the journal."
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/data_archiving_policy
+    last_verified: 2026-06-22
+  sensitive_locality:
+    value: "For endangered species or protected/sensitive locations, transform locality details or provide an anonymised dataset; where impossible (or politically/culturally sensitive or sensitive social data), editors may waive archiving — give a short explanation in the Data Availability Statement."
+    confidence: official
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/data_archiving_policy
+    last_verified: 2026-06-22
+  orcid:
+    value: "ORCID expected (BES/Wiley default; part of the submission artefact set)"
+    confidence: secondary
+    source_url: https://authorservices.wiley.com/author-resources/Journal-Authors/submission/orcid.html
+    last_verified: 2026-06-22
+
+ai_disclosure:
+  placement: inherit                    # → wiley: Methods OR Acknowledgements (Wiley does not mandate one fixed section). NOTE: P&N reviewer guidelines separately require reviewers to declare GenAI used in review reports.
+  block:
+    value: >
+      "During the preparation of this work the author(s) used [TOOL/SERVICE] in order to
+      [REASON, e.g. improve language and readability]. After using this tool/service, the author(s)
+      reviewed and edited the content as needed and take(s) full responsibility for the content of
+      the publication." (Wiley/COPE: disclose tool + version + access date + role + how output was
+      verified; grammar/spell/general-editing tools exempt; generative AI cannot be listed as an author.)
+    confidence: official
+    source_url: https://authorservices.wiley.com/ethics-guidelines/index.html
+    last_verified: 2026-06-22
+
+submission:
+  portal:
+    value: Wiley ScholarOne (Manuscript Central) — https://mc.manuscriptcentral.com/pan
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines
+    last_verified: 2026-06-22
+  pack:
+    value: [title page (title + all authors + affiliations + corresponding author email), main text with self-suited section headings, numbered-statement abstract (≤350 words), keywords (3–8, alphabetical), ethics/informed-consent statement where applicable, Conflict of Interest statement, optional Authors' Contributions (CRediT) statement, statement of intended data archive + Data Availability Statement, references (author-date preferred, not mandatory at initial submission), figures/tables (may be embedded), optional cover letter, ORCID, anonymized manuscript if double-anon confirmed]
+    confidence: secondary
+    source_url: https://besjournals.onlinelibrary.wiley.com/hub/journal/25758314/author_guidelines
+    last_verified: 2026-06-22
+
+my_notes:                               # ★ Juan 的一手观察层 —— 只填你亲历的（投稿/审稿/读者反馈）。AI 不代填，未填即留空。
+  # 可靠、带来源的"期刊偏好/读者画像"已放在上方 taste 字段（confidence + source_url）。这里只留给你的一手经验。
+  reader_profile:        # 读者画像（你实际接触到的读者/审稿人）
+  writing_style:         # 写作风格（你投稿时的体会）
+  figure_preference:     # 图表偏好
+  cautions:              # 注意事项 / 踩过的坑
+  favorite_articles: []  # [[LIT - ...]] wikilinks

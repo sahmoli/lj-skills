@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJ Talk"
+  short_description: "科学教学与学术演示幻灯片"
+  default_prompt: "Use $lj-talk to create or revise a scientific presentation deck from the supplied brief and evidence."
