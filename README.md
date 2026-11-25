@@ -4,6 +4,8 @@ Epistemically grounded AI agent skills and composable research workflows for sci
 
 Unlike broad tool catalogs that bundle hundreds of generic API wrappers, `lj-skills` focuses on **scientific reasoning integrity and deterministic verification**: separating pattern from process, locking 30-second discriminating questions before study design, checking retractions and physical PDF page anchors (`<!-- pdf-p0001 -->`) before citing, catching numeric/citation drift in manuscript edits, and auditing publication figures at print dimensions.
 
+> **Interactive Workflow Matrix & Bilingual Guide:** [juanli.me/resources/skills/](https://juanli.me/resources/skills/) (EN) · [juanli.me/zh/resources/skills/](https://juanli.me/zh/resources/skills/) (中文)
+
 ---
 
 ## Architecture: 12 Atomic Skills + 3 Composable Workflows
@@ -42,12 +44,27 @@ Explicit 1-page stage-gated playbooks (invoked on demand so they never bloat eve
 ## 2-Minute Quickstart
 
 ```bash
-# 1. Install the 7 core research skills (or --profile full for all 12)
-./install.sh copy --profile core --dest ~/.claude/skills
-./install.sh copy --profile full --dest ~/.codex/skills
-# Cross-platform / Windows PowerShell:
-python scripts/install_skills.py copy --profile core --dest "$HOME/.codex/skills"
+# 1. Core Research Cycle (7 skills · recommended, macOS / Linux):
+git clone https://github.com/sahmoli/lj-skills && ./lj-skills/install.sh copy --profile core
 
+# Or Full Suite (all 12 skills: Core + 5 Specialist):
+git clone https://github.com/sahmoli/lj-skills && ./lj-skills/install.sh copy --profile full
+```
+
+```powershell
+# Windows PowerShell (cross-platform installer):
+git clone https://github.com/sahmoli/lj-skills ; python lj-skills/scripts/install_skills.py copy --profile core
+```
+
+Optional explicit target overrides (by default, the installer auto-detects `~/.claude/skills`, `~/.codex/skills`, and `~/.gemini/config/skills`):
+
+```bash
+./lj-skills/install.sh copy --profile core --dest ~/.claude/skills
+./lj-skills/install.sh copy --profile full --dest ~/.codex/skills
+./lj-skills/install.sh copy --profile full --dest ~/.gemini/config/skills
+```
+
+```bash
 # 2. Configure your academic email & private local papers folder (optional, recommended for lj-evidence)
 export UNPAYWALL_EMAIL="your.name@university.edu"
 export LJ_PAPERS_DIR="$HOME/Documents/papers"

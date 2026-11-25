@@ -4,6 +4,7 @@ from pathlib import Path
 import re
 import tempfile
 import unittest
+from unittest import mock
 
 
 SUITE = Path(__file__).resolve().parents[1]
@@ -150,6 +151,27 @@ class InstallProfileTests(unittest.TestCase):
                 dest = Path(temp) / "skills"
                 installer.install_dest(dest, data["profiles"][profile], "copy", False, False, data)
                 self.assert_local_links_resolve(dest)
+
+    def test_main_auto_detects_antigravity_skills_dir(self):
+        import os
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            missing_claude = root / "missing-claude" / "skills"
+            missing_codex = root / "missing-codex" / "skills"
+            agy_parent = root / "gemini-config"
+            agy_parent.mkdir()
+            agy_skills = agy_parent / "skills"
+            env = {
+                "CLAUDE_SKILLS_DIR": str(missing_claude),
+                "CODEX_SKILLS_DIR": str(missing_codex),
+                "ANTIGRAVITY_SKILLS_DIR": str(agy_skills),
+            }
+            with mock.patch.dict(os.environ, env, clear=False), \
+                 mock.patch.object(installer, "install_dest") as install_mock:
+                rc = installer.main(["copy", "--profile", "core", "--dry-run"])
+            self.assertEqual(rc, 0)
+            install_mock.assert_called_once()
+            self.assertEqual(install_mock.call_args.args[0], agy_skills.resolve())
 
 
 if __name__ == "__main__":

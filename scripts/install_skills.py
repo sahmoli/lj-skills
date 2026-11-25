@@ -352,6 +352,7 @@ def main(argv: list[str] | None = None) -> int:
         auto = [
             Path(os.environ.get("CLAUDE_SKILLS_DIR", Path.home() / ".claude" / "skills")),
             Path(os.environ.get("CODEX_SKILLS_DIR", Path.home() / ".codex" / "skills")),
+            Path(os.environ.get("ANTIGRAVITY_SKILLS_DIR", Path.home() / ".gemini" / "config" / "skills")),
         ]
         dests.extend(path for path in auto if path.parent.is_dir())
     if not dests:
